@@ -11,5 +11,5 @@
 		<li>&#9679;</li>
 		<li><a target="_blank" href="http://www.linkedin.com/in/brewerjake">LinkedIn</a></li>
 	</ul>
-	<span class="copyrite">All work is &copy; Jake Brewer <?= date('Y', time('now')); ?>.<br />Please do not reproduce without consent.<br />I will find you.</span>
+	<span class="copyrite">All work is &copy; Jake Brewer <?= date('Y', time('now')); ?>.<br />Please do not reproduce without consent – I will find you.</span>
 </section>

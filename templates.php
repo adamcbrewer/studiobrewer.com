@@ -130,7 +130,7 @@
 		</section>
 		<section class="profile-frame cf bg-light">
 			<div id="thework" class="structure">
-				<h2 class="section-title">Recent Projects</h2>
+				<h2 class="section-title">Featured Projects</h2>
 				<div>
 					{{# projects }}
 						{{# feature }}{{> ichGridProject }}{{/ feature }}
