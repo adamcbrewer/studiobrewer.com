@@ -143,7 +143,8 @@ input:indeterminate {} /* un-selected radio buttons :) */
     display: block;
     float: left;
     position: absolute;
-    max-width: 94px;
+    max-width: 115px;
+    margin-top: -4px;
     /*
     &:hover {
         a { color: @c-light; text-decoration: none; }
@@ -245,7 +246,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
     .grid-dash, { display: none; }
     .grid-meta,
     .grid-tags { display: none; }
-    .grid-details { margin: 20px 0px; font-size: 1.2em; text-align: center; }
+    .grid-details { margin: 10px 0px; font-size: 1.2em; text-align: center; }
     .bg-block {
         display: none;
     }
@@ -368,7 +369,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
         text-align: left;
         font-weight: normal;
         margin: 0 auto;
-        max-width: 34em;
+        max-width: 24em;
         padding: 0 4%;
     }
 }
@@ -621,10 +622,10 @@ input:indeterminate {} /* un-selected radio buttons :) */
 
 .logo-under {
     position: absolute;
-    bottom: -6px;
-    width: 11px;
-    height: 3px;
-    left: 14px;
+    bottom: -18%;
+    width: 12%;
+    height: 10%;
+    left: 15%;
     background-color: #dd3710;
 }
 /* ====================================================
@@ -1037,8 +1038,8 @@ input:indeterminate {} /* un-selected radio buttons :) */
 @media (max-width: 450px) {
     #navigation {
         .nav-item {
-            display: block;
-            margin: 0 0 0.6em;
+            /*display: block;*/
+            margin: 0 0.8em 0.6em;
         }
     }
     #logo {
@@ -1071,7 +1072,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
     /*#details > article { font-size: 1.4em; }*/
     .subsection-title { font-weight: bold; }
     .structure {
-        .grid-project { width: 100%; /*font-size: 1.6em;*/ }
+        .grid-project { width: 100%; margin-bottom: 1em; }
         &.list {
             /*.grid-project { font-size: 1em; }*/
             .grid-details { margin-right: 0; }

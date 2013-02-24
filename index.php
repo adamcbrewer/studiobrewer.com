@@ -53,7 +53,7 @@
 		<header id="header" class="cf">
 
 			<a href="/" id="logo" class="resp-img animate">
-				<img src="assets/img/sb_logo_alt.png" alt="Studio Brewer">
+				<img src="assets/img/sb_logo_alt2.png" alt="Studio Brewer">
 				<i class="logo-under"></i>
 			</a>
 			<nav id="navigation" class="cf">
