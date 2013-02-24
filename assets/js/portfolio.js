@@ -336,6 +336,7 @@ var Portfolio = function () {
 
 			var that = this;
 
+			// console.log(typeof tag);
 			if (typeof tag === 'string' && tag != 'false') {
 				var projectsToShow = this.projectsCont.find('[data-tags*="'+tag+'"]'),
 					projectsToHide = this.projectsCont.find('.grid-project').not(projectsToShow);
@@ -360,7 +361,8 @@ var Portfolio = function () {
 				this.highlightProject(false);
 
 			} else {
-				if (tag == 'false') {
+				console.log(typeof tag);
+				if (tag === false || tag === 'false') {
 
 					// this.busy();
 
@@ -600,10 +602,11 @@ var Portfolio = function () {
 			// we don' want touch events on the actual selection
 			// of the project items
 			$(document).on('click', '.grid-project', function (evt) {
+				evt.preventDefault();
 				var filter = evt.target.getAttribute('data-filter');
-				if (filter && filter.length) {
-					that.filterProjects(filter);
-				} else {
+				// only open a project if we haven't clicked on a
+				// filter-tag with the project
+				if (typeof filter !== 'string') {
 					that.openProject(this.getAttribute('data-slug'));
 				}
 			});
@@ -629,7 +632,7 @@ var Portfolio = function () {
 			});
 
 			// Tags apply a level of filtering for displaying projects
-			this.tagsCont.on(eventType, '[data-filter]', function (evt) {
+			$(document).on(eventType, '[data-filter]', function (evt) {
 				evt.preventDefault();
 				var tag = this.getAttribute('data-filter');
 				// if we click the same filter twice then

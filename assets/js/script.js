@@ -52,7 +52,6 @@
 			// S.basePath + "/assets/js/libs/hammer.min.js",
 			// S.basePath + "/assets/js/libs/jquery.hammer.min.js",
 			// S.basePath + "/assets/js/portfolio.js"
-			// S.basePath + "/assets/js/build.min.js"
 			S.basePath + "/script.php?file=assets/js/build.min.js"
 		],
 		complete: function () {
