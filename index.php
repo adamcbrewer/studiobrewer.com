@@ -26,7 +26,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-	<link href="assets/css/core.css" rel="stylesheet" type='text/css'>
+	<link href="assets/css/styles.css" rel="stylesheet" type='text/css'>
 
 	<script src="/script.php?file=assets/js/libs/modernizr.custom.77287.min.js"></script>
 
@@ -98,7 +98,16 @@
 
 	</div>
 
-	<script src="/script.php?file=assets/js/script.min.js"></script>
+	<script src="/assets/js/build.min.js"></script>
+	<? /*
+	<script src="assets/js/libs/jquery-1.8.0.min.js"></script>
+    <script src="assets/js/libs/jquery.il.min.js"></script>
+    <script src="assets/js/libs/iCanHaz.js"></script>
+    <script src="assets/js/libs/hammer.js"></script>
+    <script src="assets/js/libs/jquery.hammer.js"></script>
+    <script src="assets/js/modules/portfolio.js"></script>
+    <script src="assets/js/modules/script.js"></script>
+    */ ?>
 
 </body>
 <!--

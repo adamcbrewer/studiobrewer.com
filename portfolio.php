@@ -2,6 +2,112 @@
 $portfolio = array(
 	'projects' => array(
 		array(
+			'title' => 'Nova Residential — iPad App',
+			'client' => 'Land Securities',
+			'tags' => array(
+				'design',
+			),
+			'feature' => true,
+
+			// the project details
+			'description' => "Nova, Victoria comprises five buildings within a new, 82,700 square feet, pedestrianised, landscaped public space, opposite Victoria mainline railway station at the heart of London’s prestigious West End.<br /><br />The Nova Building (Residential) comprises 170 high-specification apartments on the doorstep of Buckingham Palace. Land Securities were in need of a tool for agents to present all the different specifications of each apartment, along with the relevant imagery, balcony and window views to potential buyers and clients.<br /><br />Working with the Design Director, Paul Summerfield, we created an application for the iPad, detailing all the information simply, elegantly and effectively. Agents can search for apartments based on the number of bedrooms, interior finishings and aspect. Apartment window and balcony views at different floors of the building can be seen, as well as various image galleries.<br /><br />–<br />Role: Senior Designer<br />Created at <a href='http://www.bostockandpollitt.com' target='_blank'>Bostock & Pollitt</a><br />Design Director: Paul Summerfield<br />Account Manager: Rachel Beaufort",
+
+			'date' => 'October 2013',
+			'link' => NULL,
+			'thumb' => 'projects/novaresapp/novaresapp_thumb.jpg',
+			'greyBg' => 'projects/novaresapp/novaresapp_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/novaresapp/novaresapp_01.jpg',
+					'alt' => 'First'
+				),
+				array(
+					'url' => 'projects/novaresapp/novaresapp_02.jpg',
+					'alt' => 'Second'
+				),
+				array(
+					'url' => 'projects/novaresapp/novaresapp_03.jpg',
+					'alt' => 'Third'
+				),
+				array(
+					'url' => 'projects/novaresapp/novaresapp_04.jpg',
+					'alt' => 'Fourth'
+				),
+				array(
+					'url' => 'projects/novaresapp/novaresapp_05.jpg',
+					'alt' => 'Fifth'
+				),
+				array(
+					'url' => 'projects/novaresapp/novaresapp_06.jpg',
+					'alt' => 'Sixth'
+				)
+			)
+		),
+		array(
+			'title' => 'Responsive Website',
+			'client' => 'Buzzacott',
+			'tags' => array(
+				'design',
+			),
+			'feature' => true,
+
+			// the project details
+			'description' => "Buzzacott are a group of chartered accountants who define themselves by the needs of their clients, offering a wide range of services.<br /><br />Their existing online presence needed re-looking in order to better reflect their current approach, professionalism and levels of expertise within the company’s specialist teams. It also needed to be more accessible, clearer and easier to use.<br /><br />Working with the Design Director, Paul Summerfield, we created a responsive website which is faster, a joy to use and is accessible across all popular digital devices. Paul also lovingly commissioned a whole selection of new photography, allowing a more personal inside view of the company.<br /><br />–<br />Role: Senior Designer<br />Created at <a href='http://www.bostockandpollitt.com' target='_blank'>Bostock & Pollitt</a><br />Design Director: Paul Summerfield<br />Visit the site: <a href='http://www.buzzacott.co.uk' target='_blank'>buzzacott.co.uk</a>",
+
+			'date' => 'November 2013',
+			'link' => 'http://www.buzzacott.co.uk',
+			'thumb' => 'projects/buzzacott/buzzacott_thumb.jpg',
+			'greyBg' => 'projects/buzzacott/buzzacott_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/buzzacott/buzzacott_01.jpg',
+					'alt' => 'First'
+				),
+				array(
+					'url' => 'projects/buzzacott/buzzacott_02.jpg',
+					'alt' => 'Second'
+				),
+				array(
+					'url' => 'projects/buzzacott/buzzacott_03.jpg',
+					'alt' => 'Third'
+				),
+				array(
+					'url' => 'projects/buzzacott/buzzacott_04.jpg',
+					'alt' => 'Fourth'
+				),
+				array(
+					'url' => 'projects/buzzacott/buzzacott_05.jpg',
+					'alt' => 'Fifth'
+				)
+			)
+		),
+		array(
+			'title' => 'Apres Ski',
+			'client' => 'Self-Initiated',
+			'tags' => array(
+				'illustration',
+			),
+			'feature' => true,
+
+			// the project details
+			'description' => "While reminiscing about a past ski trip, I had this idea for a poster. <br /><br />Remember: 'Trinken und auf eigene gefahr skifahren!'",
+
+			'date' => 'June 2013',
+			'link' => '',
+			'thumb' => 'projects/apresski/apresski_thumb.jpg',
+			'greyBg' => 'projects/apresski/apresski_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/apresski/apresski_01.jpg',
+					'alt' => 'Main Poster'
+				),
+				array(
+					'url' => 'projects/apresski/apresski_02.jpg',
+					'alt' => 'Detail'
+				)
+			)
+		),
+		array(
 			'title' => 'Strategic Roadmap',
 			'client' => 'Manchester City FC',
 			'tags' => array(
@@ -11,7 +117,7 @@ $portfolio = array(
 			'feature' => true,
 
 			// the project details
-			'description' => "Manchester City Football Club wanted a simple way to present planned activity, growth and digital strategy to board members and digital trade shows. This needed to span across several seasons. Working with the Creative Director Andy McClane, we developed a future roadmap based on a solar system diagram. This was an effective way to show progress throughout the years.<br /><br />The original idea was to push the capabilities of CSS and HTML5, creating a dynamic 'live' map that could be updated through a content management system. This would, of course, work across all mobile devices.<br />Unfortunately, in the end a much more simplified version was created using pre-built Flash presentation software. In terms of longevity, functionality, and mobile compatibility I wasn't so sure this was the correct route, but as it turns out everyone was happy and it served its purpose.<br /><br />Sensitive and confidential information has been omitted in these screenshots.<br /><br />–<br />Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
+			'description' => "Manchester City Football Club wanted a simple way to present planned activity, growth and digital strategy to board members and digital trade shows. This needed to span across several seasons. Working with the Creative Director Andy McClane, we developed a future roadmap based on a solar system diagram. This was an effective way to show progress throughout the years.<br /><br />The original idea was to push the capabilities of CSS and HTML5, creating a dynamic 'live' map that could be updated through a content management system. This would, of course, work across all mobile devices.<br />Unfortunately, in the end a much more simplified version was created using pre-built Flash presentation software. In terms of longevity, functionality, and mobile compatibility I wasn't so sure this was the correct route, but as it turns out everyone was happy and it served its purpose.<br /><br />Sensitive and confidential information has been omitted in these screenshots.<br /><br />–<br />Role: Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
 
 			'date' => 'July 2012',
 			'link' => '',
@@ -102,10 +208,10 @@ $portfolio = array(
 				'design',
 				'print'
 			),
-			'feature' => true,
+			'feature' => false,
 
 			// the project details
-			'description' => "<a href='http://en.wikipedia.org/wiki/Barefoot_running' target='_blank'>Barefoot running</a> earns its keep by assisting a runner in learning proper technique. Once mastered, the once hated sport has become so enjoyable for me that it is now a huge part of my life; something I just can't live without.<br /><br />I had a simple idea for a poster on the topic, and went ahead and made it.<br /><br />–<br />Design",
+			'description' => "<a href='http://en.wikipedia.org/wiki/Barefoot_running' target='_blank'>Barefoot running</a> earns its keep by assisting a runner in learning proper technique. Once mastered, the once hated sport has become so enjoyable for me that it is now a huge part of my life; something I just can't live without.<br />This poster was the result of a simple idea I had.<br /><br />–<br />Design",
 
 			'date' => 'October 2011',
 			'link' => NULL,
@@ -126,7 +232,7 @@ $portfolio = array(
 				'interactive',
 				'art direction'
 			),
-
+			'feature' => true,
 			// the project details
 			'description' => "Website design proposal for The NextGen Series international football (soccer!) tournament. Players and their clubs get the chance to take part in a challenging international competition, ending in a Final to win the NextGen Series Trophy.<br /><br />One of the requirements was to integrate the futuristic feel of pre-supplied images into the website, to aid in creating the 'Future of Football' aesthetic.<br /><br />–<br />Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
 
@@ -226,12 +332,7 @@ $portfolio = array(
 				array(
 					'url' => 'projects/cutcarbon/cutcarbon_08.jpg',
 					'alt' => 'eigth'
-				),
-				array(
-					'url' => 'projects/cutcarbon/cutcarbon_09.jpg',
-					'alt' => 'ninth'
 				)
-
 			)
 		),
 		array(
@@ -301,7 +402,7 @@ $portfolio = array(
 			'date' => '2009 – 2012',
 			'link' => NULL,
 			'thumb' => 'projects/brewersdroop/brewersdroop_thumb.jpg',
-			'greyBg' => 'projects/brewersdroop/brewersdroop_01.jpg',
+			'greyBg' => 'projects/brewersdroop/brewersdroop_01.gif',
 			'images' => array(
 				array(
 					'url' => 'projects/brewersdroop/brewersdroop_01.gif',
@@ -330,7 +431,7 @@ $portfolio = array(
 			),
 
 			// the project details
-			'description' => "Design of the official MCFC iPhone app. Apart from the obvious goal of providing City fans with up-to-date news highlights, video highlights and results, we included them in the process. Sketches, IA thoughts and early designs were made available for comment and surprisingly it worked as we ended up building something that not only is aesthetically pleasing, but provides the fans with content that they actually want.<br /><br />I worked closely with the extremely talented developer, <a href='http://www.toshiro.co.uk/' target='_blank'>Richard Buck</a>, and as a result learned a great deal about the process.<br /><br />It ended up being the highest grossing app in the iTunes store for over a week, and has been received extremely well by fans, calling it 'the best looking football app', which of course made myself and the team involved smile.<br /><br />–<br />Lead Designer<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Art Director: Karen Bloom<br />Creative Director: Andy McClane",
+			'description' => "Design of the official MCFC iPhone app. Apart from the obvious goal of providing City fans with up-to-date news highlights, video highlights and results, we included them in the process. Sketches, IA thoughts and early designs were made available for comment and surprisingly it worked as we ended up building something that not only is aesthetically pleasing, but provides the fans with content that they actually want.<br /><br />I worked closely with the extremely talented developer, <a href='http://www.toshiro.co.uk/' target='_blank'>Richard Buck</a>, and as a result learned a great deal about the process.<br /><br />It ended up being the highest grossing app in the iTunes store for over a week, and has been received extremely well by fans, calling it 'the best looking football app', which of course made myself and the team involved smile.<br /><br />–<br />Lead Designer<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Art Director: Karen Bloom<br />Senior Designer: Clive Russell<br />Creative Director: Andy McClane",
 
 			'date' => 'November 2010',
 			'link' => NULL,
@@ -346,6 +447,45 @@ $portfolio = array(
 					'alt' => 'Art Direction/Screens'
 				)
 			)
+		),
+		array(
+			'title' => 'The Big Adventure',
+			'client' => 'Clarks Kids',
+			'tags' => array(
+				'illustration'
+			),
+			'feature' => false,
+
+			// the project details
+			'description' => "Jack and Daisy are cartoon characters who feature in most of Clarks Kids’ campaigns, hosting a variety of games and online activities for them to take part in.<br /><br />The Big Adventure was a campaign at the time which involved various animals, reptiles and insects where kids would either count the stripes and spots, or pair them together in memory-based games.<br /><br />These are a few from the massive set of characters we had to illustrate in a friendly and approachable style.<br /><br />–<br />Illustration<br />Created at ID-Media (now part of <a href='http://www.augustmedia.com/' target='_blank'>August Media</a>)<br />Creative Director: Dave McDougall",
+
+			'date' => 'June 2010',
+			'link' => '',
+			'thumb' => 'projects/clarks/clarks_thumb.jpg',
+			'greyBg' => 'projects/clarks/clarks_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/clarks/clarks_01.jpg',
+					'alt' => 'first'
+				),
+				array(
+					'url' => 'projects/clarks/clarks_02.jpg',
+					'alt' => 'second'
+				),
+				array(
+					'url' => 'projects/clarks/clarks_03.jpg',
+					'alt' => 'third'
+				),
+				array(
+					'url' => 'projects/clarks/clarks_04.jpg',
+					'alt' => 'fourth'
+				),
+				array(
+					'url' => 'projects/clarks/clarks_05.jpg',
+					'alt' => 'fifth'
+				)
+			)
+
 		),		
 		array(
 			'title' => 'ESPNSoccernet',
@@ -510,8 +650,8 @@ $portfolio = array(
 	'profile' => array(
 		'about' => array(
 			'title' => 'About',
-			'heroCopy' => 'Studio Brewer is the creative practice of Jake Brewer, a South African Designer, Art Director and Illustrator based in London, with many years of experience.<br /><br />I believe in strong ideas and remain dedicated to creating beautifully executed and carefully considered work.<br /><br />If you are interested in working together, please get in touch. I\'d love to hear your ideas.<br /><br />This site was lovingly built by <a href="http://brewerlogic.com" target="_blank">my brother</a>, the super-coder, Prince Harry look-a-like.<br /><br />Thanks for visiting.',
-			'introCopy' => 'Studio Brewer is the creative practice of Jake Brewer, a South African Designer, Art Director and Illustrator based in London, with many years of experience across a wide range of media and creative fields.'
+			'heroCopy' => 'Jake Brewer is a South African Graphic & Digital Designer, Art Director and Illustrator with over nine years of experience across a wide range of creative fields, digital media and client industries.<br /><br />I love the craft, diversity and strong ideas, finding complete joy in producing work with meticulous attention to detail.<br /><br />Design, illustration and technology is constantly changing and working across a variety of disciplines ranging from graphic, digital and interactive design through to illustration, motion graphics and art direction helps me to adapt, learn and evolve with this change.<br /><br />I live for The Moment. The pivotal point where after toiling with layout options, typography, colour combinations and image selections, a wonderful solution is found. Also known as <a href="http://www.youtube.com/watch?v=1SUzcDUERLo&feature=youtu.be&t=3m37s" target="_blank">The Drago Moment</a>.<br /><br />If you are interested in working together, please do get in touch. Thanks for visiting.<br /><br />This site was lovingly built by <a href="http://www.brewerlogic.com" target="_blank">my brother Adam</a>, the Super Developer, Prince Harry look-alike.',
+			'introCopy' => 'Studio Brewer is the creative practice of Jake Brewer, a South African Graphic & Digital Designer, Art Director and Illustrator based in London.'
 		),
 		'what' => array(
 			'title' => 'What I do',
