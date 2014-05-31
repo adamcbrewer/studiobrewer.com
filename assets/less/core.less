@@ -160,8 +160,8 @@ input:indeterminate {} /* un-selected radio buttons :) */
         padding: 4em 0% 0;
     }
     [data-content="projects"] {
-        /*max-width: 1670px;*/
-        /*margin: auto;*/
+        max-width: 1264px;
+        margin: auto;
     }
 }
 #container {
@@ -349,7 +349,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
         margin-bottom: 3em;
     }
     > div {
-        max-width: 1240px;
+        max-width: 1264px;
         margin: auto;
     }
 }
@@ -552,6 +552,12 @@ input:indeterminate {} /* un-selected radio buttons :) */
         }
     }
 }
+.detail-images-desc {
+    margin-top:1em;
+    width:100%;
+    color: @c-light;
+    font-size: 1.2em;
+}
 
 .profile-frame {
     padding: 5em 0px;
@@ -602,6 +608,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
     text-transform: uppercase;
     margin-bottom: 2em;
     text-align: center;
+    letter-spacing: 0.6px;
 }
 .subsection-title {
     font-weight: normal;
@@ -843,7 +850,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
             -webkit-transform: translate(0px, 0px);
         }
         50% {
-            -webkit-transform: translate(70px, 0px);
+            -webkit-transform: translate(88px, 0px);
         }
     }
     @-moz-keyframes logo-load {
@@ -851,7 +858,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
             -moz-transform: translate(0px, 0px);
         }
         50% {
-            -moz-transform: translate(70px, 0px);
+            -moz-transform: translate(88px, 0px);
         }
     }
     @-ms-keyframes logo-load {
@@ -859,7 +866,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
             -ms-transform: translate(0px, 0px);
         }
         50% {
-            -ms-transform: translate(70px, 0px);
+            -ms-transform: translate(88px, 0px);
         }
     }
     @-o-keyframes logo-load {
@@ -867,7 +874,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
             -o-transform: translate(0px, 0px);
         }
         50% {
-            -o-transform: translate(70px, 0px);
+            -o-transform: translate(88px, 0px);
         }
     }
     @keyframes logo-load {
@@ -875,16 +882,16 @@ input:indeterminate {} /* un-selected radio buttons :) */
             transform: translate(0px, 0px);
         }
         50% {
-            transform: translate(70px, 0px);
+            transform: translate(88px, 0px);
         }
     }
     #logo.animate {
         .logo-under {
-            -webkit-animation: logo-load 0.3s infinite;
-            -moz-animation: logo-load 0.3s infinite;
-            -ms-animation: logo-load 0.3s infinite;
-            -o-animation: logo-load 0.3s infinite;
-            animation: logo-load 0.3s infinite;
+            -webkit-animation: logo-load 0.35s infinite;
+            -moz-animation: logo-load 0.35s infinite;
+            -ms-animation: logo-load 0.35s infinite;
+            -o-animation: logo-load 0.35s infinite;
+            animation: logo-load 0.35s infinite;
 
             -webkit-animation-timing-function: ease-out;
             -moz-animation-timing-function: ease-out;
@@ -896,11 +903,11 @@ input:indeterminate {} /* un-selected radio buttons :) */
     }
     #logo:hover {
         .logo-under {
-            -webkit-animation: logo-load 0.3s infinite;
-            -moz-animation: logo-load 0.3s infinite;
-            -ms-animation: logo-load 0.3s infinite;
-            -o-animation: logo-load 0.3s infinite;
-            animation: logo-load 0.3s infinite;
+            -webkit-animation: logo-load 0.35s infinite;
+            -moz-animation: logo-load 0.35s infinite;
+            -ms-animation: logo-load 0.35s infinite;
+            -o-animation: logo-load 0.35s infinite;
+            animation: logo-load 0.35s infinite;
 
             -webkit-animation-timing-function: ease-out;
             -moz-animation-timing-function: ease-out;
@@ -933,7 +940,7 @@ input:indeterminate {} /* un-selected radio buttons :) */
 ========================================================================== */
 
 @media (min-width: 1400px) {
-    .structure .grid-project { width: 25%; }
+    // .structure .grid-project { width: 25%; }
     #thework .grid-project { width: 33.33%; }
 }
 
@@ -1027,15 +1034,19 @@ input:indeterminate {} /* un-selected radio buttons :) */
         -moz-column-count: 1;
         column-count: 1;
     }
+    .structure {
+        .grid-project { width: 100%; margin-bottom: 1em; }
+        &.list {
+            /*.grid-project { font-size: 1em; }*/
+            .grid-details { margin-right: 0; }
+        }
+    }
 }
 
 @media (max-width: 480px) {
     #togglers {
         display: none !important;
     }
-}
-
-@media (max-width: 450px) {
     #navigation {
         .nav-item {
             /*display: block;*/
@@ -1071,13 +1082,6 @@ input:indeterminate {} /* un-selected radio buttons :) */
     }
     /*#details > article { font-size: 1.4em; }*/
     .subsection-title { font-weight: bold; }
-    .structure {
-        .grid-project { width: 100%; margin-bottom: 1em; }
-        &.list {
-            /*.grid-project { font-size: 1em; }*/
-            .grid-details { margin-right: 0; }
-        }
-    }
     #togglers {
         .icon.icon-grid { margin-bottom: -0.3em; }
         .tag-list li {

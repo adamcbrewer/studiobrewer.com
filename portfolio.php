@@ -2,7 +2,111 @@
 $portfolio = array(
 	'projects' => array(
 		array(
-			'title' => 'Nova Residential — iPad App',
+			'title' => 'Die Wiesn',
+			'client' => 'Self-Initiated',
+			'tags' => array(
+				'illustration',
+			),
+			'feature' => true,
+
+			// the project details
+			'description' => "To the locals, Oktoberfest is simply referred to as Wiesn, after the colloquial name of the fairgrounds themselves ('Theresienwiese'). A simple poster illustration paying homage to the lovely Bavarian festival and quality beer.",
+
+			'date' => 'April 2014',
+			'link' => NULL,
+			'thumb' => 'projects/diewiesn/diewiesn_thumb.jpg',
+			'greyBg' => 'projects/diewiesn/diewiesn_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/diewiesn/diewiesn_01.jpg',
+					'alt' => 'First'
+				)
+			)
+		),
+		array(
+			'title' => "Brewer's Apps",
+			'client' => "Brewer's Advertising Data",
+			'tags' => array(
+				'design',
+			),
+			'feature' => true,
+
+			// the project details
+			'description' => "For 25 years, Mr. Chris Brewer (call him Chris) and his team have been the go-to guys for information exchange between many advertising and marketing organisations in South Africa. Due to their trustworthy nature and accurate data, they are simply unrivalled. Not to mention the fact that Chris enjoys a good Scotch with his clients.<br /><br />Various delivery formats were used over the years, ranging from printed almanacs (the well known Brewer’s Almanac) to desktop software. The move to a purely online service required a complete overhaul of the branding, design, application functionality and user experience.<br /><br />Reliability, clarity and trust. The new branding and design direction reflects these values by making use of strong typography, imagery and a simple ‘B’ mark which also functions as a secondary application of the brand. Based in Cape Town, bright colours which reflected the lovely weather, environment and positivity were used.<br /><br />Based on the sheer amount of quality information, my brother Adam (the developer) and I created a smoother user experience consisting of fast, intuitive searching — the applications’ core function. This began with a mobile-first approach, expanding areas as the tablet and desktop versions were developed. This enabled us to nail the primary functionality without the distraction of extra screen space.<br /><br />I think we smashed it.<br /><br />–<br />Role: Design Direction<br />Web Developer: <a href='http://www.brewerlogic.com' target='_blank'>Adam Brewer</a>",
+
+			'date' => 'January 2014',
+			'link' => NULL,
+			'thumb' => 'projects/brewers/brewers_thumb.jpg',
+			'greyBg' => 'projects/brewers/brewersapp_01.jpg',
+			'images' => array(
+				array(
+					'url' => 'projects/brewers/brewers_brand_01.jpg',
+					'alt' => 'First',
+					'desc' => 'Brand Positioning'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_brand_02.gif',
+					'alt' => 'Second',
+					'desc' => 'Full Identity'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_brand_03.gif',
+					'alt' => 'Third',
+					'desc' => 'Guidelines – Colour'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_brand_04.gif',
+					'alt' => 'Fourth',
+					'desc' => 'Guidelines – Typography'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_brand_05.gif',
+					'alt' => 'Fifth',
+					'desc' => 'Early identity exploration into data management and representation'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_brand_06.gif',
+					'alt' => 'Sixth',
+					'desc' => 'Colour Applications'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_apps_01.jpg',
+					'alt' => 'Seventh'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_apps_02.jpg',
+					'alt' => 'Eighth',
+					'desc' => 'App – Dashboard, showing updates and saved details'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_apps_03.jpg',
+					'alt' => 'Ninth',
+					'desc' => 'Web App – Searching by agency and region'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_apps_04.jpg',
+					'alt' => 'Tenth',
+					'desc' => 'Web App – Sub-section menu & main navigation'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_apps_05.jpg',
+					'alt' => 'Eleventh',
+					'desc' => 'Web App – Desktop version'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_website_01.jpg',
+					'alt' => 'Twelveth',
+					'desc' => 'Main Website'
+				),
+				array(
+					'url' => 'projects/brewers/brewers_website_02.jpg',
+					'alt' => 'Thirteenth',
+					'desc' => 'Main Website – Full one-page display'
+				)
+			)
+		),
+		array(
+			'title' => 'iPad Application',
 			'client' => 'Land Securities',
 			'tags' => array(
 				'design',
@@ -19,27 +123,33 @@ $portfolio = array(
 			'images' => array(
 				array(
 					'url' => 'projects/novaresapp/novaresapp_01.jpg',
-					'alt' => 'First'
+					'alt' => 'First',
+					'desc' => 'App home screen'
 				),
 				array(
 					'url' => 'projects/novaresapp/novaresapp_02.jpg',
-					'alt' => 'Second'
+					'alt' => 'Second',
+					'desc' => 'Building core selection'
 				),
 				array(
 					'url' => 'projects/novaresapp/novaresapp_03.jpg',
-					'alt' => 'Third'
+					'alt' => 'Third',
+					'desc' => 'Apartment selection'
 				),
 				array(
 					'url' => 'projects/novaresapp/novaresapp_04.jpg',
-					'alt' => 'Fourth'
+					'alt' => 'Fourth',
+					'desc' => 'Search for property'
 				),
 				array(
 					'url' => 'projects/novaresapp/novaresapp_05.jpg',
-					'alt' => 'Fifth'
+					'alt' => 'Fifth',
+					'desc' => 'Balcony views'
 				),
 				array(
 					'url' => 'projects/novaresapp/novaresapp_06.jpg',
-					'alt' => 'Sixth'
+					'alt' => 'Sixth',
+					'desc' => 'Image gallery'
 				)
 			)
 		),
@@ -49,7 +159,7 @@ $portfolio = array(
 			'tags' => array(
 				'design',
 			),
-			'feature' => true,
+			'feature' => false,
 
 			// the project details
 			'description' => "Buzzacott are a group of chartered accountants who define themselves by the needs of their clients, offering a wide range of services.<br /><br />Their existing online presence needed re-looking in order to better reflect their current approach, professionalism and levels of expertise within the company’s specialist teams. It also needed to be more accessible, clearer and easier to use.<br /><br />Working with the Design Director, Paul Summerfield, we created a responsive website which is faster, a joy to use and is accessible across all popular digital devices. Paul also lovingly commissioned a whole selection of new photography, allowing a more personal inside view of the company.<br /><br />–<br />Role: Senior Designer<br />Created at <a href='http://www.bostockandpollitt.com' target='_blank'>Bostock & Pollitt</a><br />Design Director: Paul Summerfield<br />Visit the site: <a href='http://www.buzzacott.co.uk' target='_blank'>buzzacott.co.uk</a>",
@@ -100,10 +210,6 @@ $portfolio = array(
 				array(
 					'url' => 'projects/apresski/apresski_01.jpg',
 					'alt' => 'Main Poster'
-				),
-				array(
-					'url' => 'projects/apresski/apresski_02.jpg',
-					'alt' => 'Detail'
 				)
 			)
 		),
@@ -117,7 +223,7 @@ $portfolio = array(
 			'feature' => true,
 
 			// the project details
-			'description' => "Manchester City Football Club wanted a simple way to present planned activity, growth and digital strategy to board members and digital trade shows. This needed to span across several seasons. Working with the Creative Director Andy McClane, we developed a future roadmap based on a solar system diagram. This was an effective way to show progress throughout the years.<br /><br />The original idea was to push the capabilities of CSS and HTML5, creating a dynamic 'live' map that could be updated through a content management system. This would, of course, work across all mobile devices.<br />Unfortunately, in the end a much more simplified version was created using pre-built Flash presentation software. In terms of longevity, functionality, and mobile compatibility I wasn't so sure this was the correct route, but as it turns out everyone was happy and it served its purpose.<br /><br />Sensitive and confidential information has been omitted in these screenshots.<br /><br />–<br />Role: Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
+			'description' => "Manchester City Football Club wanted a simple way to present planned activity, growth and digital strategy to board members and digital trade shows which needed to span across several seasons. Working with the Creative Director Andy McClane, we developed a solar system diagram borrowing the Blue Moon concept from the largest unofficial City website <a href='http://www.bluemoon-mcfc.co.uk' target='_blank'>bluemoon-mcfc.co.uk</a>.<br /><br />The original idea was to push the capabilities of CSS and HTML5, creating a dynamic 'live' map that could be updated through a content management system, which would work on tablets — perfect for conferences.<br />Unfortunately, the direction took a turn in the end and it was created using pre-built Flash presentation software instead. In terms of longevity, functionality, and tablet compatibility I wasn't so sure this was the correct route, but as it turns out everyone was happy and it served its purpose.<br /><br />Sensitive and confidential information has been omitted in these screenshots.<br /><br />–<br />Role: Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
 
 			'date' => 'July 2012',
 			'link' => '',
@@ -126,19 +232,32 @@ $portfolio = array(
 			'images' => array(
 				array(
 					'url' => 'projects/strategicroadmap/strategicroadmap_01.jpg',
-					'alt' => 'Front Screen'
+					'alt' => 'Online graph within monitor'
 				),
 				array(
 					'url' => 'projects/strategicroadmap/strategicroadmap_02.jpg',
-					'alt' => 'Diagram Zoom'
+					'alt' => 'Online graph',
+					'desc' => 'Graph at 100% zoom'
 				),
 				array(
 					'url' => 'projects/strategicroadmap/strategicroadmap_03.jpg',
-					'alt' => 'Diagram Zoom'
+					'alt' => 'Project selection',
+					'desc' => 'Showing projects for relevant period'
 				),				
 				array(
 					'url' => 'projects/strategicroadmap/strategicroadmap_04.jpg',
-					'alt' => 'Project Details'
+					'alt' => 'Project selection',
+					'desc' => 'Close-up on projects'
+				),
+				array(
+					'url' => 'projects/strategicroadmap/strategicroadmap_05.jpg',
+					'alt' => 'Project details',
+					'desc' => 'Individual project details'
+				),
+				array(
+					'url' => 'projects/strategicroadmap/strategicroadmap_06.jpg',
+					'alt' => 'Research and initial thoughts',
+					'desc' => 'Research and initial thoughts'
 				)
 			)
 		),
@@ -232,7 +351,7 @@ $portfolio = array(
 				'interactive',
 				'art direction'
 			),
-			'feature' => true,
+			'feature' => false,
 			// the project details
 			'description' => "Website design proposal for The NextGen Series international football (soccer!) tournament. Players and their clubs get the chance to take part in a challenging international competition, ending in a Final to win the NextGen Series Trophy.<br /><br />One of the requirements was to integrate the futuristic feel of pre-supplied images into the website, to aid in creating the 'Future of Football' aesthetic.<br /><br />–<br />Art Direction & Design<br />Created at <a href='http://www.aqueduct.co.uk' target='_blank'>Aqueduct</a><br />Creative Director: Andy McClane",
 
@@ -650,14 +769,14 @@ $portfolio = array(
 	'profile' => array(
 		'about' => array(
 			'title' => 'About',
-			'heroCopy' => 'Jake Brewer is a South African Graphic & Digital Designer, Art Director and Illustrator with over nine years of experience across a wide range of creative fields, digital media and client industries.<br /><br />I love the craft, diversity and strong ideas, finding complete joy in producing work with meticulous attention to detail.<br /><br />Design, illustration and technology is constantly changing and working across a variety of disciplines ranging from graphic, digital and interactive design through to illustration, motion graphics and art direction helps me to adapt, learn and evolve with this change.<br /><br />I live for The Moment. The pivotal point where after toiling with layout options, typography, colour combinations and image selections, a wonderful solution is found. Also known as <a href="http://www.youtube.com/watch?v=1SUzcDUERLo&feature=youtu.be&t=3m37s" target="_blank">The Drago Moment</a>.<br /><br />If you are interested in working together, please do get in touch. Thanks for visiting.<br /><br />This site was lovingly built by <a href="http://www.brewerlogic.com" target="_blank">my brother Adam</a>, the Super Developer, Prince Harry look-alike.',
+			'heroCopy' => 'Jake Brewer is a South African Graphic & Digital Designer, Illustrator and Art Director based in London.<br /><br />For a decade I have been working on a wide range of projects for clients and agencies in London, Cape Town and Toronto producing work which is captivating, communicates the appropriate message and connects businesses, brands and products with an audience.<br /><br />Driven by a constant burning desire to adapt and innovate, I enjoy smashing boundaries with enthusiasm and determination together with like-minded individuals until <a href="https://www.youtube.com/watch?v=1SUzcDUERLo&feature=youtu.be&t=3m37s" target="_blank">the Drago Moment</a> is reached.<br /><br />I do this on a freelance basis for both agencies and direct clients, remaining flexible to take on a variety of projects.<br /><br />When both design and development is needed, I <a href="http://www.getbrewer.com" target="_blank">work together with my brother Adam</a> to produce long-lasting online experiences.',
 			'introCopy' => 'Studio Brewer is the creative practice of Jake Brewer, a South African Graphic & Digital Designer, Art Director and Illustrator based in London.'
 		),
 		'what' => array(
 			'title' => 'What I do',
 			'items' => array(
-				'Interactive/UI Design',
-				'Conceptual Design',
+				'Interactive Design',
+				'User Interface Design',
 				'Visual Design',
 				'Branding',
 				'Art Direction',

@@ -69,6 +69,7 @@
 				{{# project.images }}
 					<div class="resp-img">
 						<img src="{{ url }}" alt="{{ alt }}">
+						<p class="detail-images-desc">{{ desc }}</p>
 					</div>
 				{{/ project.images }}
 			</div>

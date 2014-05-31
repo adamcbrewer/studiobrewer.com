@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             },
             less: {
                 files: [
-                    '<%= config.assetsDir %>css/less/**/*.less',
+                    '<%= config.assetsDir %>less/**/*.less',
                 ],
                 options: { livereload: true },
                 tasks: [

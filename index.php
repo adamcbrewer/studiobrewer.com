@@ -1,7 +1,5 @@
 <? include('config.php'); ?>
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
@@ -99,15 +97,6 @@
 	</div>
 
 	<script src="/assets/js/build.min.js"></script>
-	<? /*
-	<script src="assets/js/libs/jquery-1.8.0.min.js"></script>
-    <script src="assets/js/libs/jquery.il.min.js"></script>
-    <script src="assets/js/libs/iCanHaz.js"></script>
-    <script src="assets/js/libs/hammer.js"></script>
-    <script src="assets/js/libs/jquery.hammer.js"></script>
-    <script src="assets/js/modules/portfolio.js"></script>
-    <script src="assets/js/modules/script.js"></script>
-    */ ?>
 
 </body>
 <!--
