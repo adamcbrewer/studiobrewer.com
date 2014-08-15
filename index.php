@@ -26,7 +26,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 	<link href="assets/css/styles.css" rel="stylesheet" type='text/css'>
 
-	<script src="/script.php?file=assets/js/libs/modernizr.custom.77287.min.js"></script>
+	<script src="/assets/js/libs/modernizr.custom.77287.min.js"></script>
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
