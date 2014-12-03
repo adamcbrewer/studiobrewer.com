@@ -38,4 +38,9 @@ $RECYCLE.BIN/
 temp
 
 ## Build stuff
-
+app/site/accounts
+app/assets
+app/assets/avatars/*
+!app/assets/avatars/.gitignore
+app/thumbs/*
+!app/thumbs/.gitignore*
