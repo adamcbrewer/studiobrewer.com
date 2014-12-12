@@ -44,3 +44,5 @@ app/assets/avatars/*
 !app/assets/avatars/.gitignore
 app/thumbs/*
 !app/thumbs/.gitignore*
+app/content/*
+!app/content/.gitkeep
