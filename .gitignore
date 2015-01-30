@@ -37,12 +37,14 @@ $RECYCLE.BIN/
 ## Others
 temp
 
-## Build stuff
+## build files
 app/site/accounts
 app/assets
 app/assets/avatars/*
 !app/assets/avatars/.gitignore
 app/thumbs/*
 !app/thumbs/.gitignore*
+app/site/config/config.*.php
 app/content/*
 !app/content/.gitkeep
+app/vendor/**/*
