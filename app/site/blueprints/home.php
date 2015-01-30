@@ -9,7 +9,7 @@ fields:
     type:  text
 
   _headerOne:
-    label: Secion - Hero
+    label: Section - Hero
     type: headline
   text:
     label: Intro Text
