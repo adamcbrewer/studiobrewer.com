@@ -191,20 +191,6 @@ module.exports = function (grunt) {
                         dest: '<%= project.src %>/js/libs',
                     }
                 ]
-            },
-            new: {
-                src: [
-                    "app/**/**/*",
-                    "src/**/**/*",
-                    ".editorconfig",
-                    ".gitignore",
-                    ".jshintrc",
-                    "bower.json",
-                    "Gruntfile.js",
-                    "package.json",
-                    "!CHANGELOG.md"
-                ],
-                dest: '',
             }
         },
 
@@ -333,27 +319,6 @@ module.exports = function (grunt) {
             'cssmin',
             'stylestats'
         ]);
-    });
-
-    /**
-     * Export necessary files for starting a new project.
-     * Remove this task after starting a newly exported project.
-     */
-    grunt.registerTask('new', 'Exports the contents of this repo, ready for a new project. $ grunt new --target=your/project', function () {
-        var target = grunt.option('target') || "new-project";
-        var dirPath = process.cwd() + "/../" + target + "/";
-        var dirExists = grunt.file.isDir(dirPath);
-
-        if (dirExists) {
-            grunt.log.writeln("Directory exists");
-        } else {
-            grunt.log.writeln("Creating directory "+ target +"");
-        }
-        grunt.log.writeln("Copying files...");
-
-        grunt.config('copy.new.dest', dirPath);
-        grunt.task.run(['copy:new']);
-        grunt.log.ok("New project '"+ target +"' waiting for you at " + dirPath);
     });
 
 };
