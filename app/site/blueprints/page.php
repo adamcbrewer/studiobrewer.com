@@ -1,9 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Projects
-pages:
-  template: project
-files: false
+title: Default Page
+pages: true
+files: true
 fields:
   title:
     label: Title

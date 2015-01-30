@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+}
+.title-hero {
+    margin: 0 auto 2.4em;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 19em;
+}
+
+.title-main {
+    color: $c-alpha;
+    font-family: $ff-futura;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 18em;
+}
+
+.title-404 {
+    font-size: 12em;
+    text-align: center;
+    color: $c-alpha;
+    font-weight: 400;
+}

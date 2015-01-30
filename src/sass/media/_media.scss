@@ -1,6 +1,167 @@
-@media only screen and (min-width:320px) {
+@media screen and (max-width: 1360px) {
 
 }
+
+@media screen and (max-width: 1024px) {
+
+    .logo {
+        order: 1;
+        width: 100%;
+        padding-bottom: 1.4em;
+        // max-width: 120px;
+    }
+    .header {
+        flex-direction: column;
+        padding-top: 1.4em;
+        padding-bottom: 1.4em;
+        height: auto;
+        max-height: none;
+        background-position: 30% -50%;
+
+        // .nav--external,
+        .nav--pages {
+            order: 2;
+            justify-content: space-around;
+            max-width: 24em;
+            width: 100%;
+        }
+        .nav--external {
+            display: none;
+        }
+
+    }
+    .nav--pages {
+        .nav-link {
+            margin: 0.4em 0;
+            // width: calc(100%/3);
+        }
+    }
+
+    .title-hero {
+        font-size: 2.4rem;
+        max-width: 20em;
+        br {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .client {
+
+        width: calc(100%/3);
+
+        // Replace brands with
+        // > img { display: none; }
+        // &:before {
+        //     text-transform: capitalize;
+        //     content: attr(data-name);
+        // }
+    }
+
+    $x: 4em;
+    .section {
+        padding-top: $x;
+        padding-bottom: $x;
+    }
+    .section--hero .inner,
+    .features {
+        margin-top: $x;
+        margin-bottom: $x;
+    }
+    .figure {
+        margin-bottom: $x;
+    }
+
+    .section-header {
+        margin-bottom: 2.8em;
+    }
+
+    .section--yank {
+            margin-bottom: -7em;
+    }
+
+    .tweet {
+        width: 100%;
+        margin-bottom: $d-gutter;
+    }
+
+    .work {
+        $width: (($d-column*6) + ($d-gutter*5)) / $d-siteWidth * 100%;
+        width: $width;
+    }
+
+    .figure--about {
+        margin-bottom: -4em;
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .nav--footer {
+        column-count: 2;
+        .nav-link {
+            width: 50%;
+            display: inline-block;
+            margin: 1em;
+        }
+    }
+    .layout {
+        max-width: none;
+        width: 100%;
+        float: none !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .works {
+        justify-content: space-around;
+    }
+    .work {
+        width: 100%;
+    }
+    .skills {
+        padding: 0 1em;
+    }
+    .skill {
+        width: 100%;
+    }
+    .taglist {
+        padding-left: 1em;
+    }
+    .section--hero {
+
+    }
+    .btn-group {
+        width: 100%;
+    }
+    .btn {
+        display: block;
+        .btn-group & {
+            margin: 0 0 $d-gutter;
+
+        }
+    }
+    .section p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-email {
+        font-size: 1.8rem;
+    }
+    .tweet {
+        padding: $d-gutter;
+    }
+    .tweet-body {
+        font-size: 1.8rem;
+    }
+}
+
 
 /**
  * Retina.

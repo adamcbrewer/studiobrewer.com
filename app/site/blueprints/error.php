@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Error
+title: 404
 pages: false
-files: false
+files: true
 fields:
   title:
     label: Title

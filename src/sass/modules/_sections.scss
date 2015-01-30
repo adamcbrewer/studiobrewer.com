@@ -1,0 +1,69 @@
+.section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    overflow: hidden;
+}
+
+.section--hero {
+    background-image: $c-gradientHero;
+    min-height: 200px;
+    color: $c-white;
+    padding: 1.4em;
+    position: relative;
+
+    animation: $a-time linear infinite miamivice $a-delay alternate;
+
+    .inner {
+        margin: 5em auto;
+    }
+}
+
+.section--yank {
+    padding-bottom: 14rem;
+    margin-bottom: -10em;
+}
+
+.section--alt {
+    background-color: $c-delta;
+}
+
+.section--alt-lighter {
+    background-color: lighten($c-delta, 1.8%);
+}
+
+.section-header {
+    margin-bottom: 5em;
+    padding-bottom: 0em;
+}
+
+.section-header--halfgap {
+    margin-bottom: 2.5em;
+}
+
+.section-header--stroked {
+    padding-bottom: 2.5em;
+    margin-bottom: 2.5em;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid $c-echo;
+        display: block;
+        margin: auto;
+        max-width: $d-column/2;
+    }
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-family: $ff-futura;
+    font-style: italic;
+    color: $c-echo;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 0;
+}

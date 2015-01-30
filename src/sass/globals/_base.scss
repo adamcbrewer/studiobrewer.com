@@ -1,15 +1,22 @@
 * { box-sizing: border-box; }
 
 ::-moz-selection {
-    background: $c-text;
+    background-color: $c-indigo;
     color: $c-bg;
 }
 ::selection {
-    background: $c-text;
+    background-color: $c-indigo;
     color: $c-bg;
+    animation: 4s 0s test linear alternate infinite;
 }
-a::-moz-selection {}
-a::selection {}
+a::-moz-selection {
+    background-color: #FF00D5;
+    color: $c-white;
+}
+a::selection {
+    background-color: #FF00D5;
+    color: $c-white;
+}
 
 html, body {
     -webkit-font-smoothing: antialiased;
@@ -25,7 +32,28 @@ body {
     font-family: $ff;
     background-color: $c-bg;
     color: $c-text;
-    @include font-size(1.4);
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: $fw;
     line-height: 1.6;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .js.no-font & {
+        transition: 0.4s;
+        opacity: 0;
+    }
+    .js.wf-inactive &,
+    .js.wf-active & {
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }

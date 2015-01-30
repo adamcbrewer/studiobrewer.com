@@ -1,0 +1,91 @@
+a {
+    color: $c-bravo;
+    text-decoration: none;
+    transition: 0.2s ease border-color;
+    border-bottom: 1px solid transparent;
+
+    figure & {
+        border: none;
+    }
+}
+a:hover {
+    border-bottom-color: currentcolor;
+}
+a:active {}
+a:focus {}
+
+
+.nav {}
+
+.nav--pages {}
+.nav--external { text-align: right; }
+.nav--footer {
+    padding: 1rem 0 5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    border: none;
+    text-transform: uppercase;
+    color: $c-alpha;
+    position: relative;
+
+    &:after {
+        bottom: -2px;
+        height: 3px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        background-color: currentcolor;
+        content: "";
+        transform: skew(-25deg);
+        transition:
+            0.4s 0.1s $easeOutExpo,
+            0.3s 0.1s $easeOutExpo width,
+            0s $easeOutExpo left,
+            0s $easeOutExpo right,
+            0.15s 0s $easeOutExpo background-color;
+    }
+
+    &:hover {
+        &:after {
+            transition-delay: 0s;
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+    }
+    &.is-active {
+        color: $c-white;
+    }
+
+    $space: 80px;
+    .nav--pages & {
+        margin-right: $space;
+        &:last-child { margin-right: 0; }
+    }
+    .nav--external & {
+        margin-left: $space;
+        color: $c-bravo;
+        &:first-child { margin-left: 0; }
+    }
+
+    $space: 25px;
+    .nav--footer & {
+        margin: 0 $space;
+        color: $c-echo;
+        backface-visibility: hidden;
+
+        &:after {
+            bottom: -4px;
+        }
+
+        &:hover {
+            color: $c-bravo;
+        }
+    }
+}

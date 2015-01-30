@@ -1,0 +1,72 @@
+.project-intro {
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+
+.project-website {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    font-family: $ff-futura;
+    border-color: transparent;
+
+    &:hover {
+        border-color: currentcolor;
+    }
+}
+.project-images {
+    margin: 5em;
+}
+.project-image {
+    margin: 0 0 5em;
+
+    .layout--half &,
+    .layout--third &,
+    .layout--twothirds & {
+        margin-bottom: 0;
+    }
+}
+.project-figure-description {}
+.project-footer {
+    clear: both;
+}
+
+$gutter-gap: ($d-gutter/2);
+
+.layout--half {
+    float: left;
+    $width: (($d-gutter*5) + ($d-column*6)) / $d-siteWidth * 100%;
+    max-width: calc(#{$width} - #{$gutter-gap});
+    & + .layout--half {
+        float: right;
+        & + .layout--half:nth-of-type(2n+1) {
+        // & + *:nth-of-type(2n+1) {
+            clear: left;
+            float: left;
+        }
+    }
+}
+
+.layout--third {
+    float: left;
+    $width: (($d-gutter*3) + ($d-column*4)) / $d-siteWidth * 100%;
+    max-width: calc(#{$width} - #{$gutter-gap});
+    & + .layout--twothirds {
+        float: right;
+        & + * {
+            clear: both;
+        }
+    }
+}
+
+.layout--twothirds {
+    float: left;
+    $width: (($d-gutter*7) + ($d-column*8)) / $d-siteWidth * 100%;
+    max-width: calc(#{$width} - #{$gutter-gap});
+    & + .layout--third {
+        float: right;
+        & + * {
+            clear: both;
+        }
+    }
+}

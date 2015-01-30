@@ -1,0 +1,104 @@
+// Home page
+.no-js #tweet-template {
+    display: none;
+}
+.tweets {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8px;
+        height: 20px;
+        background-color: white;
+        transition: 0.2s;
+        opacity: 0;
+        animation: none;
+    }
+
+    &.is-busy {
+        &:before {
+            animation: blink 0.25s 0s ease infinite alternate;
+            opacity: 1;
+        }
+    }
+}
+.tweet {
+    $width: (($d-column*4) + ($d-gutter*3)) / $d-siteWidth * 100%;
+    width: $width;
+    padding: 2.4em;
+    text-align: left;
+    background-color: lighten($c-bg, 1%);
+
+    transition: 0.4s;
+    opacity: 1;
+
+    .is-busy & {
+        opacity: 0;
+    }
+
+}
+.tweet-header {
+    margin-bottom: 1.2em;
+}
+.tweet-time {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: $c-echo;
+    font-style: italic;
+}
+.tweet-body {
+    color: $c-white;
+}
+
+// About page
+.clients {
+    list-style-type: none;
+    padding: 0;
+}
+.client {
+    margin: 1em 0;
+    width: calc(100%/5);
+}
+
+// Contact page
+.contact-email {
+    border-color: transparent;
+    color: $c-alpha;
+    letter-spacing: 2px;
+
+    &:hover {
+        border-color: currentcolor;
+    }
+}
+
+
+// 404 / Uzicopter page
+.uzi-list {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: grayscale(0.2) blur(4px) opacity(0.4);
+    background-image: url('http://31.media.tumblr.com/a45cfd5b3aaea67a821e73fa9f0fdf8a/tumblr_nh7q3h9WHa1rkdn3ko1_500.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.uzi-figure {
+    flex: 1;
+    min-width: 20%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    background-position: center center;
+    transition: 0.4s $easeOutExpo;
+}

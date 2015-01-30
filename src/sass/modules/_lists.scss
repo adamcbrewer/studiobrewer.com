@@ -1,0 +1,18 @@
+.taglist {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+.taglist-item {
+    &:before {
+        content: "–";
+        color: $c-alpha;
+        margin-right: 0.3em;
+    }
+}
+.taglist-title {
+    color: $c-white;
+    margin-bottom: 1em;
+    text-align: left;
+}

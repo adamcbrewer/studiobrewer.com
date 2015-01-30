@@ -1,15 +1,41 @@
-// Colours
-$c-bg: #fff;
-$c-text: #444;
+// Special Colours
+$c-alpha: #ff8301; // orange
+$c-bravo: #f3245b; // pink
+$c-charlie: #1d161f; // purple 1 - main BG
+$c-delta: #261d29; // purple 2 - section BGs
+$c-echo: #473A4B; // purple 3
+$c-foxtrot: #7f7185; // purple 4
+$c-indigo: #00ffff; // neon blue
+
+// Common Colours
+$c-white: #fff;
+
+$c-bg: $c-charlie;
+$c-text: $c-foxtrot;
+
+// Gradients
+$c-gradientHero: linear-gradient(to top right, $c-alpha, $c-bravo 50%, #87329f 90%);
+$c-gradientAlt: linear-gradient(to top right, #2273BB, #2DFFFE 90%);
+$c-gradientFooter: linear-gradient(to right, $c-alpha, $c-bravo 80%);
 
 // Dimentions
-$d-maxwidth: 1400px;
+$d-siteWidth: 1290px;
+$d-thumbWidth: 380px;
+
+$d-gutter: 30px;
+$d-column: 80px;
+// $d-thumbHeight: 320px; // not needed?
 
 // Fonts
-$ff-azo: "azo-sans-web", 'Helvetica Neue', Helvetica, Arial;
-$ff-soleil: "soleil";
-$ff: $ff-azo;
-$ff: 'Helvetica Neue', Helvetica, Arial;
+$fw: 400;
+
+$ff-prox: "proxima-nova", 'Helvetica Neue', Helvetica, Arial;
+$ff-futura: "futura-pt", 'Helvetica Neue', Helvetica, Arial;
+$ff: $ff-prox;
+
+// Animations
+$a-delay: 10s;
+$a-time: 30s;
 
 // EASING
 //

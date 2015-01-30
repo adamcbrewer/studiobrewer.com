@@ -1,0 +1,19 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes miamivice {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(-80deg); }
+}
+
+@keyframes miamivice-logo {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(-100deg); }
+}

@@ -1,0 +1,140 @@
+::-webkit-input-placeholder {}
+:-moz-placeholder {}
+
+::-webkit-validation-bubble-message { padding: 40px; }
+
+input {
+    &:required {}
+    &:optional {}
+    &:valid {}
+    &:invalid {}
+    &:default {}
+    &:focus {}
+
+    &:enabled {}
+    &:disabled {}
+    &:checked {}
+    &:indeterminate {} // un-selected radio buttons
+}
+
+.btn {
+    font-family: $ff-futura;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $c-white;
+    border: 2px solid $c-white;
+    display: inline-block;
+    padding: 1em 2.2em;
+    min-width: 220px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s 0.02s ease;
+
+    &:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: -15px;
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+        transition:
+            0.4s 0.1s $easeOutExpo,
+            0s left,
+            0s right;
+        background-color: $c-white;
+        opacity: 1;
+        transform: skew(-25deg);
+        width: 0%;
+        height: 105%;
+    }
+
+    &:hover {
+        border-color: $c-white;
+        color: $c-bravo;
+
+        &:after {
+            transition-delay: 0s;
+            width: 125%;
+            left: -15px;
+            right: auto;
+        }
+    }
+}
+.btn-group {
+    text-align: center;
+    margin: 1em auto;
+
+    .btn {
+        margin: 0 $d-gutter/2;
+    }
+}
+.btn--primary {
+    color: $c-bravo;
+    border-color: $c-bravo;
+
+    &:after {
+        background-color: $c-bravo;
+    }
+
+    &:hover {
+        border-color: $c-bravo;
+        color: $c-white;
+    }
+}
+
+.figurelink {
+    position: relative;
+    backface-visibility: hidden;
+
+    .btn {
+        backface-visibility: hidden;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.6s $easeOutExpo;
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale3d(1.1, 1.1, 1);
+
+        &:before, &:after {
+            content: none;
+        }
+
+        &:hover {
+            color: $c-white;
+        }
+
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.4s $easeOutExpo;
+        }
+        &:hover {
+            .btn {
+                opacity: 1;
+                transform: translateX(-50%) translateY(-50%) scale3d(1, 1, 1);
+            }
+            &:after {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+}
