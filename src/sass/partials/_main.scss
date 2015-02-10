@@ -16,7 +16,6 @@
     padding-top: $d-gutter;
     padding-bottom: $d-gutter;
     flex: 1;
-    background: transparent url(../img/light.png) no-repeat center -85%;
 
     .nav {
         display: flex;
@@ -32,30 +31,6 @@
 
     a { display: block; }
 
-}
-
-.logo-vector {
-    position: absolute;
-    top: 0;
-    transition: 1s $easeOutExpo transform;
-
-    .js & {
-        transform: scale(0);
-    }
-    .js.wf-active & {
-        transform: scale(1);
-    }
-}
-
-.logo-bl {
-    transition: 1.4s $easeOutExpo transform, 0.2s $easeOutExpo opacity;
-    animation: $a-time linear infinite miamivice-logo $a-delay alternate;
-    .js & {
-        transform: translateX(-20px);
-    }
-    .js.wf-active & {
-        transform: translateX(0);
-    }
 }
 
 .content {
@@ -74,7 +49,6 @@
         content: "";
         height: 10px;
         display: block;
-        background-image: $c-gradientFooter;
         background-size: 100% 10px;
         animation: $a-time linear infinite miamivice $a-delay alternate;
     }
