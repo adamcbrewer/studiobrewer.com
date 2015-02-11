@@ -6,8 +6,8 @@
 
         <div class="footer-inner contain">
             <nav class="nav nav--footer f-futura">
-                <?php snippet('nav-internal'); ?>
-                <?php snippet('nav-external'); ?>
+                <?php snippet('nav-one'); ?>
+                <?php snippet('nav-two'); ?>
             </nav>
 
             <aside>

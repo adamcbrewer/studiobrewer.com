@@ -64,7 +64,7 @@ a:focus {}
     }
 
     .page--home & {
-        color: $c-white;
+        color: $c-bravo;
     }
 
     $space: 80px;
@@ -77,7 +77,7 @@ a:focus {}
         &:first-child { margin-left: 0; }
     }
 
-    $space: 25px;
+    $space: 50px;
     .nav--footer & {
         margin: 0 $space;
         color: $c-bravo;

@@ -42,7 +42,7 @@
         fill: $c-charlie;
 
         .page--home & {
-            fill: $c-white;
+            fill: $c-bravo;
         }
     }
 
@@ -90,6 +90,10 @@
     max-width: calc(#{$d-siteWidth} + #{$d-gutter*2});
     padding-left: $d-gutter;
     padding-right: $d-gutter;
+}
+
+.contain--header {
+    max-width: ($d-gutter*9) + ($d-column*10);
 }
 
 .contain--text {

@@ -33,18 +33,17 @@
 <body data-basepath="<?php echo $site->url() ?>" class="page--<?php echo strtolower($page->title()); ?>">
 
     <header class="header f-futura">
-        <div class="header-inner contain">
+        <div class="header-inner contain contain--header">
             <nav class="nav nav--pages">
-                <?php snippet('nav-internal'); ?>
+                <?php snippet('nav-one'); ?>
             </nav>
             <figure class="logo logo-main">
                 <a href="<?php echo $site->url() ?>">
                     <?php snippet('icons/logo'); ?>
-                    <!-- <img class="logo" src="<?php echo url('/assets/img/logo.png') ?>" alt="<?php echo $site->title() ?>"> -->
                 </a>
             </figure>
             <nav class="nav nav--external">
-                <?php snippet('nav-external'); ?>
+                <?php snippet('nav-two'); ?>
             </nav>
         </div>
     </header>
