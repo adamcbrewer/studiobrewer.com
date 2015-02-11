@@ -13,8 +13,8 @@
     align-items: stretch;
     // height: 145px;
     // max-height: 145px;
-    padding-top: $d-gutter;
-    padding-bottom: $d-gutter;
+    padding-top: 56px;
+    padding-bottom: 56px;
     flex: 1;
 
     .nav {
@@ -40,9 +40,10 @@
 }
 
 .footer {
+    background-color: $c-alpha;
     text-align: center;
     min-height: 10px;
-    color: $c-echo;
+    color: $c-bravo;
     font-size: 1.6rem;
 
     &:after {
@@ -52,6 +53,15 @@
         background-size: 100% 10px;
         animation: $a-time linear infinite miamivice $a-delay alternate;
     }
+
+    a {
+        border-bottom-color: $c-bravo;
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+
 }
 
 .footer-inner {

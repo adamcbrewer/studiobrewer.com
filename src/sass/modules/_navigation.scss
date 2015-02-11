@@ -1,7 +1,9 @@
 a {
     color: $c-bravo;
     text-decoration: none;
-    transition: 0.2s ease border-color;
+    transition:
+        0.2s ease border-color,
+        0.2s ease border-color;
     border-bottom: 1px solid transparent;
 
     figure & {
@@ -25,40 +27,39 @@ a:focus {}
 
 .nav-link {
     font-size: 1.6rem;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
     border: none;
     text-transform: uppercase;
-    color: $c-alpha;
+    color: $c-charlie;
     position: relative;
 
-    &:after {
-        bottom: -2px;
-        height: 3px;
-        position: absolute;
-        left: auto;
-        right: 0;
-        margin: auto;
-        width: 0%;
-        background-color: currentcolor;
-        content: "";
-        transform: skew(-25deg);
-        transition:
-            0.4s 0.1s $easeOutExpo,
-            0.3s 0.1s $easeOutExpo width,
-            0s $easeOutExpo left,
-            0s $easeOutExpo right,
-            0.15s 0s $easeOutExpo background-color;
-    }
+    // &:after {
+    //     bottom: -2px;
+    //     height: 3px;
+    //     position: absolute;
+    //     left: auto;
+    //     right: 0;
+    //     margin: auto;
+    //     width: 0%;
+    //     background-color: currentcolor;
+    //     content: "";
+    //     transform: skew(-25deg);
+    //     transition:
+    //         0.4s 0.1s $easeOutExpo,
+    //         0.3s 0.1s $easeOutExpo width,
+    //         0s $easeOutExpo left,
+    //         0s $easeOutExpo right,
+    //         0.15s 0s $easeOutExpo background-color;
+    // }
 
-    &:hover {
-        &:after {
-            transition-delay: 0s;
-            width: 100%;
-            left: 0;
-            right: auto;
-        }
-    }
+    // &:hover {
+    //     &:after {
+    //         transition-delay: 0s;
+    //         width: 100%;
+    //         left: 0;
+    //         right: auto;
+    //     }
+    // }
     &.is-active {
         color: $c-white;
     }
@@ -70,14 +71,14 @@ a:focus {}
     }
     .nav--external & {
         margin-left: $space;
-        color: $c-bravo;
+        color: $c-charlie;
         &:first-child { margin-left: 0; }
     }
 
     $space: 25px;
     .nav--footer & {
         margin: 0 $space;
-        color: $c-echo;
+        color: $c-bravo;
         backface-visibility: hidden;
 
         &:after {
@@ -85,7 +86,7 @@ a:focus {}
         }
 
         &:hover {
-            color: $c-bravo;
+            color: $c-white;
         }
     }
 }
