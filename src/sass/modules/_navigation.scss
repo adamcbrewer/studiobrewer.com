@@ -16,7 +16,6 @@ a:hover {
 a:active {}
 a:focus {}
 
-
 .nav {}
 
 .nav--pages {}
@@ -64,6 +63,10 @@ a:focus {}
         color: $c-white;
     }
 
+    .page--home & {
+        color: $c-white;
+    }
+
     $space: 80px;
     .nav--pages & {
         margin-right: $space;
@@ -71,7 +74,6 @@ a:focus {}
     }
     .nav--external & {
         margin-left: $space;
-        color: $c-charlie;
         &:first-child { margin-left: 0; }
     }
 

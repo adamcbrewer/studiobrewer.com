@@ -30,20 +30,23 @@
     <?php echo js('assets/js/modernizr.build.js') ?>
 
 </head>
-<body data-basepath="<?php echo $site->url() ?>">
+<body data-basepath="<?php echo $site->url() ?>" class="page--<?php echo strtolower($page->title()); ?>">
 
-    <header class="header contain f-futura">
-        <nav class="nav nav--pages">
-            <?php snippet('nav-internal'); ?>
-        </nav>
-        <figure class="logo logo-main">
-            <a href="<?php echo $site->url() ?>">
-                <img class="logo" src="<?php echo url('/assets/img/logo.png') ?>" alt="<?php echo $site->title() ?>">
-            </a>
-        </figure>
-        <nav class="nav nav--external">
-            <?php snippet('nav-external'); ?>
-        </nav>
+    <header class="header f-futura">
+        <div class="header-inner contain">
+            <nav class="nav nav--pages">
+                <?php snippet('nav-internal'); ?>
+            </nav>
+            <figure class="logo logo-main">
+                <a href="<?php echo $site->url() ?>">
+                    <?php snippet('icons/logo'); ?>
+                    <!-- <img class="logo" src="<?php echo url('/assets/img/logo.png') ?>" alt="<?php echo $site->title() ?>"> -->
+                </a>
+            </figure>
+            <nav class="nav nav--external">
+                <?php snippet('nav-external'); ?>
+            </nav>
+        </div>
     </header>
 
     <section class="wrapper">

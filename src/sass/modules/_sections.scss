@@ -7,10 +7,9 @@
 .section--hero {
     min-height: 200px;
     color: $c-white;
+    background-color: $c-alpha;
     padding: 1.4em;
     position: relative;
-
-    animation: $a-time linear infinite miamivice $a-delay alternate;
 
     .inner {
         margin: 5em auto;
