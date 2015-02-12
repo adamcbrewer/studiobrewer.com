@@ -1,14 +1,14 @@
 <?php snippet('header') ?>
 
-    <header class="section--hero">
+    <header class="section--hero section--yank">
 
         <div class="inner">
             <h1 class="title-hero">
                 <?php echo $page->text()->html(); ?>
             </h1>
             <div class="btn-group">
-                <a href="<?php echo $site->find('/work')->url() ?>" class="btn">View projects</a>
-                <a href="<?php echo $site->find('/about')->url() ?>" class="btn">Tell me more</a>
+                <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary">View projects</a>
+                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--primary">Tell me more</a>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
         </ol>
 
         <div class="btn-group">
-            <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary">View all projects</a>
+            <a href="<?php echo $site->find('/work')->url() ?>" class="btn">Stop teasing, show me more</a>
         </div>
 
     </section>

@@ -5,15 +5,12 @@
 }
 
 .section--hero {
-    min-height: 200px;
     color: $c-white;
     background-color: $c-alpha;
-    padding: 1.4em;
-    position: relative;
 
-    .inner {
-        margin: 5em auto;
-    }
+    // .inner {
+    //     margin: 5em auto;
+    // }
 }
 
 .section--yank {
@@ -57,11 +54,9 @@
 
 .section-title {
     font-size: 1.6rem;
-    font-family: $ff-azo;
-    font-style: italic;
-    color: $c-echo;
+    color: $c-delta;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1em;
     margin-top: 0;
 }
