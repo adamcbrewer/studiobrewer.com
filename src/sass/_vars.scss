@@ -1,15 +1,16 @@
 // Special Colours
 $c-alpha: #c13a30; // red
 $c-bravo: #74231d; // burnt-red
-$c-charlie: #afafaf; // grey
-$c-delta: #c3c3c3; // grey - darker
-$c-echo: #473A4B; // purple 3
+$c-charlie: #afafaf; // grey - 1
+$c-delta: #c3c3c3; // grey - 2
+$c-echo: #e7e7e7; // grey - 3
+$c-foxtrot: #5a5a5a; // grey - 4
 
 // Common Colours
 $c-white: #fff;
 
 $c-bg: $c-white;
-$c-text: $c-charlie;
+$c-text: $c-foxtrot;
 
 // Dimentions
 $d-siteWidth: 1290px;

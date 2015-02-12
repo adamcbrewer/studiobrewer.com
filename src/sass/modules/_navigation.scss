@@ -1,5 +1,5 @@
 a {
-    color: $c-bravo;
+    color: $c-alpha;
     text-decoration: none;
     transition:
         0.2s ease border-color,
@@ -32,33 +32,6 @@ a:focus {}
     color: $c-charlie;
     position: relative;
 
-    // &:after {
-    //     bottom: -2px;
-    //     height: 3px;
-    //     position: absolute;
-    //     left: auto;
-    //     right: 0;
-    //     margin: auto;
-    //     width: 0%;
-    //     background-color: currentcolor;
-    //     content: "";
-    //     transform: skew(-25deg);
-    //     transition:
-    //         0.4s 0.1s $easeOutExpo,
-    //         0.3s 0.1s $easeOutExpo width,
-    //         0s $easeOutExpo left,
-    //         0s $easeOutExpo right,
-    //         0.15s 0s $easeOutExpo background-color;
-    // }
-
-    // &:hover {
-    //     &:after {
-    //         transition-delay: 0s;
-    //         width: 100%;
-    //         left: 0;
-    //         right: auto;
-    //     }
-    // }
     &.is-active {
         color: $c-white;
     }

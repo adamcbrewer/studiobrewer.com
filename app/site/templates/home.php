@@ -78,6 +78,10 @@
             You need javascript to display this page correctly.
         </noscript>
 
+        <div class="btn-group">
+            <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn">View more on Twitter</a>
+        </div>
+
     </section>
 
     <?php endif; ?>

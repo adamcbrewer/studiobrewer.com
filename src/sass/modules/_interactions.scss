@@ -35,7 +35,8 @@ input {
         0.2s 0.02s ease;
 
     &:hover {
-        border-color: $c-bravo;
+        border-color: $c-alpha;
+        background-color: $c-alpha;
         color: $c-white;
     }
 }
