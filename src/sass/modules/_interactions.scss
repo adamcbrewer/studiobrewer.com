@@ -59,55 +59,55 @@ input {
     }
 }
 
-.figurelink {
-    position: relative;
-    backface-visibility: hidden;
+// .figurelink {
+//     position: relative;
+//     backface-visibility: hidden;
 
-    .btn {
-        border-color: $c-white;
-        color: $c-white;
-        backface-visibility: hidden;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transition: 0.6s $easeOutExpo;
-        opacity: 0;
-        transform: translateX(-50%) translateY(-50%) scale3d(1.1, 1.1, 1);
+//     .btn {
+//         border-color: $c-white;
+//         color: $c-white;
+//         backface-visibility: hidden;
+//         cursor: pointer;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transition: 0.6s $easeOutExpo;
+//         opacity: 0;
+//         transform: translateX(-50%) translateY(-50%) scale3d(1.1, 1.1, 1);
 
-        &:before, &:after {
-            content: none;
-        }
+//         &:before, &:after {
+//             content: none;
+//         }
 
-        &:hover {
-            color: $c-white;
-        }
+//         &:hover {
+//             color: $c-white;
+//         }
 
-    }
+//     }
 
-    a {
-        display: block;
-        position: relative;
+//     a {
+//         display: block;
+//         position: relative;
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0);
-            transition: 0.4s $easeOutExpo;
-        }
-        &:hover {
-            .btn {
-                opacity: 1;
-                transform: translateX(-50%) translateY(-50%) scale3d(1, 1, 1);
-            }
-            &:after {
-                background-color: rgba(0, 0, 0, 0.7);
-            }
-        }
-    }
-}
+//         &:after {
+//             content: "";
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             right: 0;
+//             bottom: 0;
+//             margin: auto;
+//             background-color: rgba(0, 0, 0, 0);
+//             transition: 0.4s $easeOutExpo;
+//         }
+//         &:hover {
+//             .btn {
+//                 opacity: 1;
+//                 transform: translateX(-50%) translateY(-50%) scale3d(1, 1, 1);
+//             }
+//             &:after {
+//                 background-color: rgba(0, 0, 0, 0.7);
+//             }
+//         }
+//     }
+// }

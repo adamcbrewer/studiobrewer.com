@@ -27,7 +27,6 @@
                 <li class="feature">
                     <figure class="feature-figure figurelink">
                         <a href="<?php echo $project->url() ?>">
-                            <div class="btn" tabindex="-1">View Project</div>
                             <img src="<?php echo $project->feature()->url() ?>" alt="<?php echo html($project->title()) ?>">
                         </a>
                     </figure>
