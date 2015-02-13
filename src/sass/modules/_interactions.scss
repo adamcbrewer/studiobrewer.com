@@ -64,6 +64,8 @@ input {
     backface-visibility: hidden;
 
     .btn {
+        border-color: $c-white;
+        color: $c-white;
         backface-visibility: hidden;
         cursor: pointer;
         position: absolute;

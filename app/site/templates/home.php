@@ -13,16 +13,12 @@
         </div>
 
         <aside class="contain contain--narrow">
-            <?php echo $page->status() ?>
+            <small><?php echo $page->status() ?></small>
         </aside>
 
     </header>
 
     <section class="section contain contain--features">
-
-        <header class="section-header">
-            <h2 class="section-title"><?php echo $page->sectionTitleTwo() ?></h2>
-        </header>
 
         <ol class="features">
 

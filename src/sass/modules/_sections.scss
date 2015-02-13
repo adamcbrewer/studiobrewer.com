@@ -8,14 +8,19 @@
     color: $c-white;
     background-color: $c-alpha;
 
-    // .inner {
-    //     margin: 5em auto;
-    // }
+    .btn-group {
+        margin: 4em auto;
+    }
 }
 
 .section--yank {
     padding-bottom: 14rem;
-    margin-bottom: -10em;
+    margin-bottom: -10rem;
+
+    &.section--hero {
+        margin-bottom: -17em;
+        padding-bottom: 24rem;
+    }
 }
 
 .section--alt {

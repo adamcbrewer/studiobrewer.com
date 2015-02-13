@@ -17,12 +17,6 @@ fields:
   status:
     label: Current Status
     type: text
-  _headerTwo:
-    label: Section - Featured Work
-    type: headline
-  sectionTitleTwo:
-    label: Section Title
-    type: text
   _headerThree:
     label: Section - Twitter
     type: headline
