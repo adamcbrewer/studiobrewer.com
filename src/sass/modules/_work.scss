@@ -4,12 +4,13 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    text-align: left;
 }
 .work {
     max-width: 410px;
     $width: (($d-column*4) + ($d-gutter*3)) / $d-siteWidth * 100%;
     width: $width;
-    margin: 0 0 4.6em;
+    margin: 0 0 4em;
 }
 .work-thumb {
     margin-bottom: 1.4em;
@@ -17,34 +18,23 @@
 
     img {
         display: block;
-        // transform: scale3d(1, 1, 1);
-        // transition: 0.6s $easeOutExpo transform;
-    }
-
-    a {
-        &:hover {
-            img {
-                // transform: scale3d(1.05, 1.05, 1);
-            }
-        }
     }
 
 }
 .work-details {
-    padding: 0 .6em;
+    padding: 0 1.5em;
 }
 .work-title,
-.work-summary,
-.work-when {
+.work-summary{
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .work-title {
-    color: $c-white;
+    font-weight: 400;
     a {
         color: inherit;
     }
 }
 .work-summary {
-    // color: $c-foxtrot;
+    color: $c-charlie;
 }

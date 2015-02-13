@@ -7,6 +7,7 @@ fields:
   title:
     label: Title
     type:  text
+
   _headerOne:
     label: Section - Hero
     type: headline
@@ -22,12 +23,14 @@ fields:
   buttonAbout:
     label: About Button Text
     type: text
+
   _headerTwo:
     label: Section - Features
     type: headline
   buttonFeatures:
     label: Features Button Text
     type: text
+
   _headerThree:
     label: Section - Twitter
     type: headline

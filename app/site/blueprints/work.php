@@ -14,9 +14,6 @@ fields:
   _headerOne:
     label: Section - Work
     type: headline
-  sectionTitleOne:
-    label: Section Title
-    type: text
   header:
     label: Main Header
     type: text
