@@ -33,7 +33,10 @@ a:focus {}
     position: relative;
 
     &.is-active {
-        color: $c-white;
+        color: $c-alpha;
+        .page--home & {
+            color: $c-white;
+        }
     }
 
     .page--home & {
