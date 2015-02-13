@@ -7,8 +7,8 @@
                 <?php echo $page->text()->html(); ?>
             </h1>
             <div class="btn-group">
-                <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary">View projects</a>
-                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--primary">Tell me more</a>
+                <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary"><?php echo $page->buttonWork() ?></a>
+                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--primary"><?php echo $page->buttonAbout() ?></a>
             </div>
         </div>
 
@@ -44,7 +44,7 @@
         </ol>
 
         <div class="btn-group">
-            <a href="<?php echo $site->find('/work')->url() ?>" class="btn">Stop teasing, show me more</a>
+            <a href="<?php echo $site->find('/work')->url() ?>" class="btn"><?php echo $page->buttonFeatures() ?></a>
         </div>
 
     </section>
@@ -75,7 +75,7 @@
         </noscript>
 
         <div class="btn-group">
-            <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn">View more on Twitter</a>
+            <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn"><?php echo $page->buttonTwitter() ?></a>
         </div>
 
     </section>
