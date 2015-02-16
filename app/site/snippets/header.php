@@ -30,7 +30,7 @@
     <?php echo js('assets/js/modernizr.build.js') ?>
 
 </head>
-<body data-basepath="<?php echo $site->url() ?>" class="page--<?php echo strtolower($page->title()); ?>">
+<body data-basepath="<?php echo $site->url() ?>" class="page--<?php echo strtolower($page->intendedTemplate()); ?>">
 
     <header class="header f-futura">
         <div class="header-inner contain contain--header">

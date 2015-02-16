@@ -34,27 +34,15 @@
 .section-header {
     margin-bottom: 5em;
     padding-bottom: 0em;
+
+    .page--project & {
+        margin-bottom: 2.5em;
+    }
+
 }
 
 .section-header--halfgap {
     margin-bottom: 2.5em;
-}
-
-.section-header--stroked {
-    padding-bottom: 2.5em;
-    margin-bottom: 2.5em;
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-bottom: 2px solid $c-echo;
-        display: block;
-        margin: auto;
-        max-width: $d-column/2;
-    }
 }
 
 .section-title {

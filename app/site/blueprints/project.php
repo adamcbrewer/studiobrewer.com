@@ -38,8 +38,8 @@ files:
         half: Half size
         third: One third
         twothirds: Two thirds
-fields:
 
+fields:
   _headerOne:
     label: Section - Project Information
     type: headline
@@ -69,12 +69,16 @@ fields:
   intro:
     label: Introduction
     type:  textarea
-  website:
-    label: Website (optional)
-    type: url
-    width: 1/2
   when:
-    label: Date
+    label: When
+    type:  text
+    width: 1/2
+  what:
+    label: What
+    type:  text
+    width: 1/2
+  deliverables:
+    label: Deliverables
     type:  text
     width: 1/2
   signoff:

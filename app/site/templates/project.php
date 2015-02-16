@@ -2,22 +2,22 @@
 
     <article class="section section--alt project">
 
-        <header class="section-header section-header--stroked contain">
-            <p class="section-title"><?php echo $page->when() ?></p>
+        <header class="section-header contain">
             <h1 class="title-main">
                 <?php echo $page->title() ?>
             </h1>
         </header>
 
-        <section class="contain contain--text">
-            <header class="project-intro u-textleft">
-                <?php echo markdown($page->intro()) ?>
+        <section class="contain">
+            <header class="project-intro">
+                <article class="project-intro-summary">
+                    <?php echo markdown($page->intro()) ?>
+                </article>
+                <aside class="project-intro-details">
+                    <p><strong><?php echo $page->when() ?></strong> &ndash; <?php echo h($page->what()) ?></p>
+                    <p><strong>Deliverables</strong> &ndash; <?php echo h($page->deliverables()) ?></p>
+                </aside>
             </header>
-            <?php if ($page->website() != "") : ?>
-            <aside class="btn-group">
-                <a href="<?php echo $page->website() ?>" class="btn btn--primary" target="_blank">View the website</a>
-            </aside>
-            <?php endif; ?>
         </section>
 
         <section class="contain project-images">
@@ -52,7 +52,7 @@
         </section>
 
         <?php if ($page->signoff() != "") : ?>
-        <footer class="project-footer contain contain--text u-textleft">
+        <footer class="project-footer contain">
             <?php echo kirbyText($page->signoff()) ?>
         </footer>
         <?php endif; ?>

@@ -1,19 +1,23 @@
+.project {
+    text-align: left;
+}
+
 .project-intro {
-    font-weight: 400;
     margin-bottom: 3em;
+    overflow: hidden;
 }
 
-.project-website {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 600;
-    font-family: $ff-azo;
-    border-color: transparent;
-
-    &:hover {
-        border-color: currentcolor;
-    }
+.project-intro-summary {
+    font-size: 2rem;
+    float: left;
+    width: ( ($d-column * 7) + ($d-gutter * 6) ) / $d-siteWidth * 100%;
 }
+.project-intro-details {
+    font-size: 1.6rem;
+    float: right;
+    width: ( ($d-column * 4) + ($d-gutter * 3) ) / $d-siteWidth * 100%;
+}
+
 .project-images {
     margin: 5em;
 }
@@ -29,6 +33,10 @@
 .project-figure-description {}
 .project-footer {
     clear: both;
+}
+
+.project-footer {
+    font-size: 2rem;
 }
 
 $gutter-gap: ($d-gutter/2);
