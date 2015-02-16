@@ -1,22 +1,29 @@
 .figure {
-    margin: 0 0 6em;
+    margin: 0 0 3em;
+
+    img {
+        display: block;
+    }
 }
 .figure--alt {
     margin-bottom: 3em;
 }
 
-.figure--about {
-    display: inline-block;
-    margin-bottom: -4em;
-    padding-bottom: 0;
-    width: auto;
+// .figure--about {
+//     display: inline-block;
+//     margin-bottom: -4em;
+//     padding-bottom: 0;
+//     width: auto;
+// }
+
+.figure-image {
+    margin-bottom: 4em;
 }
 
 .figure-caption {
-    margin: 0.8em 0;
-    font-style: italic;
+    margin: 1em 0;
     font-size: 1.6rem;
-    padding: 0 1em;
+    color: $c-charlie;
 
     .figure--alt & {
         text-align: left;
