@@ -36,7 +36,17 @@
 }
 
 .project-footer {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    // display: flex;
+    // justtify-content: space-around;
+    // flex-direction: row;
+}
+
+.project-signoff {
+    float: left;
+}
+.project-social {
+    float: right;
 }
 
 $gutter-gap: ($d-gutter/2);

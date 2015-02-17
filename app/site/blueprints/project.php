@@ -8,17 +8,6 @@ files:
     caption:
       label: Caption (optional)
       type: text
-    description:
-      label: Description (optional - shown below the image)
-      type: textarea
-    descriptionLocation:
-      label: Location of the image description
-      type: radio
-      default: inside
-      options:
-        inside: Default ('inside' the image container)
-        above: Above
-        below: Below
     _lineOne:
       type: line
     _infoOne:
@@ -69,20 +58,11 @@ fields:
   intro:
     label: Introduction
     type:  textarea
-  when:
-    label: When
-    type:  text
-    width: 1/2
-  what:
-    label: What
-    type:  text
-    width: 1/2
-  deliverables:
-    label: Deliverables
-    type:  text
-    width: 1/2
+  introDetails:
+    label: Intro Details
+    type:  textarea
   signoff:
-    label: Sign-off (optional)
+    label: Sign-off
     type:  textarea
   homepage:
     label: Display this project on the Home page?

@@ -14,15 +14,14 @@
                     <?php echo markdown($page->intro()) ?>
                 </article>
                 <aside class="project-intro-details">
-                    <p><strong><?php echo $page->when() ?></strong> &ndash; <?php echo h($page->what()) ?></p>
-                    <p><strong>Deliverables</strong> &ndash; <?php echo h($page->deliverables()) ?></p>
+                    <?php echo kirbyText($page->introDetails()) ?>
                 </aside>
             </header>
         </section>
 
         <section class="contain project-images">
 
-            <?php foreach ($page->images()->sortBy('sort', 'asc')->not('thumb.jpg', 'thumb.png', 'feature.jpg', 'feature.png') as $image) : ?>
+            <?php foreach ($page->project_images() as $image) : ?>
 
                 <?php if ($image->description() != "" && $image->descriptionlocation() == 'above') : ?>
                 <div class="contain contain--text figure-description figure-description--above u-textleft"><?php echo kirbyText($image->description()) ?></div>
@@ -51,11 +50,16 @@
 
         </section>
 
-        <?php if ($page->signoff() != "") : ?>
         <footer class="project-footer contain">
-            <?php echo kirbyText($page->signoff()) ?>
+            <?php if ($page->signoff() != "") : ?>
+                <section class="project-signoff">
+                    <?php echo kirbyText($page->signoff()) ?>
+                </section>
+            <?php endif; ?>
+            <section class="project-social">
+                <?php snippet('project-social'); ?>
+            </section>
         </footer>
-        <?php endif; ?>
 
     </article>
 
