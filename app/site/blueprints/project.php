@@ -50,10 +50,10 @@ fields:
     label: Title
     type:  text
   summary:
-    label: Summary (displayed beneath features)
+    label: Feature Summary
     type:  text
   summaryThumbnail:
-    label: Thumbnail Summary (displayed beneath thumbnails)
+    label: Thumbnail Summary
     type:  text
   intro:
     label: Introduction
