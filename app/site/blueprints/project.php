@@ -59,8 +59,19 @@ fields:
     label: Introduction
     type:  textarea
   introDetails:
-    label: Intro Details
+    label: Introduction Details
     type:  textarea
+  furthermore:
+    label: Furthermore (Displayed below the first project image)
+    type:  textarea
+  furthermoreColumns:
+    label: Furthermore Columns
+    type: radio
+    default: two
+    options:
+      one: One Column
+      two: Two Columns
+      three: Three Columns
   signoff:
     label: Sign-off
     type:  textarea

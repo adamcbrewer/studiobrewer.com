@@ -75,3 +75,18 @@
 .u-flex-2 {
     flex: 2;
 }
+
+// Columns
+.u-columns-one {
+
+}
+.u-columns-two {
+    column-fill: balance;
+    column-count: 2;
+    column-gap: $d-gutter;
+}
+.u-columns-three {
+    column-fill: balance;
+    column-count: 3;
+    column-gap: $d-gutter;
+}

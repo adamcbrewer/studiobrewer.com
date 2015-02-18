@@ -21,31 +21,14 @@
 
         <section class="contain project-images">
 
-            <?php foreach ($page->project_images() as $image) : ?>
+            <?php snippet('project-image', array('image' => $page->project_images()->first())); ?>
 
-                <?php if ($image->description() != "" && $image->descriptionlocation() == 'above') : ?>
-                <div class="contain contain--text figure-description figure-description--above u-textleft"><?php echo kirbyText($image->description()) ?></div>
-                <?php endif; ?>
+            <section class="project-furthermore u-columns-<?php echo $page->furthermoreColumns() ?>">
+                <?php echo kirbyText($page->furthermore()) ?>
+            </section>
 
-                <article class="figure layout layout--<?php echo $image->layout() ?>">
-
-                    <figure class="figure-image">
-                        <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
-
-                        <figcaption class="figure-caption"><?php echo $image->caption() ?></figcaption>
-
-                    </figure>
-
-                    <?php if ($image->description() != "" && !in_array($image->descriptionlocation(), array('above', 'below'))) : ?>
-                    <div class="contain contain--text figure-description u-textleft"><?php echo kirbyText($image->description()) ?></div>
-                    <?php endif; ?>
-
-                </article>
-
-                <?php if ($image->description() != "" && $image->descriptionlocation() == 'below') : ?>
-                <div class="contain contain--text figure-description figure-description--below u-textleft"><?php echo kirbyText($image->description()) ?></div>
-                <?php endif; ?>
-
+            <?php foreach ($page->project_images()->offset(1) as $image) : ?>
+                <?php snippet('project-image', array('image' => $image)); ?>
             <?php endforeach; ?>
 
         </section>
