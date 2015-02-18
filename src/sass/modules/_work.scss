@@ -8,7 +8,7 @@
 }
 .work {
     max-width: 410px;
-    $width: (($d-column*4) + ($d-gutter*3)) / $d-siteWidth * 100%;
+    $width: $d-columns-4;
     width: $width;
     margin: 0 0 4em;
 }
