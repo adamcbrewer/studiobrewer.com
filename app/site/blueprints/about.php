@@ -48,14 +48,8 @@ fields:
   sectionTitleThree:
     label: Section Title
     type: text
-  languages:
-    label: Programming Languages
-    type: tags
-  frameworks:
-    label: Frameworks
-    type: tags
-  workflow:
-    label: Workflow
+  skills:
+    label: Skills
     type: tags
 
   _headerFour:

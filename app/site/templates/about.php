@@ -25,7 +25,7 @@
 
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--alt u-textcenter">
         <header class="section-header contain">
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
@@ -41,30 +41,13 @@
     </section>
 
     <section class="section contain">
-        <header class="section-header">
+        <header class="section-header u-textcenter">
             <p class="section-title"><?php echo $page->sectionTitleThree() ?></p>
         </header>
-        <section class="skills u-flex u-flex--row">
+        <section class="skills u-columns-two contain contain--narrow">
             <div class="skill">
-                <h3 class="taglist-title">Languages</h3>
                 <ul class="taglist">
-                    <?php foreach(explode(',', $page->languages()) as $value) : ?>
-                    <li class="taglist-item"><?php echo $value ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-            <div class="skill">
-                <h3 class="taglist-title">Frameworks</h3>
-                <ul class="taglist">
-                    <?php foreach(explode(',', $page->frameworks()) as $value) : ?>
-                    <li class="taglist-item"><?php echo $value ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-            <div class="skill">
-                <h3 class="taglist-title">Workflow</h3>
-                <ul class="taglist">
-                    <?php foreach(explode(',', $page->workflow()) as $value) : ?>
+                    <?php foreach(explode(',', $page->skills()) as $value) : ?>
                     <li class="taglist-item"><?php echo $value ?></li>
                     <?php endforeach; ?>
                 </ul>
@@ -73,7 +56,7 @@
     </section>
 
     <section class="section section--alt">
-        <header class="section-header contain">
+        <header class="section-header contain u-textcenter">
             <p class="section-title"><?php echo $page->sectionTitleFour() ?></p>
         </header>
         <div class="u-textleft contain contain--narrow">
