@@ -1,10 +1,9 @@
 <?php snippet('header') ?>
 
-    <article class="section section--alt section--yank">
+    <article class="section section--hero section--yank">
 
-        <header class="section-header section-header--stroked contain">
-            <p class="section-title"><?php echo $page->sectionTitleOne() ?></p>
-            <h1 class="title-main">
+        <header class="section-header contain">
+            <h1 class="title-hero">
                 <?php echo $page->header() ?>
             </h1>
         </header>
@@ -12,19 +11,17 @@
     </article>
 
     <div class="contain">
-        <figure class="figure figure--alt figure--about section">
+        <figure class="section figure figure--about">
             <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
             <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>
-            <figcaption class="figure-caption"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
+            <figcaption class="figure-caption contain contain--narrow"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
             <?php endif; ?>
         </figure>
     </div>
 
     <section class="section contain contain--narrow">
 
-        <div class="u-textleft">
-            <?php echo kirbytext($page->about()) ?>
-        </div>
+        <?php echo kirbytext($page->about()) ?>
 
     </section>
 

@@ -9,7 +9,7 @@ files:
       label: Name of the client or brand
       type: text
     caption:
-      label: Caption (optional - not used on client brands)
+      label: Caption (Not used on client brands)
       type: text
 fields:
   title:
@@ -19,17 +19,14 @@ fields:
   _headerOne:
     label: Section - Introduction
     type: headline
-  sectionTitleOne:
-    label: Section Title
+  header:
+    label: Main Header
     type: text
   _infoTwo:
     label: Your Profile photo
     type: info
     text: >
       Make sure to name your profile photo _me_, in either .jpg of .png format.
-  header:
-    label: Main Header
-    type: text
   about:
     label: About You
     type:  textarea

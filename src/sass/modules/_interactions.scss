@@ -24,7 +24,7 @@ input {
     color: $c-alpha;
     border: 3px solid $c-alpha;
     display: inline-block;
-    padding: 1em 2.2em;
+    padding: 0.8em 4em;
     min-width: 220px;
     text-align: center;
     background: transparent;
@@ -45,7 +45,7 @@ input {
     margin: 1em auto;
 
     .btn {
-        margin: 0 $d-gutter/2;
+        margin: 0 0.5em;
     }
 }
 .btn--primary {

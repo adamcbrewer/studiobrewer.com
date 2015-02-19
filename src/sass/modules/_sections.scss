@@ -18,8 +18,13 @@
     margin-bottom: -10rem;
 
     &.section--hero {
-        margin-bottom: -17em;
-        padding-bottom: 24rem;
+        margin-bottom: -34rem;
+        padding-bottom: 22rem;
+    }
+
+    .page--about &.section--hero {
+        margin-bottom: -42rem;
+        padding-bottom: 28rem;
     }
 }
 
