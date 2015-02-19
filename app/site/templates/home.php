@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <header class="section--hero section--yank">
+    <header class="section--hero section--yank u-textcenter">
 
         <div class="inner">
             <h1 class="title-hero">
@@ -20,7 +20,7 @@
 
     <section class="section contain contain--features">
 
-        <ol class="features">
+        <ol class="features u-textcenter">
 
             <? foreach ($projects as $key => $project) : ?>
 

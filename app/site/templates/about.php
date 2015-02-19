@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero section--yank">
+    <article class="section section--hero section--yank u-textcenter">
 
         <header class="section-header contain">
             <h1 class="title-hero">
@@ -10,7 +10,7 @@
 
     </article>
 
-    <div class="contain">
+    <div class="contain u-textcenter">
         <figure class="section figure figure--about">
             <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
             <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>

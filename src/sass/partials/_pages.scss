@@ -12,6 +12,7 @@
 .tweets {
     position: relative;
     margin-bottom: $d-column;
+    font-size: 1.8rem;
 
     &:before {
         content: "";
@@ -53,7 +54,7 @@
 
 }
 .tweet-header {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.8em;
 }
 .tweet-time {
     font-size: 1.6rem;
