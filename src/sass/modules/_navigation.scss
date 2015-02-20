@@ -2,9 +2,12 @@ a {
     color: $c-alpha;
     text-decoration: none;
     transition:
-        0.2s ease border-color,
         0.2s ease border-color;
     border-bottom: 1px solid transparent;
+
+    svg {
+        transition: 0.2s ease fill;
+    }
 
     figure & {
         border: none;
@@ -17,6 +20,9 @@ a {
 }
 a:hover {
     border-bottom-color: currentcolor;
+    .icon svg {
+        fill: $c-bravo;
+    }
 }
 a:active {}
 a:focus {}
@@ -38,6 +44,13 @@ a:focus {}
     position: relative;
 
     &.is-active {
+        color: $c-alpha;
+        .page--home & {
+            color: $c-white;
+        }
+    }
+
+    &:hover {
         color: $c-alpha;
         .page--home & {
             color: $c-white;

@@ -41,9 +41,25 @@
     svg {
         fill: $c-charlie;
 
+        rect {
+            transition: 0.2s ease;
+        }
+
         .page--home & {
             fill: $c-bravo;
         }
+
+        &:hover {
+            rect {
+                fill: $c-alpha;
+            }
+
+            .page--home & rect {
+                fill: $c-white;
+            }
+
+        }
+
     }
 
 }
