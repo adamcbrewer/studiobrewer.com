@@ -48,10 +48,6 @@
         opacity: 0;
     }
 
-    svg {
-        fill: $c-alpha;
-    }
-
 }
 .tweet-header {
     margin-bottom: 1.8em;
@@ -81,8 +77,10 @@
 // Contact page
 .contact-email {
     border-color: transparent;
-    color: $c-alpha;
-    letter-spacing: 2px;
+    color: $c-white;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
 
     &:hover {
         border-color: currentcolor;

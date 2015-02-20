@@ -3,7 +3,7 @@
     <article class="section section--alt project">
 
         <header class="section-header contain">
-            <h1 class="title-main">
+            <h1 class="title-main u-textleft">
                 <?php echo $page->title() ?>
             </h1>
         </header>
@@ -23,7 +23,7 @@
 
             <?php snippet('project-image', array('image' => $page->project_images()->first())); ?>
 
-            <section class="project-furthermore u-columns-<?php echo $page->furthermoreColumns() ?>">
+            <section class="project-furthermore u-columns u-columns--largegap u-columns--<?php echo $page->furthermoreColumns() ?>">
                 <?php echo kirbyText($page->furthermore()) ?>
             </section>
 

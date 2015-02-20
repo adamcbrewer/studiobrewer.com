@@ -27,3 +27,16 @@ fields:
   text:
     label: Text
     type:  textarea
+  externallinks:
+      label: Social Links
+      type: structure
+      entry: >
+        {{title}} <br>
+        <em><a href="{{url}}">{{url}}</a></em>
+      fields:
+        title:
+          label: Title
+          type: text
+        url:
+          label: URL
+          type: url

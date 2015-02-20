@@ -2,7 +2,7 @@
 
     <section class="section section--alt-lighter">
 
-        <header class="section-header contain u-textcenter">
+        <header class="section-header contain">
             <h1 class="title-main"><?php echo $page->header() ?></h1>
         </header>
 

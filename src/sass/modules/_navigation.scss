@@ -9,6 +9,11 @@ a {
     figure & {
         border: none;
     }
+
+    .icon &,
+    .icon &:hover {
+        border: none
+    }
 }
 a:hover {
     border-bottom-color: currentcolor;

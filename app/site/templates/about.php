@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero section--yank u-textcenter">
+    <article class="section section--hero section--yank">
 
         <header class="section-header contain">
             <h1 class="title-hero">
@@ -25,7 +25,7 @@
 
     </section>
 
-    <section class="section section--alt u-textcenter">
+    <section class="section section--alt">
         <header class="section-header contain">
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
@@ -41,10 +41,10 @@
     </section>
 
     <section class="section contain">
-        <header class="section-header u-textcenter">
+        <header class="section-header">
             <p class="section-title"><?php echo $page->sectionTitleThree() ?></p>
         </header>
-        <section class="skills u-columns-two contain contain--narrow">
+        <section class="skills contain contain--narrow u-columns u-columns--two u-columns--largegap">
             <div class="skill">
                 <ul class="taglist">
                     <?php foreach(explode(',', $page->skills()) as $value) : ?>
@@ -56,7 +56,7 @@
     </section>
 
     <section class="section section--alt">
-        <header class="section-header contain u-textcenter">
+        <header class="section-header contain">
             <p class="section-title"><?php echo $page->sectionTitleFour() ?></p>
         </header>
         <div class="u-textleft contain contain--narrow">

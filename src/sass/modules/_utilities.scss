@@ -80,16 +80,17 @@
 }
 
 // Columns
-.u-columns-one {
-
-}
-.u-columns-two {
+.u-columns {
     column-fill: balance;
+    column-gap: $d-gutter;
+}
+.u-columns--largegap {
+    column-gap: $d-gutter*2;
+}
+.u-columns-one {}
+.u-columns--two {
     column-count: 2;
-    column-gap: $d-gutter;
 }
-.u-columns-three {
-    column-fill: balance;
+.u-columns--three {
     column-count: 3;
-    column-gap: $d-gutter;
 }

@@ -34,30 +34,7 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
-
   _headerTwo:
-    label: Social Links
-    type: headline
-  _infoOne:
-    label: &nbsp;
-    type: info
-    text: >
-      Only the first three will be displayed. Arrange them in the order you'd like them to appear.
-  externallinks:
-      label: Social Links
-      type: structure
-      entry: >
-        {{title}} <br>
-        <em><a href="{{url}}">{{url}}</a></em>
-      fields:
-        title:
-          label: Title
-          type: text
-        url:
-          label: URL
-          type: url
-
-  _headerThree:
     label: Twitter Settings
     type: headline
   _infoTwo:

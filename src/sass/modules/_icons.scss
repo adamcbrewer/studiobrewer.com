@@ -2,12 +2,15 @@
     width: 32px;
     height: 32px;
     margin: auto;
-    fill: white;
     display: inline-block;
+
+    svg {
+        fill: $c-alpha;
+    }
 }
 
 .icon--light {
-    fill: $c-echo;
+    fill: $c-white;
 }
 
 .icon--small {
@@ -20,15 +23,5 @@
 
 .icon--block {
     display: block;
-    margin-bottom: $d-gutter;
-}
-
-.polygon {
-    width: 32px;
-    align-self: center;
-    svg {
-        stroke: #00ffff;
-        stroke-width: 16px;
-        fill: none;
-    }
+    margin-bottom: 1em;
 }

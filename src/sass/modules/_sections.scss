@@ -46,6 +46,24 @@
 
 }
 
+.section-header--stroked {
+    padding-bottom: 2.4em;
+    margin-bottom: 2.4em;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid currentcolor;
+        display: block;
+        margin: auto;
+        max-width: $d-column;
+    }
+}
+
 .section-header--halfgap {
     margin-bottom: 2.5em;
 }
@@ -57,4 +75,13 @@
     font-weight: 700;
     margin-bottom: 1em;
     margin-top: 0;
+    text-align: center;
+
+    .section--hero & {
+        color: $c-bravo;
+    }
+}
+
+.section-title--alpha {
+    color: $c-alpha;
 }
