@@ -30,11 +30,15 @@
 }
 
 .logo {
-    width: 130px;
-    max-width: 130px;
     align-self: center;
     transition: 0.8s;
     position: relative;
+
+    .inner {
+        margin: auto;
+        width: 130px;
+        max-width: 130px;
+    }
 
     a { display: block; }
 

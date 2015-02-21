@@ -1,40 +1,7 @@
-@media screen and (max-width: 1360px) {
-
-}
-
 @media screen and (max-width: 1024px) {
 
-    .logo {
-        order: 1;
-        width: 100%;
-        padding-bottom: 1.4em;
-        // max-width: 120px;
-    }
     .header {
         flex-direction: column;
-        padding-top: 1.4em;
-        padding-bottom: 1.4em;
-        height: auto;
-        max-height: none;
-        background-position: 30% -50%;
-
-        // .nav--external,
-        .nav--pages {
-            order: 2;
-            justify-content: space-around;
-            max-width: 24em;
-            width: 100%;
-        }
-        .nav--external {
-            display: none;
-        }
-
-    }
-    .nav--pages {
-        .nav-link {
-            margin: 0.4em 0;
-            // width: calc(100%/3);
-        }
     }
 
     .title-hero {
@@ -45,43 +12,17 @@
         }
     }
 
+    .tweets {
+        font-size: 1.6rem;
+    }
+
+    .client {
+        width: calc(100%/4);
+    }
+
 }
 
 @media screen and (max-width: 900px) {
-
-    .client {
-
-        width: calc(100%/3);
-
-        // Replace brands with
-        // > img { display: none; }
-        // &:before {
-        //     text-transform: capitalize;
-        //     content: attr(data-name);
-        // }
-    }
-
-    $x: 4em;
-    .section {
-        padding-top: $x;
-        padding-bottom: $x;
-    }
-    .section--hero .inner,
-    .features {
-        margin-top: $x;
-        margin-bottom: $x;
-    }
-    .figure {
-        margin-bottom: $x;
-    }
-
-    .section-header {
-        margin-bottom: 2.8em;
-    }
-
-    .section--yank {
-            margin-bottom: -7em;
-    }
 
     .tweet {
         width: 100%;
@@ -93,26 +34,82 @@
         width: $width;
     }
 
-    .figure--about {
-        margin-bottom: -4em;
-        padding-bottom: 0;
+    .client {
+        width: calc(100%/3);
     }
 
 }
 
 @media screen and (max-width: 800px) {
+
+    .header-inner {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 100%;
+        order: 1;
+        margin-bottom: 3rem;
+    }
+
+    .nav {
+        width: 50%;
+        text-align: center;
+    }
+    .header .nav .nav-link {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    .nav--one {
+        justify-content: flex-end;
+        order: 2;
+    }
+    .nav--two {
+        justify-content: flex-start;
+        order: 3;
+    }
+    .title-hero {
+        padding-top: 0;
+        font-size: 2rem;
+    }
     .nav--footer {
-        column-count: 2;
+        width: 100%;
         .nav-link {
-            width: 50%;
-            display: inline-block;
-            margin: 1em;
+            margin: 0 2em;
         }
     }
-    .layout {
+    .page--home .section--hero .btn-group {
+        margin-bottom: 6rem;
+    }
+    .page--about .section--yank.section--hero {
+        padding-bottom: 20rem;
+        margin-bottom: -26rem;
+    }
+    .client {
+        width: calc(100%/2);
+    }
+    .project-intro-summary,
+    .project-intro-details {
+        float: none;
+        width: auto;
+    }
+    .project-intro-summary {
+        margin-bottom: 5rem;
+    }
+    .project-furthermore.u-columns {
         max-width: none;
-        width: 100%;
-        float: none !important;
+        &.u-columns--three {
+            columns: 2;
+        }
+    }
+    .project-signoff {
+        float: none;
+        max-width: none;
+    }
+    .project-social {
+        float: none;
     }
 }
 
@@ -123,17 +120,20 @@
     .work {
         width: 100%;
     }
+    .work-details {
+        padding: 0;
+    }
     .skills {
         padding: 0 1em;
+        &.u-columns {
+            columns: 1;
+        }
     }
     .skill {
         width: 100%;
     }
     .taglist {
         padding-left: 1em;
-    }
-    .section--hero {
-
     }
     .btn-group {
         width: 100%;
@@ -145,9 +145,76 @@
 
         }
     }
-    .section p {
-        font-size: 1.8rem;
+    .features {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
     }
+    .feature {
+        margin-bottom: 5rem;
+    }
+    .feature-figure {
+        margin-bottom: 2rem;
+    }
+    .section p {
+        // font-size: 1.8rem;
+    }
+    .section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .section--yank {
+        &.section--hero {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 8rem;
+            .page--about & {
+                padding-top: 8rem;
+            }
+        }
+    }
+    .figure--about {
+        margin-bottom: 0;
+    }
+    .figure-caption {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-inner {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .nav--footer {
+        text-align: justify;
+        padding-bottom: 1rem;
+
+        &:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+    }
+    .page--about .section--yank.section--hero {
+        padding-bottom: 16rem;
+        margin-bottom: -20rem;
+    }
+    .contact-email {
+        font-size: 3rem;
+    }
+    .section-header--stroked {
+        margin-bottom: 0;
+    }
+    .project-furthermore.u-columns {
+        max-width: none;
+        &.u-columns--two,
+        &.u-columns--three {
+            columns: 1;
+        }
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -160,6 +227,50 @@
     .tweet-body {
         font-size: 1.8rem;
     }
+    .contain--header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .header .nav .nav-link,
+    .nav .nav-link {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .title-hero,
+    .title-main {
+        // margin-bottom: 1em;
+        font-size: 2.4rem;
+    }
+    .section-header {
+        .page--about & {
+            margin-bottom: 3rem;
+        }
+        .page--work & {
+            margin-bottom: 8rem;
+        }
+    }
+    .page--about {
+
+        .section--yank.section--hero {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            margin-bottom: -14rem;
+        }
+
+        .contain--narrow strong {
+            font-size: 2.2rem;
+        }
+    }
+    .footer br {
+        display: none;
+    }
+
+    .layout {
+        max-width: none;
+        width: 100%;
+        float: none !important;
+    }
+
 }
 
 

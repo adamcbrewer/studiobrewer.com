@@ -32,17 +32,19 @@
 </head>
 <body data-basepath="<?php echo $site->url() ?>" class="page--<?php echo strtolower($page->intendedTemplate()); ?>">
 
-    <header class="header f-futura">
+    <header class="header">
         <div class="header-inner contain contain--header">
-            <nav class="nav nav--pages">
+            <nav class="nav nav--one">
                 <?php snippet('nav-one'); ?>
             </nav>
             <figure class="logo logo-main">
-                <a href="<?php echo $site->url() ?>">
-                    <?php snippet('icons/logo'); ?>
-                </a>
+                <div class="inner">
+                    <a href="<?php echo $site->url() ?>">
+                        <?php snippet('icons/logo'); ?>
+                    </a>
+                </div>
             </figure>
-            <nav class="nav nav--external">
+            <nav class="nav nav--two">
                 <?php snippet('nav-two'); ?>
             </nav>
         </div>

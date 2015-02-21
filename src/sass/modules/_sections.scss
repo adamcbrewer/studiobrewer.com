@@ -17,9 +17,9 @@
     color: $c-white;
     background-color: $c-alpha;
 
-    .page--about & {
-        padding-top: 11.5rem;
-    }
+    // .page--about & {
+    //     padding-top: 11.5rem;
+    // }
 
     .page--home & .btn-group {
         margin: 6rem auto 9rem;
@@ -33,9 +33,11 @@
     &.section--hero {
         margin-bottom: -33rem;
         padding-bottom: 22rem;
+        padding-top: 0;
     }
 
     .page--about &.section--hero {
+        padding-top: 12rem;
         margin-bottom: -41rem;
         padding-bottom: 29.5rem;
     }

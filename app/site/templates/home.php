@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
-    <header class="section--hero section--yank u-textcenter">
+    <header class="section section--hero section--yank u-textcenter">
 
-        <div class="inner">
+        <div class="contain inner">
             <h1 class="title-hero">
                 <?php echo $page->text()->html(); ?>
             </h1>
@@ -73,7 +73,7 @@
             You need javascript to display this page correctly.
         </noscript>
 
-        <div class="btn-group">
+        <div class="contain btn-group">
             <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn"><?php echo $page->buttonTwitter() ?></a>
         </div>
 

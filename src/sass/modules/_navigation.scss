@@ -29,8 +29,8 @@ a:focus {}
 
 .nav {}
 
-.nav--pages {}
-.nav--external { text-align: right; }
+.nav--one {}
+.nav--two { text-align: right; }
 .nav--footer {
     padding: 1rem 0 8rem;
 }
@@ -62,11 +62,11 @@ a:focus {}
     }
 
     $space: 80px;
-    .nav--pages & {
+    .nav--one & {
         margin-right: $space;
         &:last-child { margin-right: 0; }
     }
-    .nav--external & {
+    .nav--two & {
         margin-left: $space;
         &:first-child { margin-left: 0; }
     }
