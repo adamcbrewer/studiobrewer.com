@@ -5,11 +5,11 @@
 }
 
 .feature {
-    margin-bottom: 4em;
+    margin-bottom: 8.8rem;
 }
 
 .feature-figure {
-    margin-bottom: 2.4em;
+    margin-bottom: 2.5em;
     img {
         display: block;
     }
@@ -17,7 +17,7 @@
 
 .feature-title {
     font-size: 1.8rem;
-    text-transform: uppercase;
+    font-weight: 400;
     color: $c-foxtrot;
     margin: 0 0 0.6em;
     line-height: 1;

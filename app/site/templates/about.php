@@ -30,7 +30,7 @@
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
         <section class="contain">
-            <ul class="clients u-flex u-flex--row u-flex--center-v">
+            <ul class="clients u-flex u-flex--row u-flex--center-v u-textcenter">
                 <?php foreach ($page->images()->sortBy('sort', 'asc')->not('me.jpg', 'me.png') as $client) : ?>
                     <li class="client" data-name="<?php e($client->client() != "", $client->client(), $client->name()) ?>">
                         <img src="<?php echo $client->url() ?>" alt="<?php echo $client->filename() ?>">

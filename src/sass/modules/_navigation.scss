@@ -3,7 +3,7 @@ a {
     text-decoration: none;
     transition:
         0.2s ease border-color;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 
     svg {
         transition: 0.2s ease fill;
@@ -32,7 +32,7 @@ a:focus {}
 .nav--pages {}
 .nav--external { text-align: right; }
 .nav--footer {
-    padding: 1rem 0 5rem;
+    padding: 1rem 0 8rem;
 }
 
 .nav-link {

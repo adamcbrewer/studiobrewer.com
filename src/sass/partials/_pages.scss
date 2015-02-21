@@ -50,12 +50,13 @@
 
 }
 .tweet-header {
-    margin-bottom: 1.8em;
+    margin-bottom: 2em;
 }
 .tweet-time {
     font-size: 1.6rem;
 }
 .tweet-body {
+    margin-bottom: 1em;
     a {
         border-bottom-color: currentColor;
         &:hover {
@@ -83,6 +84,6 @@
     font-weight: 700;
 
     &:hover {
-        border-color: currentcolor;
+        border-color: transparent;
     }
 }

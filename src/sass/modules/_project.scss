@@ -3,7 +3,7 @@
 }
 
 .project-intro {
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     overflow: hidden;
 }
 
@@ -14,16 +14,18 @@
 }
 .project-intro-details {
     font-size: 1.6rem;
+    line-height: 2.1;
     float: right;
     width: $d-columns-4;
 }
 
 .project-images {
-    margin: 4em;
+    margin: 0 auto 4em;
 }
 
 .project-furthermore {
     margin-bottom: 6em;
+    font-size: 1.6rem;
 
     h2, h3, h4, h5 {
         margin-top: 2em;
@@ -74,12 +76,10 @@ $gutter-gap: ($d-gutter/2);
 
 .layout--half {
     float: left;
-    $width: $d-columns-6;
-    max-width: calc(#{$width} - #{$gutter-gap});
+    max-width: $d-columns-6;
     & + .layout--half {
         float: right;
         & + .layout--half:nth-of-type(2n+1) {
-        // & + *:nth-of-type(2n+1) {
             clear: left;
             float: left;
         }
@@ -88,8 +88,9 @@ $gutter-gap: ($d-gutter/2);
 
 .layout--third {
     float: left;
-    $width: $d-columns-4;
-    max-width: calc(#{$width} - #{$gutter-gap});
+    max-width: $d-columns-4;
+    // $width: $d-columns-4;
+    // max-width: calc(#{$width} - #{$gutter-gap});
     & + .layout--twothirds {
         float: right;
         & + * {
@@ -100,8 +101,9 @@ $gutter-gap: ($d-gutter/2);
 
 .layout--twothirds {
     float: left;
-    $width: $d-columns-8;
-    max-width: calc(#{$width} - #{$gutter-gap});
+    max-width: $d-columns-8;
+    // $width: $d-columns-8;
+    // max-width: calc(#{$width} - #{$gutter-gap});
     & + .layout--third {
         float: right;
         & + * {

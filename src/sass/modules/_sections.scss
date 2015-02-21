@@ -1,15 +1,28 @@
 .section {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
     overflow: hidden;
+
+    .page--about & {
+        padding-bottom: 14rem;
+    }
+
+    &.figure--about {
+        padding-bottom: 0;
+    }
+
 }
 
 .section--hero {
     color: $c-white;
     background-color: $c-alpha;
 
-    .btn-group {
-        margin: 4em auto;
+    .page--about & {
+        padding-top: 11.5rem;
+    }
+
+    .page--home & .btn-group {
+        margin: 6rem auto 9rem;
     }
 }
 
@@ -18,13 +31,13 @@
     margin-bottom: -10rem;
 
     &.section--hero {
-        margin-bottom: -34rem;
+        margin-bottom: -33rem;
         padding-bottom: 22rem;
     }
 
     .page--about &.section--hero {
-        margin-bottom: -42rem;
-        padding-bottom: 28rem;
+        margin-bottom: -41rem;
+        padding-bottom: 29.5rem;
     }
 }
 
@@ -37,11 +50,17 @@
 }
 
 .section-header {
-    margin-bottom: 5em;
+    margin-bottom: 8.5rem;
     padding-bottom: 0em;
 
+    .page--work & {
+        margin-top: 5.8rem;
+        margin-bottom: 14rem;
+    }
+
     .page--project & {
-        margin-bottom: 2.5em;
+        margin-top: 3.5rem;
+        margin-bottom: 4rem;
     }
 
 }
