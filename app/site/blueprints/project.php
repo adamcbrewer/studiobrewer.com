@@ -30,22 +30,27 @@ files:
 
 fields:
   _headerOne:
-    label: Section - Project Information
+    label: Section – Images
     type: headline
-  _infoTwo:
-    label: Please Note
+  featuredFilename:
+    label: Feature Image (defaults to image named 'feature')
+    type: select
+    options: images
+  thumbFilename:
+    label: Thumbnail Image (defaults to image named 'thumb')
+    type: select
+    options: images
+  _infoOne:
     type: info
     text: >
-      Make sure the project thumbnail is named _thumb_, otherwise the first project image will be used and likely cropped. If you want to feature this project on the Home page, please make sure to upload an appropriately sized image name _feature_.
+      **Images sizes:** <br>
+      – Thumbnail: 410xXXX <br>
+      – Feature: 900xXXX <br>
+      – All others: 1300xXXX (full), 615xYYY (half), 395xZZZ (one third), 835xZZZ (two thirds)
 
-
-      **Images sizes:**
-
-      Thumbnail: 410x320
-
-      Feature: 994xXXX
-
-      All others: 1300xXXX (full), 615xYYY (half), 395xZZZ (one third), 835xZZZ (two thirds)
+  _headerTwo:
+    label: Section - Project Information
+    type: headline
   title:
     label: Title
     type:  text

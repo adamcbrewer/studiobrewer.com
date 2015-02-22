@@ -7,7 +7,11 @@ class ProjectPage extends Page {
      *
      */
     public function feature() {
-        return $this->images()->findBy('name', 'feature');
+        $file = $this->images()->find($this->featureFilename());
+        if (!$file) {
+            $file = $this->images()->findBy('name', 'feature');
+        }
+        return $file;
     }
 
     /**
@@ -15,7 +19,11 @@ class ProjectPage extends Page {
      *
      */
     public function thumb() {
-        return $this->images()->findBy('name', 'thumb');
+        $file = $this->images()->find($this->thumbFilename());
+        if (!$file) {
+            $file = $this->images()->findBy('name', 'thumb');
+        }
+        return $file;
     }
 
 
