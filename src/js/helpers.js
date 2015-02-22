@@ -15,7 +15,7 @@ String.prototype.nl2br = function () {
  * Tweets
  *
  */
-var Tweet = function (tweet, $template, filterHash) {
+var Tweet = function (tweet, $template, filterHash, screenName) {
 
     this.months = {
         long: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -24,6 +24,8 @@ var Tweet = function (tweet, $template, filterHash) {
 
     this.tweet = tweet;
     this.text = tweet.text;
+
+    this.screenName = screenName;
 
     this.filterHash = filterHash || null;
 
@@ -43,7 +45,8 @@ Tweet.prototype.createTweetNode = function () {
 
     this
         .insertTime()
-        .insertText();
+        .insertText()
+        .insertTweetLink();
 
 };
 
@@ -66,6 +69,11 @@ Tweet.prototype.insertText = function () {
     this.$tweet.querySelectorAll('.tweet-body')[0].innerHTML = this.text.nl2br();
     return this;
 
+};
+
+Tweet.prototype.insertTweetLink = function () {
+    this.$tweet.querySelectorAll('.tweet-link')[0].href = "https://twitter.com/" + this.screenName + "/status/" + this.tweet.id_str;
+    return this;
 };
 
 Tweet.prototype.insertHyperlinks = function () {
@@ -158,12 +166,19 @@ Tweet.prototype.getDaySuffix = function (day) {
     var suffix = 'th';
 
     switch (day) {
-        case 01:
+        case '01':
+        case '21':
+        case '31':
             suffix = 'st';
-        case 02:
+            break;
+        case '02':
+        case '22':
             suffix = 'nd';
-        case 03:
+            break;
+        case '03':
+        case '23':
             suffix = 'rd';
+            break;
         default:
             break;
     }

@@ -49,6 +49,14 @@
     }
 
 }
+.tweet-link {
+    svg {}
+    &:hover {
+        svg {
+            fill: $c-delta;
+        }
+    }
+}
 .tweet-header {
     margin-bottom: 2em;
 }

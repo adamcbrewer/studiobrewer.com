@@ -11,6 +11,22 @@
         platform: navigator.platform
     };
 
+
+    /**
+     * Konami code
+     *
+     */
+    var konami = function(f,a){document.onkeyup=function(e){/113302022928$/.test(a+=''+((e||self.event).keyCode-37))&&f()}};
+    konami(function () {
+        document.body.classList.add('is-konami');
+    });
+
+
+    /**
+     * Detecting if tweets are turned on and creating
+     * a template form the original DOM element.
+     *
+     */
     var tweetsOn = false;
     var htmlEl = document.documentElement;
     // Template and container nodes
@@ -52,7 +68,7 @@
             var $tweet = document.createElement('div');
 
             for (x; x < tweets.length; x++) {
-                $tweet = new Tweet(tweets[x], $template, filter);
+                $tweet = new Tweet(tweets[x], $template, filter, resp.screen_name);
                 frag.appendChild($tweet);
             }
 
