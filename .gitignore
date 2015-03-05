@@ -39,6 +39,7 @@ temp
 
 ## build files
 app/site/accounts
+app/site/cache
 app/assets
 app/assets/avatars/*
 !app/assets/avatars/.gitignore

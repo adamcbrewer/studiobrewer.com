@@ -95,7 +95,6 @@ c::set('routes', array(
             $response['filter'] = $filter;
             if ($tweets) {
                 $response['status'] = true;
-                $response['screen_name'] = $twitter_config['screen_name'];
                 $tweets_filtered = array();
 
                 if (isset($tweets->statuses)) {

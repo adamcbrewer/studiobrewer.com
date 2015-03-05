@@ -85,7 +85,7 @@ module.exports = function (grunt) {
                 options: {
                     banner: '<%= tag.banner %>',
                     beautify: false,
-                    compress: true,
+                    compress: {},
                     mangle: false,
                     preserveComments: false
                 },
