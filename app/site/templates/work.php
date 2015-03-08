@@ -16,7 +16,6 @@
                 </figure>
                 <section class="work-details">
                     <h3 class="work-title"><a href="<?php echo $project->url() ?>"><?php echo $project->title(); ?></a></h3>
-                    <p class="work-summary"><?php echo $project->summarythumbnail(); ?></p>
                 </section>
             </li>
             <?php endforeach; ?>

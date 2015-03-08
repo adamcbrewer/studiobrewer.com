@@ -1,22 +1,22 @@
 .project {
     text-align: left;
+    padding-bottom: 13rem;
 }
 
 .project-intro {
-    margin-bottom: 4em;
+    margin-top: 10rem;
+    margin-bottom: 6em;
     overflow: hidden;
 }
 
 .project-intro-summary {
-    font-size: 2rem;
-    float: left;
-    width: $d-columns-7;
+    font-size: 2.2rem;
+    margin-bottom: 6rem;
 }
 .project-intro-details {
-    font-size: 1.6rem;
-    line-height: 2.1;
-    float: right;
-    width: $d-columns-4;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: $c-golf;
 }
 
 .project-images {
@@ -24,8 +24,9 @@
 }
 
 .project-furthermore {
-    margin-bottom: 6em;
-    font-size: 1.6rem;
+    margin-bottom: 2em;
+    font-size: 1.8rem;
+    line-height: 1.8em;
 
     h2, h3, h4, h5 {
         margin-top: 2em;
@@ -57,19 +58,16 @@
 
 .project-footer {
     clear: both;
-}
-
-.project-footer {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color: $c-golf;
 }
 
 .project-signoff {
-    float: left;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     max-width: $d-columns-7;
 }
 .project-social {
-    float: right;
+
 }
 
 $gutter-gap: ($d-gutter/2);

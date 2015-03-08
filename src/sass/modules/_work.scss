@@ -13,7 +13,7 @@
     margin: 0 0 4em;
 }
 .work-thumb {
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
     overflow: hidden;
 
     img {
@@ -21,20 +21,16 @@
     }
 
 }
-.work-details {
-    padding: 0 1.5em;
-}
-.work-title,
-.work-summary{
+.work-details {}
+
+.work-title {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 .work-title {
+    color: $c-charlie;
     font-weight: 400;
     a {
         color: inherit;
     }
-}
-.work-summary {
-    color: $c-charlie;
 }

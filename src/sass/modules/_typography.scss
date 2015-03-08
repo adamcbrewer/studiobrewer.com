@@ -30,11 +30,27 @@ p {
 .title-main {
     color: $c-foxtrot;
     font-weight: 400;
-    font-size: 2.6rem;
+    font-size: 3rem;
     line-height: 1.4;
     margin: auto;
     max-width: 22em;
     text-align: center;
+
+    .page--project & {
+        max-width: none;
+        margin-bottom: 0.4em;
+    }
+
+}
+
+.title-summary {
+    color: $c-golf;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.4;
+    margin: auto;
+    text-align: center;
+    max-width: 22em;
 
     .page--project & {
         max-width: none;

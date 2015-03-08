@@ -38,8 +38,8 @@
 
     .page--about &.section--hero {
         padding-top: 12rem;
-        margin-bottom: -41rem;
-        padding-bottom: 29.5rem;
+        margin-bottom: -36rem;
+        padding-bottom: 31rem;
     }
 }
 
@@ -48,7 +48,7 @@
 }
 
 .section--alt-lighter {
-    background-color: lighten($c-echo, 6%);
+    background-color: $c-hotel;
 }
 
 .section-header {
@@ -63,6 +63,7 @@
     .page--project & {
         margin-top: 3.5rem;
         margin-bottom: 4rem;
+        padding-bottom: 7rem;
     }
 
 }

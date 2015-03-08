@@ -89,11 +89,11 @@
     }
 
     a {
-        color: $c-bravo;
-        border-bottom-color: $c-bravo;
+        color: $c-white;
+        border-bottom-color: transparent;
 
         &:hover {
-            border-bottom-color: transparent;
+            border-bottom-color: currentColor;
         }
     }
 
@@ -118,7 +118,7 @@
 }
 
 .contain--text {
-    max-width: 32em;
+    max-width: $d-columns-7;
 }
 .contain--narrow {
     max-width: ($d-gutter*5) + ($d-column*6) + ($d-gutter*2);

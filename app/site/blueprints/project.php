@@ -52,13 +52,10 @@ fields:
     label: Section - Project Information
     type: headline
   title:
-    label: Title
+    label: Project Title
     type:  text
   summary:
-    label: Feature Summary
-    type:  text
-  summaryThumbnail:
-    label: Thumbnail Summary
+    label: Project Summary
     type:  text
   intro:
     label: Introduction
@@ -67,16 +64,8 @@ fields:
     label: Introduction Details
     type:  textarea
   furthermore:
-    label: Furthermore (Displayed below the first project image)
+    label: Furthermore
     type:  textarea
-  furthermoreColumns:
-    label: Furthermore Columns
-    type: radio
-    default: two
-    options:
-      one: One Column
-      two: Two Columns
-      three: Three Columns
   signoff:
     label: Sign-off
     type:  textarea
