@@ -20,9 +20,14 @@ p {
     max-width: 27em;
     text-align: center;
 
+    .page--contact &,
     .page--about & {
         font-size: 3.4rem;
         padding-top: 0;
+    }
+
+    a {
+        color: $c-white;
     }
 
 }

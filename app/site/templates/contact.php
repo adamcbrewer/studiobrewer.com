@@ -1,23 +1,30 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero">
+    <article class="section section--hero section--yank">
 
-        <header class="section-header section-header--stroked contain">
-            <p class="section-title"><?php echo $page->sectionTitleOne() ?></p>
-            <h1 class="title-main">
-                <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $site->email() ?></a>
+        <header class="section-header contain">
+            <h1 class="title-hero">
+                <a href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text() ?></a>
             </h1>
         </header>
 
     </article>
 
-    <section class="section section--alt-lighter">
+    <div class="contain u-textcenter">
+        <figure class="section figure figure--about">
+            <?php $image = $page->images()->findBy('name', 'contact'); ?>
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
+            <?php if ($image->caption()) : ?>
+            <figcaption class="figure-caption contain contain--narrow"><?php echo $image->caption() ?></figcaption>
+            <?php endif; ?>
+        </figure>
+    </div>
 
-        <section class="contain contain--narrow u-textleft">
-            <?php echo markdown($page->text()) ?>
-        </section>
+    <section class="section contain contain--narrow">
 
-        </section>
+        <?php echo markdown($page->text()) ?>
+
+    </section>
 
     <section class="section section--alt">
 

@@ -3,6 +3,7 @@
     padding-bottom: 8.5rem;
     overflow: hidden;
 
+    .page--contact &,
     .page--about & {
         padding-bottom: 14rem;
     }
@@ -21,7 +22,8 @@
     //     padding-top: 11.5rem;
     // }
 
-    .page--home & .btn-group {
+    .page--home & .btn-group,
+    .page--contact & .btn-group {
         margin: 6rem auto 9rem;
     }
 }
@@ -36,6 +38,7 @@
         padding-top: 0;
     }
 
+    .page--contact &.section--hero,
     .page--about &.section--hero {
         padding-top: 12rem;
         margin-bottom: -36rem;

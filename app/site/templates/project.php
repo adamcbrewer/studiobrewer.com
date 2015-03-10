@@ -15,19 +15,21 @@
 
             <?php snippet('project-image', array('image' => $page->project_images()->first())); ?>
 
-            <section class="contain contain--text project-intro">
-                <article class="project-intro-summary">
-                    <?php echo markdown($page->intro()) ?>
-                </article>
-                <aside class="project-intro-details">
-                    <?php echo kirbyText($page->introDetails()) ?>
-                </aside>
-            </section>
+        </section>
 
+        <section class="contain contain--text project-intro">
+            <article class="project-intro-summary">
+                <?php echo markdown($page->intro()) ?>
+            </article>
+            <aside class="project-intro-details">
+                <?php echo kirbyText($page->introDetails()) ?>
+            </aside>
+        </section>
+
+        <section class="contain project-images">
             <?php foreach ($page->project_images()->offset(1) as $image) : ?>
                 <?php snippet('project-image', array('image' => $image)); ?>
             <?php endforeach; ?>
-
         </section>
 
         <section class="contain contain--text project-furthermore">

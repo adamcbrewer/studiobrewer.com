@@ -2,7 +2,12 @@
 
 title: Contact
 pages: false
-files: false
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
 fields:
   title:
     label: Page Title
@@ -11,9 +16,14 @@ fields:
   _headerOne:
     label: Section - Contact Email
     type: headline
-  sectionTitleOne:
-    label: Section Title
+  email_text:
+    label: Email Text
     type: text
+  _infoTwo:
+    label: Your Contact Photo
+    type: info
+    text: >
+      Make sure to name your contact photo _contact_, in either .jpg of .png format.
   text:
     label: Text
     type:  textarea

@@ -23,7 +23,7 @@ fields:
     label: Main Header
     type: text
   _infoTwo:
-    label: Your Profile photo
+    label: Your Profile Photo
     type: info
     text: >
       Make sure to name your profile photo _me_, in either .jpg of .png format.
