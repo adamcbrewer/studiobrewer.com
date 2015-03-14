@@ -89,13 +89,5 @@
 
 // Contact page
 .contact-email {
-    border-color: transparent;
-    color: $c-white;
-    font-size: 3.4rem;
-    text-transform: uppercase;
-    font-weight: 700;
-
-    &:hover {
-        border-color: transparent;
-    }
+    letter-spacing: 1px;
 }

@@ -7,12 +7,20 @@ $c-echo: #e7e7e7; // grey - 3
 $c-foxtrot: #5a5a5a; // grey - 4
 $c-golf: #989898; // grey - 5
 $c-hotel: #f8f8f8; // grey - 6
+$c-indigo: #f5f5f5; // grey - 7
 
 // Common Colours
 $c-white: #fff;
 
 $c-bg: $c-white;
 $c-text: $c-foxtrot;
+
+// Gradients
+$grad-primary-h: linear-gradient(90deg, transparent 50%, $c-bravo 50%);
+$grad-primary-v: linear-gradient(0deg, transparent 50%, $c-bravo 50%);
+
+$grad-secondary-h: linear-gradient(90deg, transparent 50%, $c-delta 50%);
+$grad-secondary-v: linear-gradient(0deg, transparent 50%, $c-delta 50%);
 
 // Dimentions
 $d-siteWidth: 1290px;

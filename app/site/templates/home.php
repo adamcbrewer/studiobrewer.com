@@ -7,8 +7,12 @@
                 <?php echo $page->text()->html(); ?>
             </h1>
             <div class="btn-group">
-                <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary"><?php echo $page->buttonWork() ?></a>
-                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--primary"><?php echo $page->buttonAbout() ?></a>
+                <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--primary">
+                    <?php snippet('button', array('copy' => $page->buttonWork())); ?>
+                </a>
+                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--primary">
+                    <?php snippet('button', array('copy' => $page->buttonAbout())); ?>
+                </a>
             </div>
         </div>
 
@@ -43,7 +47,9 @@
         </ol>
 
         <div class="btn-group">
-            <a href="<?php echo $site->find('/work')->url() ?>" class="btn"><?php echo $page->buttonFeatures() ?></a>
+            <a href="<?php echo $site->find('/work')->url() ?>" class="btn">
+                <?php snippet('button', array('copy' => $page->buttonFeatures())); ?>
+            </a>
         </div>
 
     </section>
@@ -76,7 +82,9 @@
         </noscript>
 
         <div class="contain btn-group">
-            <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn"><?php echo $page->buttonTwitter() ?></a>
+            <a href="http://twitter.com/jakefbrewer" target="_blank" class="btn">
+                <?php snippet('button', array('copy' => $page->buttonTwitter())); ?>
+            </a>
         </div>
 
     </section>

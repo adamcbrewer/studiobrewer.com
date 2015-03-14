@@ -4,7 +4,7 @@
 
         <header class="section-header contain">
             <h1 class="title-hero">
-                <a href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text() ?></a>
+                <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text() ?></a>
             </h1>
         </header>
 
