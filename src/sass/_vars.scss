@@ -22,6 +22,11 @@ $grad-primary-v: linear-gradient(0deg, transparent 50%, $c-bravo 50%);
 $grad-secondary-h: linear-gradient(90deg, transparent 50%, $c-delta 50%);
 $grad-secondary-v: linear-gradient(0deg, transparent 50%, $c-delta 50%);
 
+// Animations
+$antSize: 8;
+$marchSpeed: 0.5s;
+$marchLunges: 12;
+
 // Dimentions
 $d-siteWidth: 1290px;
 $d-thumbWidth: 380px;

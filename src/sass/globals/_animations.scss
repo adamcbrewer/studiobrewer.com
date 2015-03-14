@@ -11,3 +11,8 @@
   from { background-position: 0 0; }
   to   { background-position: 0 20px; }
 }
+
+@keyframes ants-svg {
+  0%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: $antSize * 2; }
+}

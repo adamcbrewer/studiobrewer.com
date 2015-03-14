@@ -24,4 +24,14 @@
 .icon--block {
     display: block;
     margin-bottom: 1em;
+
+    .btn-group--svgicon & {
+        margin: 0;
+        display: inline-block;
+
+        & + a {
+            margin-top: 4px;
+        }
+    }
+
 }
