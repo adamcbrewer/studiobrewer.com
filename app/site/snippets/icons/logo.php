@@ -16,45 +16,17 @@
     </g>
 
     <rect x="38.9" y="86.1" width="29.4" height="7.5">
-
         <animate attributeName="width"
-            id="svganimation1"
             begin="sblogo.mouseover"
             from="29.4"
             to="220"
-            dur="0.07s"
-            fill="freeze" />
-        <animate attributeName="x"
-            begin="svganimation1.end"
-            from="38.9"
-            to="226.9"
-            dur="0.07s"
-            fill="freeze" />
-        <animate attributeName="width"
-            begin="svganimation2.end"
-            from="216"
-            to="29.4"
-            dur="0.07s"
-            fill="freeze" />
-        <animate attributeName="x"
-            id="svganimation2"
-            begin="sblogo.mouseout"
-            from="226.9"
-            to="38.9"
-            dur="0.07s"
-            fill="freeze" />
-
-        <!-- <animate attributeName="width"
-            begin="sblogo.mouseover"
-            from="29.4"
-            to="220"
-            dur="0.1s"
+            dur="0.3s"
             fill="freeze" />
         <animate attributeName="width"
             begin="sblogo.mouseout"
             from="216"
             to="29.4"
-            dur="0.1s"
-            fill="freeze" /> -->
+            dur="0.3s"
+            fill="freeze" />
     </rect>
 </svg>
