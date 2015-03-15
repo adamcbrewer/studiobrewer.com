@@ -124,7 +124,7 @@
 }
 
 .contain--text {
-    max-width: $d-columns-7;
+    max-width: ($d-column * 7) + ($d-gutter * 6);
 }
 .contain--narrow {
     max-width: ($d-gutter*5) + ($d-column*6) + ($d-gutter*2);
