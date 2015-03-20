@@ -18,15 +18,23 @@
     <rect x="38.9" y="86.1" width="29.4" height="7.5">
         <animate attributeName="width"
             begin="sblogo.mouseover"
+            dur="0.18s"
             from="29.4"
             to="220"
-            dur="0.3s"
-            fill="freeze" />
+            fill="freeze"
+            calcMode="spline"
+            keySplines="0.035, 0.435, 0.000, 1"
+            keyTimes="0;1"
+            />
         <animate attributeName="width"
             begin="sblogo.mouseout"
             from="216"
             to="29.4"
-            dur="0.3s"
-            fill="freeze" />
+            dur="0.14s"
+            fill="freeze"
+            calcMode="spline"
+            keySplines="0.035, 0.435, 0.000, 1"
+            keyTimes="0;1"
+            />
     </rect>
 </svg>
