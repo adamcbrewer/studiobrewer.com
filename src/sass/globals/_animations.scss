@@ -5,14 +5,14 @@
 
 @keyframes ants-horizontal {
   from { background-position: 0 0; }
-  to   { background-position: 20px 0; }
+  to   { background-position: $antSize-css 0; }
 }
 @keyframes ants-vertical {
   from { background-position: 0 0; }
-  to   { background-position: 0 20px; }
+  to   { background-position: 0 $antSize-css; }
 }
 
 @keyframes ants-svg {
   0%   { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: $antSize * 2; }
+  100% { stroke-dashoffset: $antSize-svg * 2; }
 }

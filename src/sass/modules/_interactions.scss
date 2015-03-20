@@ -55,7 +55,7 @@ input {
                 steps($marchLunges)
                 infinite;
 
-            stroke-dasharray: $antSize;
+            stroke-dasharray: $antSize-svg;
             stroke: $c-delta;
         }
     }
@@ -111,50 +111,34 @@ input {
 
 .ant {
     position: absolute;
-    background-size: 20px 20px;
 
-    &.ant--top {
-        top: 0;
+    &.ant--left { left: 0; }
+    &.ant--right { right: 0; }
+    &.ant--top { top: 0; }
+    &.ant--bottom { bottom: 0; }
+
+    &.ant--top,
+    &.ant--bottom {
         left: 0;
         width: 100%;
         height: 3px;
         animation: ants-horizontal $marchSpeed linear infinite;
         background-image: $grad-secondary-h;
+        background-size: $antSize-css $antSize-css;
         .btn--primary & {
             background-image: $grad-primary-h;
         }
     }
-    &.ant--left {
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 3px;
-        animation: ants-vertical $marchSpeed linear infinite;
-        background-image: $grad-secondary-v;
-        .btn--primary & {
-            background-image: $grad-primary-v;
-        }
-    }
+    &.ant--left,
     &.ant--right {
         top: 0;
-        right: 0;
         height: 100%;
         width: 3px;
         animation: ants-vertical $marchSpeed linear infinite;
         background-image: $grad-secondary-v;
+        background-size: $antSize-css $antSize-css;
         .btn--primary & {
             background-image: $grad-primary-v;
-        }
-    }
-    &.ant--bottom {
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        animation: ants-horizontal $marchSpeed linear infinite;
-        background-image: $grad-secondary-h;
-        .btn--primary & {
-            background-image: $grad-primary-h;
         }
     }
 
