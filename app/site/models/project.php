@@ -10,6 +10,9 @@ class ProjectPage extends Page {
         $file = $this->images()->find($this->featureFilename());
         if (!$file) {
             $file = $this->images()->findBy('name', 'feature');
+            if (!$file) {
+                $file = $this->images()->not('thumb.jpg')->first();
+            }
         }
         return $file;
     }
