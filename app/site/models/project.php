@@ -15,6 +15,15 @@ class ProjectPage extends Page {
     }
 
     /**
+     * Calculates the aspect ratio in percentage for a feature image
+     *
+     */
+    public function feature_ratio() {
+        $feature = $this->feature();
+        return round($feature->height() / $feature->width() *100 , 2) . '%';
+    }
+
+    /**
      * Get the thumbnail image
      *
      */

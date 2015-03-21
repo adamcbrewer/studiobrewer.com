@@ -52,10 +52,17 @@ a:focus {}
     }
 
     .header & {
-        border-bottom: 3px solid transparent;
-        transition:
-            0.3s 0.05s ease border-color,
-            0.3s ease color;
+        position: relative;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 0%;
+            height: 3px;
+            background: currentColor;
+            content: "";
+            transition: 0.3s width $easeOutExpo;
+        }
     }
 
     &:hover {
@@ -64,10 +71,9 @@ a:focus {}
             color: $c-white;
         }
         .header & {
-            border-bottom-color: $c-white;
-            transition:
-                0.3s ease border-color,
-                0.3s 0.05s ease color;
+            &:after {
+                width: 100%;
+            }
         }
     }
 

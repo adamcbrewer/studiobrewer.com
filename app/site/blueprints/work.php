@@ -17,3 +17,6 @@ fields:
   header:
     label: Main Header
     type: text
+  buttonThumb:
+    label: Thumbnail Button Text
+    type: text

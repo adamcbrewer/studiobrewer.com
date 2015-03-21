@@ -16,17 +16,17 @@ $c-bg: $c-white;
 $c-text: $c-foxtrot;
 
 // Gradients
-$grad-primary-h: linear-gradient(90deg, transparent 42%, $c-bravo 42%);
-$grad-primary-v: linear-gradient(0deg, transparent 42%, $c-bravo 42%);
+$grad-primary-h: linear-gradient(90deg, transparent 35%, $c-bravo 35%);
+$grad-primary-v: linear-gradient(0deg, transparent 35%, $c-bravo 35%);
 
-$grad-secondary-h: linear-gradient(90deg, transparent 42%, $c-delta 42%);
-$grad-secondary-v: linear-gradient(0deg, transparent 42%, $c-delta 42%);
+$grad-secondary-h: linear-gradient(90deg, transparent 35%, $c-delta 35%);
+$grad-secondary-v: linear-gradient(0deg, transparent 35%, $c-delta 35%);
 
 // Animations
 $antSize-svg: 8;
 $marchSpeed: 0.5s;
 $marchLunges: 12;
-$antSize-css: 20px;
+$antSize-css: 16px;
 
 // Dimentions
 $d-siteWidth: 1290px;

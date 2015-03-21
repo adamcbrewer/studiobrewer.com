@@ -18,7 +18,7 @@
     <rect x="38.9" y="86.1" width="29.4" height="7.5">
         <animate attributeName="width"
             begin="sblogo.mouseover"
-            dur="0.18s"
+            dur="0.22s"
             from="29.4"
             to="220"
             fill="freeze"

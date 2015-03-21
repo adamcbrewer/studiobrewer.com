@@ -31,6 +31,9 @@
                 <li class="feature">
                     <figure class="feature-figure figurelink">
                         <a href="<?php echo $project->url() ?>">
+                            <div class="rollover" style="background-image: url(<?php echo $project->feature()->url() ?>);">
+                                <p><?php echo $page->buttonFeatures() ?></p>
+                            </div>
                             <img src="<?php echo $project->feature()->url() ?>" alt="<?php echo html($project->title()) ?>">
                         </a>
                     </figure>

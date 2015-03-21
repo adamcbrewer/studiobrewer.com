@@ -11,6 +11,9 @@
             <li class="work">
                 <figure class="work-thumb figurelink">
                     <a href="<?php echo $project->url() ?>">
+                        <div class="rollover" style="background-image: url(<?php echo $project->thumb()->url() ?>);">
+                            <p><?php echo $page->buttonThumb() ?></p>
+                        </div>
                         <img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
                     </a>
                 </figure>
