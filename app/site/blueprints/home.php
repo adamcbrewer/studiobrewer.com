@@ -27,6 +27,9 @@ fields:
   _headerTwo:
     label: Section - Features
     type: headline
+  buttonView:
+    label: View Project Button Text
+    type: text
   buttonFeatures:
     label: Features Button Text
     type: text

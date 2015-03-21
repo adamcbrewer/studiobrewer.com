@@ -17,6 +17,6 @@ fields:
   header:
     label: Main Header
     type: text
-  buttonThumb:
-    label: Thumbnail Button Text
+  buttonView:
+    label: View Project Button Text
     type: text
