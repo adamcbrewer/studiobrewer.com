@@ -17,10 +17,10 @@
     overflow: hidden;
     position: relative;
 
-    img {
+    img,
+    a {
         display: block;
     }
-
 }
 .work-details {}
 
@@ -34,4 +34,10 @@
     a {
         color: inherit;
     }
+}
+
+.work-thumb:hover + .work-details a,
+.work-title a:hover {
+    color: $c-alpha;
+    border-bottom-color: $c-alpha;
 }
