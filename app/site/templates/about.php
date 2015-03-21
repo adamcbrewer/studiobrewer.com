@@ -14,7 +14,7 @@
         <figure class="section figure figure--about">
             <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
             <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>
-            <figcaption class="figure-caption contain contain--narrow"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
+            <figcaption class="figure-caption"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
             <?php endif; ?>
         </figure>
     </div>
