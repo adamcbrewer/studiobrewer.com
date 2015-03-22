@@ -42,40 +42,19 @@
     a { display: block; }
 
     svg {
+        transition: 0.2s ease;
         fill: $c-charlie;
 
-        rect {
-            pointer-events: none;
-            transition: 0.2s ease;
-        }
+        g { pointer-events: none; }
 
-        g {
-            pointer-events: none;
-        }
-
-        .page--home & {
-            fill: $c-bravo;
-        }
-
+        .page--home & { fill: $c-bravo; }
         &:hover {
-            rect {
-                fill: $c-alpha;
-            }
-
-            .page--home & rect {
-                fill: $c-white;
-            }
-
+            fill: $c-alpha;
+            .page--home & { fill: $c-white; }
         }
 
     }
 
-}
-
-.content {
-    // strong {
-    //     color: $c-white;
-    // }
 }
 
 .footer {
@@ -117,19 +96,20 @@
     padding-right: $d-gutter;
 }
 
+.contain--12 {
+    // max-width: ($d-column * 12) + ($d-gutter * 13);
+}
+
 .contain--header {
-    max-width: ($d-gutter*8) + ($d-column*9);
+    max-width: ($d-column * 9) + ($d-gutter * 8);
 }
 
 .contain--text {
     max-width: ($d-column * 7) + ($d-gutter * 6);
 }
 .contain--narrow {
-    max-width: ($d-gutter*5) + ($d-column*6) + ($d-gutter*2);
+    max-width: ($d-column * 6) + ($d-gutter * 7);
 }
 .contain--features {
     max-width: ($d-gutter*8) + ($d-column*9);
-}
-.contain--projectimage {
-    max-width: calc(#{$d-projectImagesWidth} + #{$d-gutter*2});
 }

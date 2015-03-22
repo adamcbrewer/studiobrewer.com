@@ -29,16 +29,15 @@ $marchLunges: 12;
 $antSize-css: 16px;
 
 // Dimentions
-$d-siteWidth: 1290px;
-$d-projectImagesWidth: 1400px;
-$d-thumbWidth: 380px;
-
 $d-gutter: 30px;
 $d-column: 80px;
+
+$d-siteWidth: ($d-column * 12) + ($d-gutter * 11);
 
 // Columns
 $d-columns-3: ( ($d-column * 3) + ($d-gutter * 3) ) / $d-siteWidth * 100%;
 $d-columns-4: ( ($d-column * 4) + ($d-gutter * 3) ) / $d-siteWidth * 100%;
+$d-columns-5: ( ($d-column * 5) + ($d-gutter * 4) ) / $d-siteWidth * 100%;
 $d-columns-6: ( ($d-column * 6) + ($d-gutter * 5) ) / $d-siteWidth * 100%;
 $d-columns-7: ( ($d-column * 7) + ($d-gutter * 6) ) / $d-siteWidth * 100%;
 $d-columns-8: ( ($d-column * 8) + ($d-gutter * 7) ) / $d-siteWidth * 100%;
