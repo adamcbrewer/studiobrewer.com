@@ -44,18 +44,15 @@ a:focus {}
     color: $c-charlie;
     position: relative;
 
-    .header & {
-        position: relative;
-        &:after {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0%;
-            height: 2px;
-            background: currentColor;
-            content: "";
-            transition: 0.3s width $easeOutExpo;
-        }
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background: currentColor;
+        content: "";
+        transition: 0.3s width $easeOutExpo;
     }
 
     &:hover {
@@ -63,16 +60,14 @@ a:focus {}
         .page--home & {
             color: $c-white;
         }
-        .header & {
-            &:after {
-                width: 100%;
-            }
+        &:after {
+            width: 100%;
         }
     }
 
     &.is-active {
         color: $c-alpha;
-        &:after {
+        .header &:after {
             content: none;
         }
         .page--home & {
