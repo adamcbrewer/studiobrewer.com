@@ -42,10 +42,10 @@
     a { display: block; }
 
     svg {
-        transition: 0.2s ease;
+        transition: 0.3s ease;
         fill: $c-charlie;
 
-        g { pointer-events: none; }
+        g, rect { pointer-events: none; }
 
         .page--home & { fill: $c-bravo; }
         &:hover {

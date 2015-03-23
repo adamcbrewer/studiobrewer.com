@@ -12,6 +12,10 @@
         padding-bottom: 0;
     }
 
+    .content &:last-child {
+        padding-bottom: 17rem;
+    }
+
 }
 
 .section--hero {

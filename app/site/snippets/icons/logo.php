@@ -18,7 +18,7 @@
     <rect x="38.9" y="86.1" width="29.4" height="7.5">
         <animate attributeName="width"
             begin="sblogo.mouseover"
-            dur="0.22s"
+            dur="0.3s"
             from="29.4"
             to="220"
             fill="freeze"
@@ -30,7 +30,7 @@
             begin="sblogo.mouseout"
             from="216"
             to="29.4"
-            dur="0.14s"
+            dur="0.15s"
             fill="freeze"
             calcMode="spline"
             keySplines="0.035, 0.435, 0.000, 1"

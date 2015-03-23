@@ -44,21 +44,14 @@ a:focus {}
     color: $c-charlie;
     position: relative;
 
-    &.is-active {
-        color: $c-alpha;
-        .page--home & {
-            color: $c-white;
-        }
-    }
-
     .header & {
         position: relative;
         &:after {
             position: absolute;
             left: 0;
-            bottom: -1px;
+            bottom: 0;
             width: 0%;
-            height: 3px;
+            height: 2px;
             background: currentColor;
             content: "";
             transition: 0.3s width $easeOutExpo;
@@ -74,6 +67,16 @@ a:focus {}
             &:after {
                 width: 100%;
             }
+        }
+    }
+
+    &.is-active {
+        color: $c-alpha;
+        &:after {
+            content: none;
+        }
+        .page--home & {
+            color: $c-white;
         }
     }
 
