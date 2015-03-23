@@ -10,7 +10,7 @@
 
     </article>
 
-    <div class="contain u-textcenter">
+    <div class="contain contain--features u-textcenter">
         <figure class="section figure figure--about">
             <?php $image = $page->images()->findBy('name', 'contact'); ?>
             <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">

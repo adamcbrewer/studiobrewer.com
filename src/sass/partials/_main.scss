@@ -91,13 +91,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: calc(#{$d-siteWidth} + #{$d-gutter*2});
+    max-width: calc(#{$d-siteWidth} + #{$d-sitePadding});
     padding-left: $d-gutter;
     padding-right: $d-gutter;
-}
-
-.contain--12 {
-    // max-width: ($d-column * 12) + ($d-gutter * 13);
 }
 
 .contain--header {
@@ -111,5 +107,5 @@
     max-width: ($d-column * 6) + ($d-gutter * 7);
 }
 .contain--features {
-    max-width: ($d-gutter*8) + ($d-column*9);
+    max-width: $d-features;
 }

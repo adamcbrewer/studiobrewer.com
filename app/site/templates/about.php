@@ -10,7 +10,7 @@
 
     </article>
 
-    <div class="contain u-textcenter">
+    <div class="contain contain--features u-textcenter">
         <figure class="section figure figure--about">
             <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
             <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>

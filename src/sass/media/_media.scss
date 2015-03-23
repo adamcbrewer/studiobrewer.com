@@ -30,8 +30,7 @@
     }
 
     .work {
-        $width: (($d-column*6) + ($d-gutter*5)) / $d-siteWidth * 100%;
-        width: $width;
+        width: $d-columns-6;
     }
 
     .client {
