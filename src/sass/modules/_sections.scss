@@ -12,7 +12,7 @@
         padding-bottom: 0;
     }
 
-    .content &:last-child {
+    .content > &:last-child {
         padding-bottom: 17rem;
     }
 
