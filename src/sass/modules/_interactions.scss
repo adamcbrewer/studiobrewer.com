@@ -39,9 +39,13 @@ input {
     align-items: center;
     flex-direction: column;
 
+    .icon svg,
+    .section-title--alpha {
+        transition: 0.15s ease;
+    }
+
     &:hover {
         .icon svg {
-            transition: 0.15s ease;
             fill: $c-delta;
         }
         .section-title--alpha {
