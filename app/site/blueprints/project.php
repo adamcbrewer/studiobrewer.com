@@ -44,9 +44,9 @@ fields:
     type: info
     text: >
       **Images sizes:** <br>
-      – Thumbnail: 410xXXX <br>
-      – Feature: 900xXXX <br>
-      – All others: 1300xXXX (full), 615xYYY (half), 395xZZZ (one third), 835xZZZ (two thirds)
+      – Thumbnail: 440px <br>
+      – Feature: 920px <br>
+      – All others: 1400px (full), 680px (half), 440px (one third), 920px (two thirds)
 
   _headerTwo:
     label: Section - Project Information
@@ -60,15 +60,9 @@ fields:
   intro:
     label: Introduction
     type:  textarea
-  introDetails:
-    label: Introduction Details
-    type:  textarea
-  furthermore:
-    label: Furthermore
-    type:  textarea
-  signoff:
-    label: Sign-off
-    type:  textarea
+  details:
+    label: Details
+    type: textarea
   homepage:
     label: Display this project on the Home page?
     type: toggle

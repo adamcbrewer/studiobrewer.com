@@ -17,12 +17,12 @@
 
         </section>
 
-        <section class="contain contain--text project-intro">
+        <section class="contain contain--project-info project-intro">
             <article class="project-intro-summary">
                 <?php echo markdown($page->intro()) ?>
             </article>
             <aside class="project-intro-details">
-                <?php echo kirbyText($page->introDetails()) ?>
+                <?php echo kirbyText($page->details()) ?>
             </aside>
         </section>
 
@@ -32,16 +32,7 @@
             <?php endforeach; ?>
         </section>
 
-        <section class="contain contain--text project-furthermore">
-            <?php echo kirbyText($page->furthermore()) ?>
-        </section>
-
         <footer class="project-footer contain contain--text ">
-            <?php if ($page->signoff() != "") : ?>
-                <section class="project-signoff">
-                    <?php echo kirbyText($page->signoff()) ?>
-                </section>
-            <?php endif; ?>
             <section class="project-social">
                 <?php snippet('project-social'); ?>
             </section>

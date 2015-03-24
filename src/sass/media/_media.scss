@@ -20,6 +20,15 @@
         width: calc(100%/4);
     }
 
+    .project-intro {
+        display: block;
+    }
+
+    .project-intro-summary {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -109,6 +118,12 @@
     }
     .project-social {
         float: none;
+    }
+
+    .layout {
+        max-width: none;
+        width: 100%;
+        float: none !important;
     }
 }
 
@@ -262,12 +277,6 @@
     }
     .footer br {
         display: none;
-    }
-
-    .layout {
-        max-width: none;
-        width: 100%;
-        float: none !important;
     }
 
 }

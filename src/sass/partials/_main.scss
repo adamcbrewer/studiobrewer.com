@@ -96,6 +96,9 @@
     padding-right: $d-gutter;
 }
 
+.contain--project-info {
+    max-width: calc(#{($d-column * 10) + ($d-gutter * 9)} + #{$d-sitePadding});
+}
 .contain--header {
     max-width: ($d-column * 9) + ($d-gutter * 8);
 }
