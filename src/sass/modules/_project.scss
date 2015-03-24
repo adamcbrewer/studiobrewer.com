@@ -12,13 +12,13 @@
 }
 
 .project-intro-details {
-    font-size: 1.6rem;
+    font-size: $f-size-3;
     line-height: 1.8;
     flex: 1;
     order: 1;
 }
 .project-intro-summary {
-    font-size: 2.2rem;
+    font-size: $f-size-2;
     flex: 1;
     order: 2;
     margin-left: $d-gutter;
@@ -35,8 +35,7 @@
 
 .project-footer {
     clear: both;
-    font-size: 1.8rem;
-    color: $c-golf;
+    font-size: $f-size-2;
 }
 
 .project-social {

@@ -15,14 +15,13 @@ p {
 .title-hero {
     padding-top: 2.2em;
     margin: 0 auto 2.2em;
-    font-size: 2.6rem;
+    font-size: $f-size-1;
     font-weight: 400;
     max-width: 27em;
     text-align: center;
 
     .page--contact &,
     .page--about & {
-        font-size: 3.4rem;
         padding-top: 0;
     }
 
@@ -33,9 +32,8 @@ p {
 }
 
 .title-main {
-    color: $c-foxtrot;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: $f-size-1;
     line-height: 1.4;
     margin: auto;
     max-width: 22em;
@@ -51,7 +49,7 @@ p {
 .title-summary {
     color: $c-golf;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: $f-size-1;
     line-height: 1.4;
     margin: auto;
     text-align: center;

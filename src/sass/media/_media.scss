@@ -80,7 +80,7 @@
     }
     .title-hero {
         padding-top: 0;
-        font-size: 2rem;
+        font-size: $f-size-2;
     }
     .nav--footer {
         width: 100%;
@@ -214,9 +214,6 @@
     .page--about .section--yank.section--hero {
         padding-bottom: 16rem;
         margin-bottom: -20rem;
-    }
-    .contact-email {
-        font-size: 3rem;
     }
     .section-header--stroked {
         margin-bottom: 0;

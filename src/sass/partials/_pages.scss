@@ -4,7 +4,7 @@
 .tweets {
     position: relative;
     margin-bottom: $d-column;
-    font-size: 1.8rem;
+    font-size: $f-size-2;
 
     &:before {
         content: "";
@@ -55,7 +55,8 @@
     margin-bottom: 2em;
 }
 .tweet-time {
-    font-size: 1.6rem;
+    font-size: $f-size-3;
+    color: $c-golf;
 }
 .tweet-body {
     margin-bottom: 1em;

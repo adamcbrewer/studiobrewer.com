@@ -18,7 +18,7 @@
 }
 
 .feature-title {
-    font-size: 1.8rem;
+    font-size: $f-size-2;
     font-weight: 400;
     color: $c-foxtrot;
     margin: 0 0 0.6em;
@@ -30,6 +30,6 @@
 
 .feature-summary {
     margin: 0;
-    font-size: 1.8rem;
-    color: $c-charlie;
+    font-size: $f-size-2;
+    color: $c-golf;
 }
