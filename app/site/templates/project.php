@@ -19,7 +19,7 @@
 
         <section class="contain contain--project-info project-intro">
             <article class="project-intro-summary">
-                <?php echo markdown($page->intro()) ?>
+                <?php echo kirbyText($page->intro()) ?>
             </article>
             <aside class="project-intro-details">
                 <?php echo kirbyText($page->details()) ?>
