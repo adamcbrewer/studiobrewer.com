@@ -17,7 +17,7 @@
         </div>
 
         <aside class="contain contain--narrow">
-            <small><?php echo $page->status() ?></small>
+            <small><?php echo $page->status()->markdown() ?></small>
         </aside>
 
     </header>

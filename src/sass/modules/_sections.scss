@@ -22,13 +22,13 @@
     color: $c-white;
     background-color: $c-alpha;
 
-    // .page--about & {
-    //     padding-top: 11.5rem;
-    // }
-
     .page--home & .btn-group,
     .page--contact & .btn-group {
         margin: 6rem auto 9rem;
+    }
+
+    a {
+        color: $c-white;
     }
 }
 

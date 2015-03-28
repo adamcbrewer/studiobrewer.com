@@ -46,10 +46,10 @@ input {
 
     &:hover {
         .icon svg {
-            fill: $c-delta;
+            fill: $c-foxtrot;
         }
         .section-title--alpha {
-            color: $c-delta;
+            color: $c-foxtrot;
         }
 
         .svg-ants {
@@ -60,7 +60,7 @@ input {
                 infinite;
 
             stroke-dasharray: $antSize-svg;
-            stroke: $c-delta;
+            stroke: $c-foxtrot;
         }
     }
 

@@ -32,7 +32,7 @@
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
 
-        <div class="u-flex u-flex--row contain">
+        <div class="u-flex u-flex--row contain contain--social">
             <?php $external_links = array_slice($page->externallinks()->yaml(), 0, 3); ?>
             <?php foreach($external_links as $external_link) : ?>
                 <div class="btn-group btn-group--svgicon u-textcenter">
