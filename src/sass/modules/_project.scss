@@ -31,6 +31,13 @@
     &:first-of-type {
         margin-bottom: 6rem;
     }
+
+    // progressive enhancement
+    .flexbox & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .project-footer {
@@ -43,27 +50,47 @@
 }
 
 .layout--half {
-    float: left;
     width: $d-columns-6;
-    & + .layout--half {
-        float: right;
-        & + .layout--half:nth-of-type(2n+1) {
-            clear: left;
-            float: left;
+}
+.layout--third {
+    width: $d-columns-4;
+}
+.layout--twothirds {
+    width: $d-columns-8;
+}
+
+.no-flexbox {
+    .layout--half {
+        float: left;
+        & + .layout--half {
+            float: right;
+            & + .layout--half:nth-of-type(2n+1) {
+                clear: left;
+                float: left;
+            }
+        }
+    }
+    .layout--third {
+        float: left;
+        & + .layout--twothirds {
+            float: right;
+            & + * {
+                clear: both;
+            }
+        }
+    }
+    .layout--twothirds {
+        float: left;
+        & + .layout--third {
+            float: right;
+            & + * {
+                clear: both;
+            }
         }
     }
 }
 
-.layout--third {
-    float: left;
-    width: $d-columns-4;
-    & + .layout--twothirds {
-        float: right;
-        & + * {
-            clear: both;
-        }
-    }
-}
+
 
 .layout--twothirds {
     float: left;
@@ -75,3 +102,5 @@
         }
     }
 }
+
+

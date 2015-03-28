@@ -225,7 +225,8 @@ module.exports = function (grunt) {
                     load : false,
                 },
                 tests : [
-                    'touch'
+                    'touch',
+                    'flexbox'
                 ]
             }
         },
