@@ -16,6 +16,10 @@
         padding-bottom: 17rem;
     }
 
+    .page--work & {
+        padding-top: 12rem;
+    }
+
 }
 
 .section--hero {
@@ -63,8 +67,7 @@
     padding-bottom: 0em;
 
     .page--work & {
-        margin-top: 5.8rem;
-        margin-bottom: 14rem;
+        margin-bottom: 13rem;
     }
 
     .page--project & {
