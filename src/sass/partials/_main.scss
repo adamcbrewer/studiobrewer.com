@@ -112,3 +112,6 @@
 .contain--features {
     max-width: $d-features;
 }
+.contain--clients {
+    max-width: calc(#{($d-column * 10) + ($d-gutter * 10)} + #{$d-sitePadding});
+}

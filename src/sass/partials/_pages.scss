@@ -74,8 +74,9 @@
     padding: 0;
 }
 .client {
-    margin: 1em 0;
+    margin: 20px;
     width: calc(100%/5);
+    max-width: 200px;
 }
 
 // Contact page

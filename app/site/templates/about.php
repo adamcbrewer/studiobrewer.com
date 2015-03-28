@@ -29,7 +29,7 @@
         <header class="section-header contain">
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
-        <section class="contain">
+        <section class="contain contain--clients">
             <ul class="clients u-flex u-flex--row u-flex--center-v u-textcenter">
                 <?php foreach ($page->images()->sortBy('sort', 'asc')->not('me.jpg', 'me.png') as $client) : ?>
                     <li class="client" data-name="<?php e($client->client() != "", $client->client(), $client->name()) ?>">
