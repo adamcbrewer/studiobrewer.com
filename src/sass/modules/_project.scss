@@ -1,6 +1,6 @@
 .project {
     text-align: left;
-    padding-bottom: 13rem;
+    // padding-bottom: 13rem;
 }
 
 .project-intro {
@@ -25,7 +25,7 @@
 }
 
 .project-images {
-    margin: 0 auto 10rem;
+    margin: 0 auto 16rem;
     overflow: hidden;
 
     &:first-of-type {
@@ -43,64 +43,10 @@
 .project-footer {
     clear: both;
     font-size: $f-size-2;
+    padding: 17rem 0;
+    background: $c-white;
 }
 
 .project-social {
     text-align: center;
 }
-
-.layout--half {
-    width: $d-columns-6;
-}
-.layout--third {
-    width: $d-columns-4;
-}
-.layout--twothirds {
-    width: $d-columns-8;
-}
-
-.no-flexbox {
-    .layout--half {
-        float: left;
-        & + .layout--half {
-            float: right;
-            & + .layout--half:nth-of-type(2n+1) {
-                clear: left;
-                float: left;
-            }
-        }
-    }
-    .layout--third {
-        float: left;
-        & + .layout--twothirds {
-            float: right;
-            & + * {
-                clear: both;
-            }
-        }
-    }
-    .layout--twothirds {
-        float: left;
-        & + .layout--third {
-            float: right;
-            & + * {
-                clear: both;
-            }
-        }
-    }
-}
-
-
-
-.layout--twothirds {
-    float: left;
-    width: $d-columns-8;
-    & + .layout--third {
-        float: right;
-        & + * {
-            clear: both;
-        }
-    }
-}
-
-

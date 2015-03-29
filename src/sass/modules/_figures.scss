@@ -4,6 +4,12 @@
     img {
         display: block;
     }
+
+    // The last group of images removes the bottom margin
+    // when next to the footer
+    .project-images:last-of-type &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 .figure--alt {
     margin-bottom: 3em;

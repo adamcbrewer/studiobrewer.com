@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <article class="section section--alt-lighter project">
+    <article class="project section section--alt-lighter">
 
         <header class="section-header contain">
             <h1 class="title-main">
@@ -32,8 +32,8 @@
             <?php endforeach; ?>
         </section>
 
-        <footer class="project-footer contain contain--text ">
-            <section class="project-social">
+        <footer class="project-footer">
+            <section class="project-social contain contain--text">
                 <?php snippet('project-social'); ?>
             </section>
         </footer>

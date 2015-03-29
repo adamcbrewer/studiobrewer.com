@@ -3,21 +3,24 @@
     padding-bottom: 8.5rem;
     overflow: hidden;
 
+    .content > &:not(.project):last-child {
+        padding-bottom: 17rem;
+    }
+
     .page--contact &,
     .page--about & {
         padding-bottom: 14rem;
     }
+    .page--work & {
+        padding-top: 12rem;
+    }
 
-    &.figure--about {
+    .page--project & {
         padding-bottom: 0;
     }
 
-    .content > &:last-child {
-        padding-bottom: 17rem;
-    }
-
-    .page--work & {
-        padding-top: 12rem;
+    &.figure--about {
+        padding-bottom: 0;
     }
 
 }
