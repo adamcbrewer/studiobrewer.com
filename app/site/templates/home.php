@@ -32,7 +32,7 @@
                     <figure class="feature-figure figurelink">
                         <a href="<?php echo $project->url() ?>">
                             <div class="rollover" style="background-image: url(<?php echo $project->feature()->url() ?>);">
-                                <p><?php echo $page->buttonView() ?></p>
+                                <span class="rollover-content"><?php echo $page->buttonView() ?></span>
                             </div>
                             <img src="<?php echo $project->feature()->url() ?>" alt="<?php echo html($project->title()) ?>">
                         </a>

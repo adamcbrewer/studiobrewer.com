@@ -57,6 +57,15 @@
 
     a:hover & {
         opacity: 1;
+        .rollover-content {
+            transition: 0.8s 0s $easeOutExpo;
+            transform: translateY(0);
+        }
     }
 
+}
+
+.rollover-content {
+    transform: translateY(20px);
+    transition: 0s 0.3s $easeOutExpo;
 }
