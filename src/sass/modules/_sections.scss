@@ -12,7 +12,7 @@
         padding-bottom: 14rem;
     }
     .page--work & {
-        padding-top: 12rem;
+        padding-top: 13rem;
     }
 
     .page--project & {
@@ -34,8 +34,12 @@
         margin: 6rem auto 9rem;
     }
 
-    a {
+    .page--home & a:not(.btn) {
         color: $c-white;
+        border-bottom-color: $c-white;
+        &:hover {
+            border-bottom-color: transparent;
+        }
     }
 }
 
@@ -70,7 +74,7 @@
     padding-bottom: 0em;
 
     .page--work & {
-        margin-bottom: 13rem;
+        margin-bottom: 12.5rem;
     }
 
     .page--project & {

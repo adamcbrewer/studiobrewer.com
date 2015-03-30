@@ -32,17 +32,19 @@
             <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
 
-        <div class="u-flex u-flex--row contain contain--social">
+        <div class="u-flex u-flex--row u-flex--center-v contain contain--social">
             <?php $external_links = array_slice($page->externallinks()->yaml(), 0, 3); ?>
             <?php foreach($external_links as $external_link) : ?>
                 <div class="btn-group btn-group--svgicon u-textcenter">
                     <a target="_blank" href="<?php echo $external_link['url'] ?>">
                         <?php snippet('svgants', array('type' => strtolower($external_link['title']))); ?>
+                        <div class="btn-group--svgicon-content">
+                            <div class="icon icon--block">
+                                <?php echo snippet('icons/' . strtolower($external_link['title'])) ?>
+                            </div>
+                            <span class="section-title section-title--alpha"><?php echo $external_link['title'] ?></span>
+                        </div>
                     </a>
-                    <div class="icon icon--block">
-                        <a target="_blank" href="<?php echo $external_link['url'] ?>"><?php echo snippet('icons/' . strtolower($external_link['title'])) ?></a>
-                    </div>
-                    <a target="_blank" href="<?php echo $external_link['url'] ?>"><span class="section-title section-title--alpha"><?php echo $external_link['title'] ?></span></a>
                 </div>
             <?php endforeach; ?>
         </div>

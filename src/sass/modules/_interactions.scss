@@ -28,11 +28,11 @@ input {
 
 .btn-group--svgicon {
     position: relative;
-    height: 240px;
+    height: 300px;
     width: 240px;
 
     max-width: 240px;
-    max-height: 240px;
+    // max-height: 240px;
 
     display: flex;
     justify-content: center;
@@ -42,6 +42,15 @@ input {
     .icon svg,
     .section-title--alpha {
         transition: 0.15s ease;
+    }
+
+    .section-title {
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    a:hover {
+        border-bottom-color: transparent;
     }
 
     &:hover {
@@ -60,10 +69,24 @@ input {
                 infinite;
 
             stroke-dasharray: $antSize-svg;
-            stroke: $c-foxtrot;
+            stroke: $c-golf;
         }
     }
 
+}
+
+.btn-group--svgicon-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn {
@@ -149,10 +172,6 @@ input {
 }
 
 .svg-ants {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
     width: 100%;
     fill: transparent;
     transition: 0.2s ease stroke, 0s ease stroke-dasharray;
