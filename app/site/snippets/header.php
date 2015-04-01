@@ -19,7 +19,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo $site->url() ?>" />
     <meta property="og:title" content="<?php echo $site->title() ?>" />
-    <meta property="og:image" content="<?php echo url('/assets/img/logo-og.png') ?>" />
+    <meta property="og:image" content="<?php echo url('/assets/img/facebook.gif') ?>" />
 
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
     <script>
