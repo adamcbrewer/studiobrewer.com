@@ -1,9 +1,9 @@
 <?php snippet('header') ?>
 
-    <section class="section section--alt-lighter">
+    <section class="section section--hero section--alt-lighter">
 
         <header class="section-header contain">
-            <h1 class="title-main"><?php echo $page->header() ?></h1>
+            <h1 class="title-hero"><?php echo $page->header() ?></h1>
         </header>
 
         <ol class="works contain">

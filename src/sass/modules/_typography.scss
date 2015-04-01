@@ -21,6 +21,7 @@ p {
     max-width: 27em;
     text-align: center;
 
+    .page--work &,
     .page--contact &,
     .page--about & {
         padding-top: 0;

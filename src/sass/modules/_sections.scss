@@ -26,12 +26,21 @@
 }
 
 .section--hero {
-    color: $c-white;
-    background-color: $c-alpha;
+
+    .page--home &,
+    .page--about &,
+    .page--contact & {
+        color: $c-white;
+        background-color: $c-alpha;
+    }
 
     .page--home & .btn-group,
     .page--contact & .btn-group {
         margin: 6rem auto 9rem;
+    }
+
+    .page--work & {
+        padding-top: 12rem;
     }
 
     .page--home & a:not(.btn) {
