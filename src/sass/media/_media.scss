@@ -33,6 +33,12 @@
 
 @media screen and (max-width: 900px) {
 
+    .contain {
+        max-width: calc(#{$d-siteWidth} + #{$d-sitePadding/2});
+        padding-left: $d-gutter/2;
+        padding-right: $d-gutter/2;
+    }
+
     .tweet {
         width: 100%;
         margin-bottom: $d-gutter;
@@ -61,15 +67,15 @@
 @media screen and (max-width: 800px) {
 
     .header-inner {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         flex-wrap: wrap;
         justify-content: center;
     }
     .logo {
         width: 100%;
         order: 1;
-        margin-bottom: 3rem;
+        margin-bottom: 1.4rem;
     }
 
     .nav {
@@ -138,6 +144,9 @@
 }
 
 @media screen and (max-width: 680px) {
+    body {
+        font-size: 1.8rem;
+    }
     .works {
         justify-content: space-around;
     }
@@ -171,8 +180,8 @@
     .btn {
         display: block;
         .btn-group & {
-            margin: 0 0 $d-gutter;
-
+            margin: 0 0 $d-gutter/2;
+            padding: 0.9em 2em;
         }
     }
     .features {
@@ -185,23 +194,42 @@
     .feature-figure {
         margin-bottom: 2rem;
     }
+    .feature-title {
+        margin: 0 0 0 .3em;
+        line-height: 1.5;
+    }
     .section p {
         // font-size: 1.8rem;
     }
     .section {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .section-header {
+        margin-bottom: $d-gutter;
+    }
+
+    .section--yank .section--hero {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 6rem;
+    }
+    .page--contact .section--yank.section--hero,
+    .page--about .section--yank.section--hero {
+        margin-bottom: 0;
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-    .section--yank {
-        &.section--hero {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-bottom: 8rem;
-            .page--about & {
-                padding-top: 8rem;
-            }
-        }
+    .page--contact .section-header,
+    .page--about .section-header {
+        margin-bottom: 0;
     }
+    .page--contact .title-hero,
+    .page--about .title-hero {
+        margin-bottom: 0;
+    }
+
+
     .figure--about {
         margin-bottom: 0;
     }
@@ -227,10 +255,6 @@
             margin-bottom: 1em;
         }
     }
-    .page--about .section--yank.section--hero {
-        padding-bottom: 16rem;
-        margin-bottom: -20rem;
-    }
     .section-header--stroked {
         margin-bottom: 0;
     }
@@ -240,6 +264,15 @@
         &.u-columns--three {
             columns: 1;
         }
+    }
+    .icon--small {
+        top: 0.4em;
+    }
+    .tweets {
+        margin-bottom: $d-gutter/2;
+    }
+    .content > .section:not(.project):last-child {
+        padding-bottom: 5em;
     }
 
 }
@@ -258,6 +291,9 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+    .nav-link {
+        font-size: 1.4rem;
+    }
     .header .nav .nav-link,
     .nav .nav-link {
         margin-left: 1em;
@@ -269,25 +305,22 @@
         font-size: 2.4rem;
     }
     .section-header {
-        .page--about & {
-            margin-bottom: 3rem;
-        }
         .page--work & {
             margin-bottom: 8rem;
         }
     }
-    .page--about {
+    // .page--about {
 
-        .section--yank.section--hero {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
-            margin-bottom: -14rem;
-        }
+    //     .section--yank.section--hero {
+    //         padding-top: 6rem;
+    //         padding-bottom: 6rem;
+    //         margin-bottom: -14rem;
+    //     }
 
-        .contain--narrow strong {
-            font-size: 2.2rem;
-        }
-    }
+    //     .contain--narrow strong {
+    //         font-size: 2.2rem;
+    //     }
+    // }
     .footer br {
         display: none;
     }

@@ -147,7 +147,9 @@ Tweet.prototype.createHumanDate = function () {
     var month = this.months.short[date.getMonth()]
     var day = date.getDate();
 
-    if (day < 10) day = '0' + day;
+    day += '';
+
+    // if (day < 10) day = '0' + day;
 
     day += this.getDaySuffix(day);
 
@@ -166,15 +168,18 @@ Tweet.prototype.getDaySuffix = function (day) {
     var suffix = 'th';
 
     switch (day) {
+        case '1':
         case '01':
         case '21':
         case '31':
             suffix = 'st';
             break;
+        case '2':
         case '02':
         case '22':
             suffix = 'nd';
             break;
+        case '3':
         case '03':
         case '23':
             suffix = 'rd';
