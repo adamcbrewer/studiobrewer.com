@@ -43,3 +43,9 @@ RewriteRule ^(.*) index.php [L]
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTP_HOST} ^www\.studiobrewer\.com$ [NC]
+  RewriteRule ^(.*)$ http://studiobrewer.com/$1 [L,R=301]
+</IfModule>
