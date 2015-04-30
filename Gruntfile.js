@@ -1,153 +1,325 @@
-module.exports = function(grunt) {
+'use strict';
 
-    // Load the all the plugins that Grunt requires
-    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+/**
+ * Grunt module
+ */
+module.exports = function (grunt) {
 
+    require('time-grunt')(grunt);
 
     /**
-     * Grunt config vars
-     *
+     * Dynamically load npm tasks
      */
-    var config = {};
-    config.assetsDir = 'assets/';
-    config.cssFilenameOutput = 'styles.css';
-    config.jsFilenameOutput = 'build.min.js';
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-
+    /**
+     * FireShell Grunt config
+     */
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        config: config,
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-            '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-            '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-            ' Licensed <%= props.license %> */\n',
-        meta: {
-            version: '0.1.0'
-        },
-        watch: {
-            options: { nospawn: true },
-            env: {
-                // Sstatic and environment files
-                files: [
-                    "Gruntfile.js",
-                    "*.html",
-                    "*.php"
-                ],
-                options: { livereload: true },
-                tasks: [
 
-                ]
-            },
-            js: {
-                files: [
-                    '<%= config.assetsDir %>js/*.js',
-                    '<%= config.assetsDir %>js/**/*.js'
-                ],
-                options: { livereload: true },
-                tasks: [
-                    'uglify:development'
-                ]
-            },
-            less: {
-                files: [
-                    '<%= config.assetsDir %>less/**/*.less',
-                ],
-                options: { livereload: true },
-                tasks: [
-                    'less:development'
+        pkg: grunt.file.readJSON('package.json'),
+
+        /**
+         * Set project info
+         */
+        project: {
+            src: 'src',
+            app: 'app',
+            assets: '<%= project.app %>/assets',
+            css: [
+                '<%= project.src %>/sass/screen.scss'
+            ],
+            js: [
+                '<%= project.src %>/js/libs/*.js',
+                '<%= project.src %>/js/*.js'
+            ],
+            bower: {
+                js: [
+                    // manually add files here
                 ]
             }
         },
-        less: {
-            development: {
-                options: {
-                    // paths: ["assets/css"]
-                },
-                files: {
-                    '<%= config.assetsDir %>css/styles.css': '<%= config.assetsDir %>less/core.less',
-                }
-            },
-            production: {
-                options: {
-                    compress: true,
-                    // paths: ["assets/css"],
-                    cleancss: true,
-                    // modifyVars: {
-                    //     imgPath: '"http://mycdn.com/path/to/images"',
-                    //     bgColor: 'red'
-                    // }
-                },
-                files: {
-                    '<%= config.assetsDir %>css/styles.css': '<%= config.assetsDir %>less/core.less',
-                }
-            }
+
+        /**
+         * Project banner
+         */
+        tag: {
+          banner:   '/*!\n' +
+                    ' * <%= pkg.name %> - <%= pkg.url %>\n' +
+                    ' * @author <%= pkg.author %>\n' +
+                    ' * @version <%= pkg.version %>\n' +
+                    ' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
+                    ' */\n'
         },
+
+        /**
+         * Clean files and folders
+         */
+        clean: {
+            all: [
+                '<%= project.src %>/js/libs',
+                '<%= project.assets %>/css/*.css',
+                '<%= project.assets %>/js/*.js',
+                '<%= project.assets %>/img/*/**',
+                '<%= project.assets %>/img/{,*/,**/}*.{jpg,png,gif,svg}'
+            ]
+        },
+
+        /**
+         * Uglify (minify) JavaScript files
+         */
         uglify: {
-            development: {
+            dev: {
                 options: {
-                    compress: false,
-                    preserveComments: true,
-                    mangle: false,
+                    banner: '<%= tag.banner %>',
                     beautify: true,
-                    report: 'min'
+                    compress: false,
+                    mangle: false,
+                    preserveComments: 'all'
                 },
-                files: [
-                    {
-                        src: [
-                            '<%= config.assetsDir %>js/libs/jquery-1.8.0.min.js',
-                            '<%= config.assetsDir %>js/libs/jquery.il.min.js',
-                            '<%= config.assetsDir %>js/libs/iCanHaz.js',
-                            '<%= config.assetsDir %>js/libs/hammer.js',
-                            '<%= config.assetsDir %>js/libs/jquery.hammer.js',
-                            '<%= config.assetsDir %>js/modules/portfolio.js',
-                            '<%= config.assetsDir %>js/modules/script.js',
-                        ],
-                        dest: '<%= config.assetsDir %>js/<%= config.jsFilenameOutput %>'
-                    }
+                files: {
+                    '<%= project.assets %>/js/script.js': '<%= project.js %>'
+                }
+            },
+            dist: {
+                options: {
+                    banner: '<%= tag.banner %>',
+                    beautify: false,
+                    compress: {},
+                    mangle: false,
+                    preserveComments: false
+                },
+                files: {
+                    '<%= project.assets %>/js/script.min.js': '<%= project.js %>'
+                }
+            }
+        },
+
+        /**
+         * Compile Sass/sass files
+         */
+        sass: {
+            dev: {
+                options: {
+                    style: 'expanded',
+                    banner: '<%= tag.banner %>'
+                },
+                files: {
+                    '<%= project.assets %>/css/styles.unprefixed.css': '<%= project.css %>'
+                }
+            },
+            dist: {
+                options: {
+                    style: 'compressed',
+                    banner: '<%= tag.banner %>'
+                },
+                files: {
+                    '<%= project.assets %>/css/styles.unprefixed.css': '<%= project.css %>'
+                }
+            }
+        },
+
+        /**
+         * Auto vendor prefixes
+         */
+        autoprefixer: {
+            options: {
+                browsers: [
+                    'last 2 version',
+                    'safari 6',
+                    'ie 9',
+                    'opera 12.1',
+                    'ios 6',
+                    'android 4'
                 ]
             },
-            production: {
+            dev: {
+                files: {
+                    '<%= project.assets %>/css/styles.prefixed.css': ['<%= project.assets %>/css/styles.unprefixed.css']
+                }
+            },
+            dist: {
+                files: {
+                    '<%= project.assets %>/css/styles.prefixed.css': ['<%= project.assets %>/css/styles.unprefixed.css']
+                }
+            }
+        },
+
+        /**
+         * CSS Minification
+         */
+         cssmin: {
+            all: {
+                files: {
+                    '<%= project.assets %>/css/styles.css': [
+                        '<%= project.assets %>/css/styles.prefixed.css'
+                    ]
+                }
+            }
+        },
+
+        /**
+         * Stylestats
+         */
+        stylestats: {
+            src: ['<%= project.assets %>/css/styles.prefixed.css']
+        },
+
+        /**
+         * Copy required application files
+         */
+        copy: {
+            img: {
+                files: [
+                    {
+                        expand: true,
+                        flatten: false,
+                        cwd: '<%= project.src %>/img/',
+                        src: [
+                            '{,*/,*/*/}*.{jpg,png,gif,svg}'
+                        ],
+                        dest: '<%= project.assets %>/img',
+                    },
+                ]
+            },
+            bower: {
+                files: [
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: '<%= project.bower.js %>',
+                        dest: '<%= project.src %>/js/libs',
+                    }
+                ]
+            }
+        },
+
+        imagemin: {
+            all: {
                 options: {
-                    compress: true,
-                    preserveComments: false,
-                    mangle: false,
-                    beautify: false,
-                    report: 'min'
+                    optimizationLevel: 4,
+                    progressive: true,
+                    pngquant: true
                 },
                 files: [
                     {
+                        expand: true,
+                        cwd: '<%= project.assets %>/img',
                         src: [
-                            '<%= config.assetsDir %>js/libs/jquery-1.8.0.min.js',
-                            '<%= config.assetsDir %>js/libs/jquery.il.min.js',
-                            '<%= config.assetsDir %>js/libs/iCanHaz.js',
-                            '<%= config.assetsDir %>js/libs/hammer.js',
-                            '<%= config.assetsDir %>js/libs/jquery.hammer.js',
-                            '<%= config.assetsDir %>js/modules/portfolio.js',
-                            '<%= config.assetsDir %>js/modules/script.js',
+                            '*.{png,jpg,gif}',
+                            '**/*.{png,jpg,gif}',
                         ],
-                        dest: '<%= config.assetsDir %>js/<%= config.jsFilenameOutput %>'
+                        dest: '<%= project.assets %>/img'
                     }
+                ]
+            }
+        },
+
+        modernizr: {
+            all: {
+                devFile : '',
+                outputFile : "<%= project.assets %>/js/modernizr.build.js",
+                parseFiles : false,
+                uglify: true,
+                extra : {
+                    load : false,
+                },
+                tests : [
+                    'touch',
+                    'flexbox'
+                ]
+            }
+        },
+
+        /**
+         * Watching development files and run concat/compile tasks
+         */
+        watch: {
+            concat: {
+                files: '<%= project.src %>/js/{,*/}*.js',
+                tasks: [
+                    'uglify:dev'
+                ]
+            },
+            sass: {
+                files: '<%= project.src %>/sass/{,*/}*.{scss,sass}',
+                tasks: [
+                    'sass:dev',
+                    'autoprefixer:dev'
                 ]
             }
         }
     });
 
-
-    // For local developing
+    /**
+     * Default task
+     * Run `grunt` on the command line
+     */
     grunt.registerTask('default', [
+        'copy:img',
+        'copy:bower',
+        'sass:dev',
+        'autoprefixer:dev',
+        'uglify:dev',
+        'modernizr',
         'watch'
     ]);
 
-    // only process javascript files
-    grunt.registerTask('js', [
-        'uglify:development'
+    /**
+     * First task on new project
+     */
+    grunt.registerTask('init', [
+        'copy:bower'
     ]);
 
-    // prep files for production
-    grunt.registerTask('build', [
-        'less:production',
-        'uglify:production'
-    ]);
+    /**
+     * CSS Task
+     */
+    grunt.registerTask('css', function () {
+        var target = grunt.option('target') || 'dist';
+        var tasks = [
+            'sass:' + target,
+            'autoprefixer:' + target,
+            'stylestats'
+        ];
+        if (target === 'dist') tasks.splice(2, 0, 'cssmin');
+        grunt.task.run(tasks);
+    });
+
+    /**
+     * Javascript Task
+     */
+    grunt.registerTask('js', function () {
+        var target = grunt.option('target') || 'dist';
+        grunt.task.run([
+            'uglify:' + target,
+            'modernizr'
+        ]);
+    });
+
+    /**
+     * Build task
+     * Run `grunt build` on the command line
+     * Then compress all JS/CSS files
+     */
+    grunt.registerTask('build', function () {
+        var target = grunt.option('target') || 'dist';
+        grunt.task.run([
+            'clean',
+            // Bower files
+            'copy:bower',
+            // Images
+            'copy:img',
+            'imagemin',
+            // JavaScript
+            'uglify:'+ target,
+            'modernizr',
+            // CSS
+            'sass:'+ target,
+            'autoprefixer:'+ target,
+            'cssmin',
+            'stylestats'
+        ]);
+    });
 
 };

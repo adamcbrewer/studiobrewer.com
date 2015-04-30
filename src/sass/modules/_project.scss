@@ -1,0 +1,52 @@
+.project {
+    text-align: left;
+    // padding-bottom: 13rem;
+}
+
+.project-intro {
+    margin-bottom: 16rem;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-intro-details {
+    font-size: $f-size-3;
+    line-height: 1.8;
+    flex: 1;
+    order: 1;
+}
+.project-intro-summary {
+    font-size: $f-size-2;
+    flex: 1;
+    order: 2;
+    margin-left: $d-gutter;
+}
+
+.project-images {
+    margin: 0 auto 16rem;
+    overflow: hidden;
+
+    &:first-of-type {
+        margin-bottom: 6rem;
+    }
+
+    // progressive enhancement
+    .flexbox & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.project-footer {
+    clear: both;
+    font-size: $f-size-2;
+    padding: 17rem 0;
+    background: $c-white;
+}
+
+.project-social {
+    text-align: center;
+}

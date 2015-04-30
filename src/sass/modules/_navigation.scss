@@ -1,0 +1,107 @@
+a {
+    color: $c-alpha;
+    text-decoration: none;
+    transition:
+        0.3s ease border-color,
+        0.3s ease color;
+    border-bottom: 2px solid transparent;
+
+    svg {
+        transition: 0.3s ease fill;
+    }
+
+    figure & {
+        border: none;
+    }
+
+    .icon &,
+    .icon &:hover {
+        border: none
+    }
+}
+a:hover {
+    border-bottom-color: currentcolor;
+    .icon svg {
+        fill: $c-bravo;
+    }
+}
+a:active {}
+a:focus {}
+
+.nav {}
+
+.nav--one {}
+.nav--two { text-align: right; }
+.nav--footer {
+    padding: 1rem 0 8rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    color: $c-charlie;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background: currentColor;
+        content: "";
+        transition: 0.3s width $easeOutExpo;
+    }
+
+    &:hover {
+        color: $c-alpha;
+        .page--home & {
+            color: $c-white;
+        }
+        &:after {
+            width: 100%;
+        }
+    }
+
+    &.is-active {
+        color: $c-alpha;
+        .header &:after {
+            content: none;
+        }
+        .page--home & {
+            color: $c-white;
+        }
+    }
+
+    .page--home & {
+        color: $c-bravo;
+    }
+
+    $space: 80px;
+    .nav--one & {
+        margin-right: $space;
+        &:last-child { margin-right: 0; }
+    }
+    .nav--two & {
+        margin-left: $space;
+        &:first-child { margin-left: 0; }
+    }
+
+    $space: 50px;
+    .nav--footer & {
+        margin: 0 $space;
+        color: $c-bravo;
+        backface-visibility: hidden;
+
+        &:after {
+            bottom: -4px;
+            color: $c-white;
+        }
+
+        &:hover {
+            color: $c-white;
+        }
+    }
+}

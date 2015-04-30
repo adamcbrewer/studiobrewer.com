@@ -1,0 +1,342 @@
+@media screen and (max-width: 1024px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .title-hero {
+        font-size: 2.4rem;
+        max-width: 20em;
+        br {
+            display: none;
+        }
+    }
+
+    .tweets {
+        font-size: 1.6rem;
+    }
+
+    .client {
+        width: calc(100%/4);
+    }
+
+    .project-intro {
+        display: block;
+    }
+
+    .project-intro-summary {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .contain {
+        max-width: calc(#{$d-siteWidth} + #{$d-sitePadding/2});
+        padding-left: $d-gutter/2;
+        padding-right: $d-gutter/2;
+    }
+
+    .tweet {
+        width: 100%;
+        margin-bottom: $d-gutter;
+    }
+
+    .work {
+        width: $d-columns-6;
+
+        .flexbox & {
+            &:nth-child(3n) {
+                margin-right: $d-gutter / $d-siteWidth * 100%
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+        }
+    }
+
+    .client {
+        width: calc(100%/3);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-inner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 100%;
+        order: 1;
+        margin-bottom: 1.4rem;
+    }
+
+    .nav {
+        width: 50%;
+        text-align: center;
+    }
+    .header .nav .nav-link {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    .nav--one {
+        justify-content: flex-end;
+        order: 2;
+    }
+    .nav--two {
+        justify-content: flex-start;
+        order: 3;
+    }
+    .title-hero {
+        padding-top: 0;
+        font-size: $f-size-2;
+    }
+    .nav--footer {
+        width: 100%;
+        .nav-link {
+            margin: 0 2em;
+        }
+    }
+    .page--home .section--hero .btn-group {
+        margin-bottom: 6rem;
+    }
+    .page--about .section--yank.section--hero {
+        padding-bottom: 20rem;
+        margin-bottom: -26rem;
+    }
+    .client {
+        width: calc(100%/2);
+    }
+    .project-intro-summary,
+    .project-intro-details {
+        float: none;
+        width: auto;
+    }
+    .project-intro-summary {
+        margin-bottom: 5rem;
+    }
+    .project-furthermore.u-columns {
+        max-width: none;
+        &.u-columns--three {
+            columns: 2;
+        }
+    }
+    .project-signoff {
+        float: none;
+        max-width: none;
+    }
+    .project-social {
+        float: none;
+    }
+
+    .layout {
+        max-width: none;
+        width: 100%;
+        float: none !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        font-size: 1.8rem;
+    }
+    .works {
+        justify-content: space-around;
+    }
+    .work {
+        width: 100%;
+        .flexbox & {
+            &:nth-child(n) {
+                margin-right: 0;
+            }
+
+        }
+    }
+    .work-details {
+        padding: 0;
+    }
+    .skills {
+        padding: 0 1em;
+        &.u-columns {
+            columns: 1;
+        }
+    }
+    .skill {
+        width: 100%;
+    }
+    .taglist {
+        padding-left: 1em;
+    }
+    .btn-group {
+        width: 100%;
+    }
+    .btn {
+        display: block;
+        .btn-group & {
+            margin: 0 0 $d-gutter/2;
+            padding: 0.9em 2em;
+        }
+    }
+    .features {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .feature {
+        margin-bottom: 5rem;
+    }
+    .feature-figure {
+        margin-bottom: 2rem;
+    }
+    .feature-title {
+        margin: 0 0 0 .3em;
+        line-height: 1.5;
+    }
+    .section p {
+        // font-size: 1.8rem;
+    }
+    .section {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .section-header {
+        margin-bottom: $d-gutter;
+    }
+
+    .section--yank .section--hero {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 6rem;
+    }
+    .page--contact .section--yank.section--hero,
+    .page--about .section--yank.section--hero {
+        margin-bottom: 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .page--contact .section-header,
+    .page--about .section-header {
+        margin-bottom: 0;
+    }
+    .page--contact .title-hero,
+    .page--about .title-hero {
+        margin-bottom: 0;
+    }
+
+
+    .figure--about {
+        margin-bottom: 0;
+    }
+    .figure-caption {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-inner {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .nav--footer {
+        text-align: justify;
+        padding-bottom: 1rem;
+
+        &:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+    }
+    .section-header--stroked {
+        margin-bottom: 0;
+    }
+    .project-furthermore.u-columns {
+        max-width: none;
+        &.u-columns--two,
+        &.u-columns--three {
+            columns: 1;
+        }
+    }
+    .icon--small {
+        top: 0.4em;
+    }
+    .tweets {
+        margin-bottom: $d-gutter/2;
+    }
+    .content > .section:not(.project):last-child {
+        padding-bottom: 5em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .contact-email {
+        font-size: 1.8rem;
+    }
+    .tweet {
+        padding: $d-gutter;
+    }
+    .tweet-body {
+        font-size: 1.8rem;
+    }
+    .contain--header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .nav-link {
+        font-size: 1.4rem;
+    }
+    .header .nav .nav-link,
+    .nav .nav-link {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .title-hero,
+    .title-main {
+        // margin-bottom: 1em;
+        font-size: 2.4rem;
+    }
+    .section-header {
+        .page--work & {
+            margin-bottom: 8rem;
+        }
+    }
+    // .page--about {
+
+    //     .section--yank.section--hero {
+    //         padding-top: 6rem;
+    //         padding-bottom: 6rem;
+    //         margin-bottom: -14rem;
+    //     }
+
+    //     .contain--narrow strong {
+    //         font-size: 2.2rem;
+    //     }
+    // }
+    .footer br {
+        display: none;
+    }
+
+}
+
+
+/**
+ * Retina.
+ * Currently only set to 'double' retina, meaning, assets only have to be twice the normal size,
+ * @reference http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/
+ */
+@media  (-webkit-min-device-pixel-ratio: 2),
+        (min--moz-min-device-pixel-ratio: 2),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+}

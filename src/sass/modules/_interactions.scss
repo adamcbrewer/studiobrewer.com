@@ -1,0 +1,185 @@
+::-webkit-input-placeholder {}
+:-moz-placeholder {}
+
+::-webkit-validation-bubble-message { padding: 40px; }
+
+input {
+    &:required {}
+    &:optional {}
+    &:valid {}
+    &:invalid {}
+    &:default {}
+    &:focus {}
+
+    &:enabled {}
+    &:disabled {}
+    &:checked {}
+    &:indeterminate {} // un-selected radio buttons
+}
+
+.btn-group {
+    text-align: center;
+    margin: 1em auto;
+
+    .btn {
+        margin: 0 0.5em;
+    }
+}
+
+.btn-group--svgicon {
+    position: relative;
+    height: 300px;
+    width: 240px;
+
+    max-width: 240px;
+    // max-height: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .icon svg,
+    .section-title--alpha {
+        transition: 0.15s ease;
+    }
+
+    .section-title {
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    a:hover {
+        border-bottom-color: transparent;
+    }
+
+    &:hover {
+        .icon svg {
+            fill: $c-foxtrot;
+        }
+        .section-title--alpha {
+            color: $c-foxtrot;
+        }
+
+        .svg-ants {
+            animation:
+                ants-svg
+                $marchSpeed
+                steps($marchLunges)
+                infinite;
+
+            stroke-dasharray: $antSize-svg;
+            stroke: $c-golf;
+        }
+    }
+
+}
+
+.btn-group--svgicon-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $c-alpha;
+    border: 3px solid $c-alpha;
+    display: inline-block;
+    padding: 0.9em 4em;
+    min-width: 220px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    transition:
+        0.15s 0.0s ease;
+
+    &:hover {
+        border-color: transparent;
+        color: $c-foxtrot;
+        .btn-ants {
+            opacity: 1;
+        }
+    }
+}
+
+.btn--primary {
+    color: $c-white;
+    border-color: $c-bravo;
+    background-color: $c-bravo;
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $c-bravo;
+    }
+}
+
+.btn-ants {
+    transition: 0.15s 0.0s ease;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 0;
+}
+
+.ant {
+    position: absolute;
+
+    &.ant--left { left: 0; }
+    &.ant--right { right: 0; }
+    &.ant--top { top: 0; }
+    &.ant--bottom { bottom: 0; }
+
+    &.ant--top,
+    &.ant--bottom {
+        left: 0;
+        width: 100%;
+        height: 3px;
+        animation: ants-horizontal $marchSpeed linear infinite;
+        background-image: $grad-secondary-h;
+        background-size: $antSize-css $antSize-css;
+        .btn--primary & {
+            background-image: $grad-primary-h;
+        }
+    }
+    &.ant--left,
+    &.ant--right {
+        top: 0;
+        height: 100%;
+        width: 3px;
+        animation: ants-vertical $marchSpeed linear infinite;
+        background-image: $grad-secondary-v;
+        background-size: $antSize-css $antSize-css;
+        .btn--primary & {
+            background-image: $grad-primary-v;
+        }
+    }
+
+}
+
+.svg-ants {
+    width: 100%;
+    fill: transparent;
+    transition: 0.2s ease stroke, 0s ease stroke-dasharray;
+    stroke-dasharray: 0;
+    stroke: $c-alpha;
+
+    &.svg-ants--circle,
+    &.svg-ants--square {
+    }
+
+}

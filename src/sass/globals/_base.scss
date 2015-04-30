@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+::-moz-selection {
+    background-color: $c-alpha;
+    color: $c-white;
+}
+::selection {
+    background-color: $c-alpha;
+    color: $c-white;
+}
+a::-moz-selection {
+    background-color: #FF00D5;
+    color: $c-white;
+}
+a::selection {
+    background-color: #FF00D5;
+    color: $c-white;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-size: 62.5%;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+body {
+    font-family: $ff;
+    background-color: $c-bg;
+    color: $c-text;
+    font-size: 2rem;
+    font-weight: $fw;
+    line-height: 1.7;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .js.no-font & {
+        transition: 0.4s;
+        opacity: 0;
+    }
+    .js.wf-inactive &,
+    .js.wf-active & {
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+p {
+    margin: 1.8em auto;
+}
+p:last-child {
+    margin-bottom: 0;
+}

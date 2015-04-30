@@ -1,0 +1,18 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes ants-horizontal {
+  from { background-position: 0 0; }
+  to   { background-position: $antSize-css 0; }
+}
+@keyframes ants-vertical {
+  from { background-position: 0 0; }
+  to   { background-position: 0 $antSize-css; }
+}
+
+@keyframes ants-svg {
+  0%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: $antSize-svg * 2; }
+}

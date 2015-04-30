@@ -1,0 +1,35 @@
+.features {
+    margin: 5em 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.feature {
+    margin-bottom: 8.8rem;
+}
+
+.feature-figure {
+    margin-bottom: 2.5em;
+    position: relative;
+
+    img {
+        display: block;
+    }
+}
+
+.feature-title {
+    font-size: $f-size-2;
+    font-weight: 400;
+    color: $c-foxtrot;
+    margin: 0 0 0.6em;
+    line-height: 1;
+    a {
+        color: inherit;
+    }
+}
+
+.feature-summary {
+    margin: 0;
+    font-size: $f-size-2;
+    color: $c-golf;
+}

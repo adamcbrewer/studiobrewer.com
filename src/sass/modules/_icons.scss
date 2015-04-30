@@ -1,0 +1,37 @@
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    display: inline-block;
+
+    svg {
+        fill: $c-alpha;
+    }
+}
+
+.icon--light {
+    fill: $c-white;
+}
+
+.icon--small {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.2em;
+    position: relative;
+    top: 0.3em;
+}
+
+.icon--block {
+    display: block;
+    margin-bottom: 1em;
+
+    .btn-group--svgicon & {
+        margin: 0;
+        display: inline-block;
+
+        & + a {
+            margin-top: 4px;
+        }
+    }
+
+}

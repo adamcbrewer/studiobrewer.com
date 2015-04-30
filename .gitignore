@@ -1,3 +1,51 @@
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+# results
+npm-debug.log
 node_modules
+
+## Bower
 bower_components
-/projects/*
+
+## Sass
+.sass-cache
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Others
+temp
+
+## build files
+app/site/accounts
+app/site/cache
+app/assets
+app/assets/avatars/*
+!app/assets/avatars/.gitignore
+app/thumbs/*
+!app/thumbs/.gitignore*
+app/site/config/config.*.php
+app/content/*
+!app/content/.gitkeep
+app/vendor/**/*

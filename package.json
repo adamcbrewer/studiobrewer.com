@@ -1,15 +1,28 @@
 {
-  "name": "studiobrewer.com",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "grunt-cli": "^0.1.13"
+  "name": "fireshell",
+  "title": "Quick-start front-end builds. Forked from http://getfireshell.com by Todd Motto",
+  "url": "https://github.com/adamcbrewer/fireshell",
+  "author": "Adam Brewer",
+  "copyright": "2014",
+  "version": "1.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/adamcbrewer/fireshell.git"
   },
   "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-uglify": "^0.4.0",
-    "grunt-contrib-less": "^0.11.0",
-    "matchdep": "^0.3.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-modernizr": "^0.5.2",
+    "grunt-stylestats": "~0.1.2",
+    "matchdep": "~0.1.2",
+    "time-grunt": "^1.0.0"
   }
 }

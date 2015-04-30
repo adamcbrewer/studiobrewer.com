@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "app/vendor"
+    },
+    "require": {
+        // "tumblr/tumblr": "dev-master"
+    }
+}
