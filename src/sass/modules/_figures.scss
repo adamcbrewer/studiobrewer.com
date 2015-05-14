@@ -53,7 +53,7 @@
     background-blend-mode: multiply;
     background-size: cover;
     background-color: $c-alpha;
-    font-size: 3rem;
+    font-size: $f-size-1;
     transition: 0.3s ease;
 
     a:hover & {
