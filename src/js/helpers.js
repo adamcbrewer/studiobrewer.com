@@ -46,7 +46,7 @@ Tweet.prototype.createTweetNode = function () {
     this
         .insertTime()
         .insertText()
-        .insertTweetLink();
+        .insertTweetLinks();
 
 };
 
@@ -71,8 +71,12 @@ Tweet.prototype.insertText = function () {
 
 };
 
-Tweet.prototype.insertTweetLink = function () {
-    this.$tweet.querySelectorAll('.tweet-link')[0].href = "https://twitter.com/" + this.screenName + "/status/" + this.tweet.id_str;
+Tweet.prototype.insertTweetLinks = function () {
+    var links = this.$tweet.querySelectorAll('.tweet-link');
+    var count = links.length;
+    while (count--) {
+        links[count].href = "https://twitter.com/" + this.screenName + "/status/" + this.tweet.id_str;
+    }
     return this;
 };
 
