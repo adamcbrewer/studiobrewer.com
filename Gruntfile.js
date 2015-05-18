@@ -195,7 +195,7 @@ module.exports = function (grunt) {
         },
 
         imagemin: {
-            all: {
+            default: {
                 options: {
                     optimizationLevel: 4,
                     progressive: true,
@@ -212,7 +212,28 @@ module.exports = function (grunt) {
                         dest: '<%= project.assets %>/img'
                     }
                 ]
+            },
+            svg: {
+                options: {
+                    svgoPlugins: [
+                        { removeViewBox: false },
+                        { removeUselessStrokeAndFill: false },
+                        { removeEmptyAttrs: false }
+                    ]
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= project.assets %>/img',
+                        src: [
+                            '*.svg',
+                            '**/*.svg',
+                        ],
+                        dest: '<%= project.assets %>/img'
+                    }
+                ]
             }
+
         },
 
         modernizr: {
