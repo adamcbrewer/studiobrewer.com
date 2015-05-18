@@ -13,13 +13,17 @@ p {
 }
 
 .title-hero {
-    padding-top: 2.2em;
-    margin: 0 auto 2.2em;
+    // padding-top: 2.2em;
+    margin: 0 auto 7rem;
     font-size: $f-size-1;
     line-height: 1.4;
     font-weight: 400;
-    max-width: 27em;
+    max-width: 21em;
     text-align: center;
+
+    .page--home & {
+
+    }
 
     .page--work &,
     .page--contact &,

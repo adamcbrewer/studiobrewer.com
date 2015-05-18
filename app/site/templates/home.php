@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <header class="section section--hero section--yank u-textcenter">
+    <header class="section section--hero section--topo u-textcenter">
 
         <div class="contain inner">
             <h1 class="title-hero">
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <aside class="contain contain--narrow">
+        <aside class="availability contain contain--narrow">
             <small><?php echo $page->status()->markdown() ?></small>
         </aside>
 

@@ -9,7 +9,10 @@
 
 .header {
     .page--home & {
-        background-color: $c-alpha;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
     }
 }
 
@@ -18,13 +21,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
     flex: 1;
+
+    .page--home & {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
 
     .nav {
         display: flex;
         align-self: center;
+    }
+}
+
+.availability {
+
+    .page--home & {
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        right: 0;
     }
 }
 
