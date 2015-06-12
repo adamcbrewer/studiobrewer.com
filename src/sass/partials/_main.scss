@@ -108,33 +108,3 @@
     padding-top: 10rem;
     padding-bottom: 15rem;
 }
-
-.contain {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: calc(#{$d-siteWidth} + #{$d-sitePadding});
-    padding-left: $d-gutter;
-    padding-right: $d-gutter;
-}
-
-.contain--project-info {
-    max-width: calc(#{($d-column * 10) + ($d-gutter * 9)} + #{$d-sitePadding});
-}
-.contain--header,
-.contain--social {
-    max-width: ($d-column * 9) + ($d-gutter * 8);
-}
-
-.contain--text {
-    max-width: ($d-column * 7) + ($d-gutter * 6);
-}
-.contain--narrow {
-    max-width: ($d-column * 6) + ($d-gutter * 7);
-}
-.contain--features {
-    max-width: $d-features;
-}
-.contain--clients {
-    max-width: calc(#{($d-column * 10) + ($d-gutter * 10)} + #{$d-sitePadding});
-}

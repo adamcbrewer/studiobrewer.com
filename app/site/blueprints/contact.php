@@ -2,28 +2,21 @@
 
 title: Contact
 pages: false
-files:
-  sortable: true
-  fields:
-    caption:
-      label: Caption
-      type: text
+files: false
 fields:
   title:
     label: Page Title
     type:  text
 
   _headerOne:
-    label: Section - Contact Email
+    label: Section - Contact Details
     type: headline
   email_text:
     label: Email Text
     type: text
-  _infoTwo:
-    label: Your Contact Photo
-    type: info
-    text: >
-      Make sure to name your contact photo _contact_, in either .jpg of .png format.
+  phone:
+    label: Phone Number
+    type: text
   text:
     label: Text
     type:  textarea
@@ -31,12 +24,6 @@ fields:
   _headerTwo:
     label: Section - Social Links
     type: headline
-  sectionTitleTwo:
-    label: Section Title
-    type: text
-  text:
-    label: Text
-    type:  textarea
   externallinks:
       label: Social Links
       type: structure
