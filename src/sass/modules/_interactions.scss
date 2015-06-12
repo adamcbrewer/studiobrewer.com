@@ -57,8 +57,15 @@ input {
         .icon svg {
             fill: $c-foxtrot;
         }
-        .section-title--alpha {
+        .section-title--alpha,
+        .icon-label {
             color: $c-foxtrot;
+        }
+
+        .icon-label {
+            opacity: 1;
+            transition: 0.8s 0s $easeOutExpo;
+            transform: translateY(10px);
         }
 
         .svg-ants {
@@ -69,7 +76,7 @@ input {
                 infinite;
 
             stroke-dasharray: $antSize-svg;
-            stroke: $c-golf;
+            stroke: $c-delta;
         }
     }
 

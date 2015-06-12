@@ -21,10 +21,10 @@
                     <a target="_blank" href="<?php echo $external_link['url'] ?>">
                         <?php snippet('svgants', array('type' => strtolower($external_link['title']))); ?>
                         <div class="btn-group--svgicon-content">
-                            <div class="icon icon--block">
+                            <div class="icon icon--block icon--large icon--bravo">
                                 <?php echo snippet('icons/' . strtolower($external_link['title'])) ?>
                             </div>
-                            <span class=""><?php echo $external_link['title'] ?></span>
+                            <span class="icon-label icon-label--social"><?php echo $external_link['title'] ?></span>
                         </div>
                     </a>
                 </div>
