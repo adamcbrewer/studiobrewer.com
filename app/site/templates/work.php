@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <section class="section section--hero section--alt-lighter">
+    <section class="section section--alt-lighter">
 
         <header class="section-header contain">
             <h1 class="title-section"><?php echo $page->header() ?></h1>
@@ -20,7 +20,7 @@
                 </figure>
                 <section class="work-details">
                     <h2 class="work-title"><a href="<?php echo $project->url() ?>"><?php echo $project->title(); ?></a></h2>
-                    <h3 class="work-summary"><?php echo $project->summary() ?></h3>
+                    <h3 class="work-summary"><a href="<?php echo $project->url() ?>"><?php echo $project->summary() ?></a></h3>
                 </section>
             </li>
             <?php endforeach; ?>

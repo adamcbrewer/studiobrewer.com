@@ -35,7 +35,9 @@
         display: block;
     }
 }
-.work-details {}
+.work-details {
+    text-align: center;
+}
 
 .work-title,
 .work-summary {
@@ -45,16 +47,15 @@
     line-height: 1.6;
 }
 .work-title {
-    a {
-        color: inherit;
-    }
+    color: $c-bravo;
+    > a { color: inherit; }
 }
 .work-summary {
-    color: $c-golf;
+    color: $c-alpha;
+    > a { color: inherit; }
 }
 
 .work-thumb:hover + .work-details a,
 .work-title a:hover {
-    color: $c-alpha;
     border-bottom-color: $c-alpha;
 }
