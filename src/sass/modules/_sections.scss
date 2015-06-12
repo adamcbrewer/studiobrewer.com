@@ -53,11 +53,11 @@
 // }
 
 .section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     position: relative;
 
-    .page--home & {
+    .page--home &.section--topo {
         padding-top: 29rem;
         padding-bottom: 29rem;
     }
@@ -72,9 +72,6 @@
 .section--topo {
     padding-top: 8.5rem;
     padding-bottom: 6rem;
-    background-image: url(../img/topography.svg);
-    background-position: 50% 50%;
-    background-size: 3000px;
 }
 
 // .section--yank {
@@ -98,18 +95,18 @@
 }
 
 .section-header {
-    margin-bottom: 8.5rem;
+    margin-bottom: 6rem;
     padding-bottom: 0em;
 
-    .page--work & {
-        margin-bottom: 12.5rem;
-    }
+    // .page--work & {
+    //     margin-bottom: 12.5rem;
+    // }
 
-    .page--project & {
-        margin-top: 3.5rem;
-        margin-bottom: 3rem;
-        padding-bottom: 3rem;
-    }
+    // .page--project & {
+    //     margin-top: 3.5rem;
+    //     margin-bottom: 3rem;
+    //     padding-bottom: 3rem;
+    // }
 
 }
 
@@ -133,22 +130,4 @@
 
 .section-header--halfgap {
     margin-bottom: 2.5em;
-}
-
-.section-title {
-    font-size: 1.6rem;
-    color: $c-delta;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 1em;
-    margin-top: 0;
-    text-align: center;
-
-    .section--hero & {
-        color: $c-bravo;
-    }
-}
-
-.section-title--alpha {
-    color: $c-alpha;
 }

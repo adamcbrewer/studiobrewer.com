@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <header class="section section--hero section--topo u-textcenter">
+    <header class="section section--hero section--topo u-textcenter bg-pattern--topo">
 
         <div class="contain inner">
             <h1 class="title-hero">
@@ -23,6 +23,11 @@
     </header>
 
     <section class="section contain contain--features">
+
+        <header class="section-header contain">
+            <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
+            <img class="title-underline" src="/assets/img/headers/header-01.svg" alt="">
+        </header>
 
         <ol class="features u-textcenter">
 
@@ -49,19 +54,14 @@
 
         </ol>
 
-        <div class="btn-group">
-            <a href="<?php echo $site->find('/work')->url() ?>" class="btn">
-                <?php snippet('button', array('copy' => $page->buttonFeatures())); ?>
-            </a>
-        </div>
-
     </section>
 
     <?php if ($site->showtweets() == 'true') : ?>
 
-    <section class="section section--alt">
+    <section class="section section--alt bg-pattern--shapes">
         <header class="section-header contain">
-            <h2 class="section-title"><?php echo $page->sectionTitleThree() ?></h2>
+            <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
+            <img class="title-underline" src="/assets/img/headers/header-02.svg" alt="">
         </header>
 
         <section class="contain">

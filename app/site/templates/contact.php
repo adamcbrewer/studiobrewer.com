@@ -1,11 +1,12 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero section--yank">
+    <article class="section">
 
         <header class="section-header contain">
-            <h1 class="title-hero">
+            <h1 class="title-section">
                 <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text() ?></a>
             </h1>
+            <img class="title-underline" src="/assets/img/headers/header-08.svg" alt="">
         </header>
 
     </article>
@@ -29,7 +30,7 @@
     <section class="section section--alt">
 
         <header class="section-header section-header--halfgap">
-            <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
+            <p class="title-section"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
 
         <div class="u-flex u-flex--row u-flex--center-v contain contain--social">
@@ -42,7 +43,7 @@
                             <div class="icon icon--block">
                                 <?php echo snippet('icons/' . strtolower($external_link['title'])) ?>
                             </div>
-                            <span class="section-title section-title--alpha"><?php echo $external_link['title'] ?></span>
+                            <span class="title-section title-section--alpha"><?php echo $external_link['title'] ?></span>
                         </div>
                     </a>
                 </div>

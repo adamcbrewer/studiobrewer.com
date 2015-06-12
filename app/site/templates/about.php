@@ -27,7 +27,7 @@
 
     <section class="section section--alt">
         <header class="section-header contain">
-            <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
+            <p class="title-section"><?php echo $page->sectionTitleTwo() ?></p>
         </header>
         <section class="contain contain--clients">
             <ul class="clients u-flex u-flex--row u-flex--center-v u-textcenter">
@@ -42,7 +42,7 @@
 
     <section class="section contain">
         <header class="section-header">
-            <p class="section-title"><?php echo $page->sectionTitleThree() ?></p>
+            <p class="title-section"><?php echo $page->sectionTitleThree() ?></p>
         </header>
         <section class="skills contain contain--narrow u-columns u-columns--two u-columns--largegap">
             <div class="skill">
@@ -57,7 +57,7 @@
 
     <section class="section section--alt">
         <header class="section-header contain">
-            <p class="section-title"><?php echo $page->sectionTitleFour() ?></p>
+            <p class="title-section"><?php echo $page->sectionTitleFour() ?></p>
         </header>
         <div class="u-textleft contain contain--narrow">
             <?php echo kirbytext($page->TextSectionFour()) ?>

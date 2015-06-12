@@ -3,7 +3,8 @@
     <section class="section section--hero section--alt-lighter">
 
         <header class="section-header contain">
-            <h1 class="title-hero"><?php echo $page->header() ?></h1>
+            <h1 class="title-section"><?php echo $page->header() ?></h1>
+            <img class="title-underline" src="/assets/img/headers/header-01.svg" alt="">
         </header>
 
         <ol class="works contain">

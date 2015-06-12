@@ -3,12 +3,13 @@
     <article class="project section section--alt-lighter">
 
         <header class="section-header contain">
-            <h1 class="title-main">
+            <h1 class="title-section title-section--secondary">
                 <?php echo $page->title() ?>
             </h1>
-            <p class="title-summary">
+            <p class="title-section title-section--tertiary">
                 <?php echo $page->summary() ?>
             </p>
+            <img class="title-underline" src="/assets/img/headers/header-04.svg" alt="">
         </header>
 
         <section class="contain project-images">

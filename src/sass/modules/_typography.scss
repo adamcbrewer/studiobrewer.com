@@ -13,17 +13,12 @@ p {
 }
 
 .title-hero {
-    // padding-top: 2.2em;
     margin: 0 auto 7rem;
     font-size: $f-size-1;
     line-height: 1.4;
     font-weight: 400;
     max-width: 21em;
     text-align: center;
-
-    .page--home & {
-
-    }
 
     .page--work &,
     .page--contact &,
@@ -37,34 +32,36 @@ p {
 
 }
 
-.title-main {
-    font-weight: 400;
+.title-section {
     font-size: $f-size-1;
-    line-height: 1.4;
-    margin: auto;
-    max-width: 22em;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 0;
     text-align: center;
+    color: $c-bravo;
 
-    .page--project & {
-        max-width: none;
-        margin-bottom: 0.4em;
+    > a {
+        color: $c-bravo;
     }
-
 }
 
-.title-summary {
+.title-section--secondary {
+    color: $c-foxtrot;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.title-section--tertiary {
     color: $c-golf;
-    font-weight: 400;
-    font-size: $f-size-1;
-    line-height: 1.4;
+}
+.title-section--alpha {
+    color: $c-alpha;
+}
+
+.title-underline {
+    height: 10px;
+    display: block;
     margin: auto;
-    text-align: center;
-    max-width: 22em;
-
-    .page--project & {
-        max-width: none;
-    }
-
+    width: 90px;
 }
 
 .title-404 {
