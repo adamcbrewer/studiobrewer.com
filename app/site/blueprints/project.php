@@ -63,15 +63,3 @@ fields:
   details:
     label: Details
     type: textarea
-  homepage:
-    label: Display this project on the Home page?
-    type: toggle
-    text: yes/no
-    default: no
-    width: 1/2
-  _infoThree:
-    label: &nbsp;
-    type: info
-    width: 1/2
-    text: >
-      If the following option is enabled then this project will be displayed on the Home page, using the first uploaded image (not the thumbnail). There's no limit to the number of projects displayed on the Home page.

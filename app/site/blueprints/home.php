@@ -33,6 +33,22 @@ fields:
   buttonView:
     label: View Project Button Text
     type: text
+  featured_project_uids:
+    label: Featured Projects
+    type: structure
+    width: 1/4
+    entry: >
+      {{ uid }}
+    fields:
+      uid:
+        label: Project
+        type: select
+        options: query
+        query:
+          page: work
+          fetch: visibleChildren
+          value: '{{uid}}'
+          text: '{{uid}}'
 
   _headerThree:
     label: Section - Twitter
