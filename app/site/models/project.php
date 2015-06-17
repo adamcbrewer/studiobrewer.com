@@ -7,7 +7,7 @@ class ProjectPage extends Page {
      *
      */
     public function feature() {
-        $file = $this->images()->find($this->featureFilename());
+        $file = $this->images()->find($this->featuredFilename()->html());
         if (!$file) {
             $file = $this->images()->findBy('name', 'feature');
             if (!$file) {

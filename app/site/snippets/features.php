@@ -9,12 +9,6 @@
                 <img src="<?php echo $project->feature()->url() ?>" alt="<?php echo html($project->title()) ?>">
             </a>
         </figure>
-        <div>
-            <h3 class="feature-title">
-                <a href="<?php echo $project->url() ?>"><?php echo html($project->title()) ?></a>
-            </h3>
-            <p class="feature-summary"><?php echo html($project->summary()) ?></p>
-        </div>
     </li>
 
 <? endforeach; ?>

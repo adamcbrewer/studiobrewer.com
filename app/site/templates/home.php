@@ -22,7 +22,7 @@
 
     </header>
 
-    <section class="section contain contain--features">
+    <section class="section contain">
 
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
