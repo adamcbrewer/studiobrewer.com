@@ -21,8 +21,8 @@
 .contain--features {
     max-width: $d-features;
 }
-.contain--clients {
-    max-width: calc(#{($d-column * 10) + ($d-gutter * 10)} + #{$d-sitePadding});
+.contain--about {
+    max-width: ($d-column * 6) + ($d-gutter * 7);
 }
 .contain--text {
     max-width: ($d-column * 7) + ($d-gutter * 6);

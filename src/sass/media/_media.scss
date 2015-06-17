@@ -113,10 +113,7 @@
     .page--home .section--hero .btn-group {
         margin-bottom: 6rem;
     }
-    .page--about .section--yank.section--hero {
-        padding-bottom: 20rem;
-        margin-bottom: -26rem;
-    }
+
     .client {
         width: calc(100%/2);
     }
@@ -215,17 +212,6 @@
         margin-bottom: $d-gutter;
     }
 
-    .section--yank .section--hero {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 6rem;
-    }
-    .page--contact .section--yank.section--hero,
-    .page--about .section--yank.section--hero {
-        margin-bottom: 0;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
     .page--contact .section-header,
     .page--about .section-header {
         margin-bottom: 0;
@@ -316,12 +302,6 @@
         }
     }
     // .page--about {
-
-    //     .section--yank.section--hero {
-    //         padding-top: 6rem;
-    //         padding-bottom: 6rem;
-    //         margin-bottom: -14rem;
-    //     }
 
     //     .contain--narrow strong {
     //         font-size: 2.2rem;

@@ -2,9 +2,11 @@
 .clients {
     list-style-type: none;
     padding: 0;
+    background-color: $c-white;
+    padding: 7rem 0;
 }
 .client {
-    margin: 20px;
+    margin: 1rem 2rem;
     width: calc(100%/5);
     max-width: 200px;
 }

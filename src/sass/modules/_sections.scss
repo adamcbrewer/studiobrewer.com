@@ -1,60 +1,6 @@
-// .section {
-//     padding-top: 8.5rem;
-//     padding-bottom: 8.5rem;
-//     overflow: hidden;
-
-//     .content > &:not(.project):last-child {
-//         padding-bottom: 17rem;
-//     }
-
-//     .page--contact &,
-//     .page--about & {
-//         padding-bottom: 14rem;
-//     }
-//     .page--work & {
-//         padding-top: 13rem;
-//     }
-
-//     .page--project & {
-//         padding-bottom: 0;
-//     }
-
-//     &.figure--about {
-//         padding-bottom: 0;
-//     }
-
-// }
-
-// .section--hero {
-
-//     .page--home &,
-//     .page--about &,
-//     .page--contact & {
-//         color: $c-white;
-//         background-color: $c-alpha;
-//     }
-
-//     .page--home & .btn-group,
-//     .page--contact & .btn-group {
-//         margin: 6rem auto 9rem;
-//     }
-
-//     .page--work & {
-//         padding-top: 12rem;
-//     }
-
-//     .page--home & a:not(.btn) {
-//         color: $c-white;
-//         border-bottom-color: $c-white;
-//         &:hover {
-//             border-bottom-color: transparent;
-//         }
-//     }
-// }
-
 .section {
     padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
     position: relative;
 
     .page--home &.section--topo {
@@ -74,18 +20,6 @@
     padding-bottom: 6rem;
 }
 
-// .section--yank {
-//     padding-bottom: 14rem;
-//     margin-bottom: -10rem;
-
-//     .page--contact &.section--hero,
-//     .page--about &.section--hero {
-//         padding-top: 12rem;
-//         margin-bottom: -36rem;
-//         padding-bottom: 31rem;
-//     }
-// }
-
 .section--alt {
     background-color: $c-echo;
 }
@@ -95,18 +29,8 @@
 }
 
 .section-header {
-    margin-bottom: 9rem;
+    margin-bottom: 8rem;
     padding-bottom: 0em;
-
-    // .page--work & {
-    //     margin-bottom: 12.5rem;
-    // }
-
-    // .page--project & {
-    //     margin-top: 3.5rem;
-    //     margin-bottom: 3rem;
-    //     padding-bottom: 3rem;
-    // }
 
 }
 

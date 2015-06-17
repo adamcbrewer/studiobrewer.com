@@ -1,35 +1,35 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero section--yank">
+    <article class="contain contain--about section">
 
         <header class="section-header contain">
-            <h1 class="title-hero">
-                <?php echo $page->header() ?>
-            </h1>
+            <h1 class="title-section"><?php echo $page->header() ?></h1>
+            <img class="title-underline" src="/assets/img/headers/header-09.svg" alt="">
         </header>
 
-    </article>
-
-    <div class="contain contain--features u-textcenter">
-        <figure class="section figure figure--about">
+        <figure class="figure figure--about">
             <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
             <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>
             <figcaption class="figure-caption"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
             <?php endif; ?>
         </figure>
-    </div>
 
-    <section class="section contain contain--narrow">
+        <section class="contain contain--minute">
 
-        <?php echo kirbytext($page->about()) ?>
+            <?php echo kirbytext($page->about()) ?>
 
-    </section>
+        </section>
 
-    <section class="section section--alt">
+    </article>
+
+    <section class="section">
+
         <header class="section-header contain">
-            <p class="title-section"><?php echo $page->sectionTitleTwo() ?></p>
+            <h1 class="title-section"><?php echo $page->sectionTitleTwo() ?></h1>
+            <img class="title-underline" src="/assets/img/headers/header-07.svg" alt="">
         </header>
-        <section class="contain contain--clients">
+
+        <section class="contain">
             <ul class="clients u-flex u-flex--row u-flex--center-v u-textcenter">
                 <?php foreach ($page->images()->sortBy('sort', 'asc')->not('me.jpg', 'me.png') as $client) : ?>
                     <li class="client" data-name="<?php e($client->client() != "", $client->client(), $client->name()) ?>">
@@ -38,6 +38,7 @@
                 <?php endforeach; ?>
             </ul>
         </section>
+
     </section>
 
     <section class="section contain">
