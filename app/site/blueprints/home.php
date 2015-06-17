@@ -30,9 +30,6 @@ fields:
   titleFeatures:
     label: Features Title
     type: text
-  buttonView:
-    label: View Project Button Text
-    type: text
   featured_project_uids:
     label: Featured Projects
     type: structure

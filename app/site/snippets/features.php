@@ -4,7 +4,10 @@
         <figure class="feature-figure figurelink">
             <a href="<?php echo $project->url() ?>">
                 <div class="rollover" style="background-image: url(<?php echo $project->feature()->url() ?>);">
-                    <span class="rollover-content"><?php echo $page->buttonView() ?></span>
+                    <div class="rollover-content">
+                        <h3 class="feature-title"><?php echo html($project->title()) ?></h3>
+                        <p class="feature-summary"><?php echo html($project->summary()) ?></p>
+                    </div>
                 </div>
                 <img src="<?php echo $project->feature()->url() ?>" alt="<?php echo html($project->title()) ?>">
             </a>

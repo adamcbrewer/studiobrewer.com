@@ -20,3 +20,16 @@
         display: block;
     }
 }
+
+.feature-title {
+    font-size: $f-size-1;
+    font-weight: 400;
+    margin: 0 0 3rem;
+    line-height: 1.2;
+}
+
+.feature-summary {
+    font-size: $f-size-3;
+    text-transform: uppercase;
+    line-height: 1;
+}
