@@ -11,6 +11,13 @@
     max-width: 200px;
 }
 
-// Contact page
+// Contact details for the Contact & Home pages
 .contact-email {}
 .contact-phone {}
+
+.contact-email,
+.contact-phone {
+    .page--home & {
+        color: $c-alpha;
+    }
+}

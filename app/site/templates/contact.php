@@ -4,8 +4,10 @@
 
         <header class="section-header contain">
             <h1 class="title-section">
-                <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text() ?></a> <br>
-                <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone() ?></a>
+                <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text()->html() ?></a> <br>
+                <?php if (!$site->phone()->empty() && !$page->phone_text()->empty()) : ?>
+                    <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone_text()->html() ?></a>
+                <?php endif; ?>
             </h1>
             <img class="title-underline" src="/assets/img/headers/header-08.svg" alt="">
         </header>

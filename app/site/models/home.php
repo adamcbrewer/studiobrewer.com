@@ -32,4 +32,15 @@ class HomePage extends Page {
 
     }
 
+
+    /**
+     * Get the contact image
+     *
+     */
+    public function contact_image() {
+        $file = $this->images()->find($this->contact_image_filename()->html());
+        return $file;
+    }
+
+
 }

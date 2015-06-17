@@ -5,6 +5,7 @@ pages:
   sortable: true
   max: 5
 fields:
+
   _headerOne:
     label: Site Configuration
     type: headline
@@ -20,6 +21,10 @@ fields:
     label: Contact Email Address
     type: email
     width: 1/2
+  phone:
+    label: Contact Phone Number
+    type: text
+    width: 1/2
   analytics:
     label:  Google Analytics Tracking code
     type: text
@@ -34,6 +39,7 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
   _headerTwo:
     label: Twitter Settings
     type: headline

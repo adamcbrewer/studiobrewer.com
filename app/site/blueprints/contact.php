@@ -11,11 +11,16 @@ fields:
   _headerOne:
     label: Section - Contact Details
     type: headline
+  _infoOne:
+    label: &nbsp;
+    type: info
+    text: >
+      You change how your email and phone number links are displayed from the fields below, but the actual email address and phone number can be changed within the global site options.
   email_text:
     label: Email Text
     type: text
-  phone:
-    label: Phone Number
+  phone_text:
+    label: Phone Text
     type: text
   text:
     label: Text

@@ -6,6 +6,7 @@
         display: block;
     }
 
+    .splitbox--image &,
     // The last group of images removes the bottom margin
     // when next to the footer
     .project-images:last-of-type &:last-of-type {
@@ -20,6 +21,11 @@
     display: inline-block;
     margin-bottom: 3rem;
     width: auto;
+}
+
+.figure--svg {
+    width: 100%;
+
 }
 
 .figure-caption {

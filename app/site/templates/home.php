@@ -75,5 +75,36 @@
 
     <?php endif; ?>
 
+    <section class="section contain">
+
+        <header class="section-header contain">
+            <h2 class="title-section"><?php echo $page->sectionTitleFour()->html() ?></h2>
+            <img class="title-underline" src="/assets/img/headers/header-03.svg" alt="">
+        </header>
+
+        <section class="splitboxes">
+
+            <div class="splitbox splitbox--image">
+                <figure class="figure figure--svg">
+                    <img src="<?php echo $page->contact_image()->url() ?>" alt="<?php echo $page->contact_image()->name() ?>">
+                </figure>
+            </div>
+
+            <div class="splitbox u-textcenter">
+                <h3 class="title-section">
+                    <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text()->html() ?></a> <br>
+                    <?php if (!$site->phone()->empty() && !$page->phone_text()->empty()) : ?>
+                        <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone_text()->html() ?></a>
+                    <?php endif; ?>
+                </h3>
+                <footer>
+                    <?php echo $page->contact_text()->html() ?>
+                </footer>
+            </div>
+
+        </section>
+
+    </section>
+
 <?php snippet('footer') ?>
 
