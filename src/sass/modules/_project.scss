@@ -43,8 +43,14 @@
 .project-footer {
     clear: both;
     font-size: $f-size-2;
-    padding: 17rem 0;
+    padding: 10rem 0;
     background: $c-white;
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .project-social {

@@ -86,4 +86,31 @@
         request.send();
     }
 
+
+    /**
+     * Keyboard navigation
+     *
+     */
+    window.addEventListener('keyup', function (evt) {
+
+        var code = evt.keyCode || null;
+        var link = null;
+
+        switch (code) {
+            case 39: // right
+                link = document.querySelectorAll('[rel="next"]');
+                if (link.length && link[0].href) window.location = link[0].href;
+                break;
+            case 37: // left;
+                link = document.querySelectorAll('[rel="prev"]');
+                if (link.length && link[0].href) window.location = link[0].href;
+                break;
+            case 27: // esc
+                window.location = '/';
+            default:
+                break;
+        }
+
+    });
+
 }(window, document));

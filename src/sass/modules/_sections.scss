@@ -3,9 +3,20 @@
     padding-bottom: 10rem;
     position: relative;
 
-    .page--home &.section--topo {
+    .page--home &.section--hero {
         padding-top: 29rem;
         padding-bottom: 29rem;
+
+        .flexbox & {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 100vh;
+            display: flex;
+        }
+    }
+
+    &.project {
+        padding-bottom: 0;
     }
 
 }

@@ -34,9 +34,15 @@
         </section>
 
         <footer class="project-footer">
-            <section class="project-social contain contain--text">
-                <?php snippet('project-social'); ?>
-            </section>
+            <div class="inner contain">
+                <a href="<?php echo $page->parent()->url() ?>">Back to Projects</a>
+                <section class="project-social contain contain--text">
+                    <?php snippet('project-social'); ?>
+                </section>
+                <?php if($next = $page->next()): ?>
+                    <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>">Next Project</a>
+                <?php endif ?>
+            </div>
         </footer>
 
     </article>

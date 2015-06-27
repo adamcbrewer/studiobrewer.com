@@ -5,6 +5,12 @@
     max-width: calc(#{$d-siteWidth} + #{$d-sitePadding});
     padding-left: $d-gutter;
     padding-right: $d-gutter;
+
+    .flexbox .page--home .section--hero & {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .contain--project-info {
