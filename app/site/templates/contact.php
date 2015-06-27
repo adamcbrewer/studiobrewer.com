@@ -9,7 +9,7 @@
                     <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone_text()->html() ?></a>
                 <?php endif; ?>
             </h1>
-            <img class="title-underline" src="/assets/img/headers/header-08.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-08.svg" alt="">
         </header>
 
         <section class="contain contain--minute">

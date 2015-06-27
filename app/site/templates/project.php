@@ -9,7 +9,7 @@
             <p class="title-section title-section--tertiary">
                 <?php echo $page->summary() ?>
             </p>
-            <img class="title-underline" src="/assets/img/headers/header-04.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-04.svg" alt="">
         </header>
 
         <section class="contain project-images">

@@ -26,7 +26,7 @@
 
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
-            <img class="title-underline" src="/assets/img/headers/header-01.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-01.svg" alt="">
         </header>
 
         <ol class="features u-textcenter">
@@ -42,7 +42,7 @@
     <section class="section section--alt bg-pattern--shapes">
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
-            <img class="title-underline" src="/assets/img/headers/header-02.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-02.svg" alt="">
         </header>
 
         <section class="contain">
@@ -79,7 +79,7 @@
 
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->sectionTitleFour()->html() ?></h2>
-            <img class="title-underline" src="/assets/img/headers/header-03.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-03.svg" alt="">
         </header>
 
         <section class="splitboxes">

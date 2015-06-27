@@ -4,7 +4,7 @@
 
         <header class="section-header contain">
             <h1 class="title-section"><?php echo $page->header() ?></h1>
-            <img class="title-underline" src="/assets/img/headers/header-09.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-09.svg" alt="">
         </header>
 
         <figure class="figure figure--about">
@@ -26,7 +26,7 @@
 
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->section_title_skills() ?></h2>
-            <img class="title-underline" src="/assets/img/headers/header-06.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-06.svg" alt="">
         </header>
 
         <div class="contain">
@@ -57,7 +57,7 @@
 
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->section_title_clients() ?></h2>
-            <img class="title-underline" src="/assets/img/headers/header-07.svg" alt="">
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-07.svg" alt="">
         </header>
 
         <section class="contain">
