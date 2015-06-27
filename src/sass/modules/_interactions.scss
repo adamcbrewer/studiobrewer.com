@@ -133,6 +133,53 @@ input {
     }
 }
 
+.btn--arrow {
+    fill: none;
+    padding: 25px 20px 25px 10px;
+    width: 210px;
+    height: 80px;
+    border: none;
+    stroke: $c-alpha;
+    color: $c-bravo;
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:hover {
+        color: $c-foxtrot;
+        svg {
+            stroke-dasharray: $antSize-svg;
+            stroke: $c-delta;
+            animation:
+                ants-svg
+                $marchSpeed
+                steps($marchLunges)
+                infinite;
+        }
+    }
+
+    .section--hero & {
+        min-width: 220px;
+        stroke: $c-white;
+        color: $c-white;
+
+    }
+    .section--hero &:hover {
+        svg {
+            stroke: $c-white;
+        }
+    }
+
+}
+
 .btn-ants {
     transition: 0.15s 0.0s ease;
     position: absolute;
