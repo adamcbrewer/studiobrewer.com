@@ -33,7 +33,7 @@ fields:
   featured_project_uids:
     label: Featured Projects
     type: structure
-    width: 1/4
+    width: 1/2
     entry: >
       {{ uid }}
     fields:

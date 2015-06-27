@@ -14,7 +14,7 @@
 
         <section class="contain project-images">
 
-            <?php snippet('project-image', array('image' => $page->project_images()->first())); ?>
+            <?php snippet('project-image', array('image_object' => $page->first_image())); ?>
 
         </section>
 
@@ -28,19 +28,19 @@
         </section>
 
         <section class="contain project-images">
-            <?php foreach ($page->project_images()->offset(1) as $image) : ?>
-                <?php snippet('project-image', array('image' => $image)); ?>
+            <?php foreach ($page->remaining_project_images() as $image) : ?>
+                <?php snippet('project-image', array('image_object' => $image)); ?>
             <?php endforeach; ?>
         </section>
 
         <footer class="project-footer">
             <div class="inner contain">
-                <a href="<?php echo $page->parent()->url() ?>">Back to Projects</a>
+                <a href="<?php echo $page->parent()->url() ?>"><?php echo $pages->find('work')->all_projects_copy() ?></a>
                 <section class="project-social contain contain--text">
                     <?php snippet('project-social'); ?>
                 </section>
                 <?php if($next = $page->next()): ?>
-                    <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>">Next Project</a>
+                    <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>"><?php echo $pages->find('work')->next_project_copy() ?></a>
                 <?php endif ?>
             </div>
         </footer>
