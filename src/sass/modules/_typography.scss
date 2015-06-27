@@ -43,6 +43,12 @@ p {
     > a {
         color: inherit;
     }
+
+    .splitbox & {
+        color: $c-alpha;
+        margin-bottom: 3rem;
+    }
+
 }
 
 .title-section--secondary {

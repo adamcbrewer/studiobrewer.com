@@ -1,18 +1,28 @@
+ul,
 .taglist {
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: left;
 }
-.taglist-item {
-    &:before {
-        content: "–";
-        color: $c-alpha;
-        margin-right: 0.5em;
-    }
+
+.taglist-item:before {
+    content: "–";
+    color: $c-alpha;
+    margin-right: 0.5em;
 }
+
 .taglist-title {
     color: $c-white;
     margin-bottom: 1em;
     text-align: left;
+}
+
+ul:not(.has-nostyle) li:before {
+    content: url(../img/triangle.svg);
+    display: inline-block;
+    color: $c-alpha;
+    margin-right: 2.4rem;
+    width: 10px;
+    fill: $c-alpha;
 }

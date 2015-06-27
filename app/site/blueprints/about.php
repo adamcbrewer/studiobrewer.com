@@ -16,7 +16,7 @@ fields:
     label: Page Title
     type:  text
 
-  _headerOne:
+  _header_intro:
     label: Section - Introduction
     type: headline
   header:
@@ -30,10 +30,30 @@ fields:
   about:
     label: About You
     type:  textarea
-  _headerTwo:
+
+  _header_skills:
+    label: Section - Skills
+    type: headline
+  section_title_skills:
+    label: Section Title
+    type: text
+  skills_box_title_left:
+    label: Left Box Title
+    type: text
+  skills_box_content_left:
+    label: Left Box Content
+    type: textarea
+  skills_box_title_right:
+    label: Right Box Title
+    type: text
+  skills_box_content_right:
+    label: Right Box Content
+    type: textarea
+
+  _header_clients:
     label: Section - Client Branding
     type: headline
-  sectionTitleTwo:
+  section_title_clients:
     label: Section Title
     type: text
   _infoThree:
@@ -42,22 +62,3 @@ fields:
     text: >
       Images for client brands can be uploaded under the files section on the left,
       where you'll be able to arrange and sort them.
-  _headerThree:
-    label: Section - Skills
-    type: headline
-  sectionTitleThree:
-    label: Section Title
-    type: text
-  skills:
-    label: Skills
-    type: tags
-
-  _headerFour:
-    label: Section - Sign-off
-    type: headline
-  sectionTitleFour:
-    label: Section Title
-    type: text
-  TextSectionFour:
-    label: Sign-off Copy
-    type:  textarea

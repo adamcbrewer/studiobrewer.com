@@ -1,5 +1,5 @@
 .splitboxes {
-    margin: 6rem 0;
+    margin: 6rem 0 0;
     padding: 0;
 
 
@@ -16,7 +16,7 @@
     padding: 9rem 11rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 
@@ -25,4 +25,8 @@
 
 .splitbox--image {
     padding: 9rem 17rem;
+}
+
+.splitbox--hollow {
+    background-color: transparent;
 }
