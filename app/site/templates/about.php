@@ -8,9 +8,9 @@
         </header>
 
         <figure class="figure figure--about">
-            <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
-            <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>
-            <figcaption class="figure-caption"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
+            <img src="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>">
+            <?php if ($page->profile_image()->caption()) : ?>
+            <figcaption class="figure-caption"><?php echo $page->profile_image()->caption() ?></figcaption>
             <?php endif; ?>
         </figure>
 

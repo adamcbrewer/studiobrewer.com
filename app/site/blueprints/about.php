@@ -22,11 +22,10 @@ fields:
   header:
     label: Main Header
     type: text
-  _infoTwo:
-    label: Your Profile Photo
-    type: info
-    text: >
-      Make sure to name your profile photo _me_, in either .jpg of .png format.
+  profile_image_filename:
+    label: You Profile Image
+    type: select
+    options: images
   about:
     label: About You
     type:  textarea
