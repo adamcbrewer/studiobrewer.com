@@ -14,7 +14,7 @@
 
         <section class="contain project-images">
 
-            <?php snippet('project-image', array('image_object' => $page->first_image())); ?>
+            <?php snippet('project/image', array('image_object' => $page->first_image())); ?>
 
         </section>
 
@@ -29,7 +29,7 @@
 
         <section class="contain project-images">
             <?php foreach ($page->remaining_project_images() as $image) : ?>
-                <?php snippet('project-image', array('image_object' => $image)); ?>
+                <?php snippet('project/image', array('image_object' => $image)); ?>
             <?php endforeach; ?>
         </section>
 
@@ -37,7 +37,7 @@
             <div class="inner contain">
                 <a href="<?php echo $page->parent()->url() ?>"><?php echo $pages->find('work')->all_projects_copy() ?></a>
                 <section class="project-social contain contain--text">
-                    <?php snippet('project-social'); ?>
+                    <?php snippet('project/social'); ?>
                 </section>
                 <?php if($next = $page->next()): ?>
                     <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>"><?php echo $pages->find('work')->next_project_copy() ?></a>

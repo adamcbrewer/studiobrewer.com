@@ -46,9 +46,12 @@ class ProjectPage extends Page {
     public function first_image() {
 
         $image_structure = $this->project_images()->toStructure()->first();
+        $first_image = null;
 
-        $first_image = $image_structure;
-        $first_image->image = $this->images()->find($image_structure->filename());
+        if ($image_structure) {
+            $first_image = $image_structure;
+            $first_image->image = $this->images()->find($image_structure->filename());
+        }
 
         return $first_image;
 
