@@ -56,7 +56,7 @@ fields:
     label: Section Title
     type: text
   client_brands_structure:
-    label: Client Brands
+    label: Client Brand Images
     type: structure
     width: 1/2
     entry: >
