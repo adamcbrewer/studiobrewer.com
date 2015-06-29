@@ -61,3 +61,19 @@ fields:
     text: >
       Images for client brands can be uploaded under the files section on the left,
       where you'll be able to arrange and sort them.
+  client_brands_structure:
+    label: Client Brands
+    type: structure
+    width: 1/2
+    entry: >
+      <b>Client Name</b>:&nbsp;&nbsp; <i>{{name}}</i> <br>
+      <b>Image</b>:&nbsp;&nbsp; <i>{{image_filename}}</i>
+    fields:
+      name:
+        label: Client Name
+        type: text
+      image_filename:
+        label: Image
+        type: select
+        options: images
+

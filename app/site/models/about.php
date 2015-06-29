@@ -18,4 +18,24 @@ class AboutPage extends Page {
     }
 
 
+    /**
+     * Client brands
+     *
+     */
+    public function client_brands () {
+
+        $client_brands = $this->client_brands_structure()->toStructure();
+
+        if ($client_brands) {
+            foreach ($client_brands as $key => $client) {
+                $client->image = $this->images()->find($client->image_filename());
+            }
+        }
+
+        return $client_brands;
+
+
+    }
+
+
 }
