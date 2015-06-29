@@ -113,4 +113,15 @@
 
     });
 
+
+    /**
+     * Lazy-load images
+     *
+     */
+    new Layzr({
+        callback: function () {
+            this.classList.add('is-loaded');
+        }
+    });
+
 }(window, document));

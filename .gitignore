@@ -49,3 +49,4 @@ app/site/config/config.*.php
 app/content/*
 !app/content/.gitkeep
 app/vendor/**/*
+src/js/libs

@@ -12,10 +12,11 @@
             <li class="work">
                 <figure class="work-thumb figurelink">
                     <a href="<?php echo $project->url() ?>">
-                        <div class="rollover" style="background-image: url(<?php echo $project->thumb()->url() ?>);">
+                        <div class="rollover" data-layzr="<?php echo $project->thumb()->url() ?>" data-layzr-bg>
                             <span class="rollover-content"><?php echo $page->buttonView() ?></span>
                         </div>
-                        <img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
+                        <img class="js-layzr" data-layzr="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
+                        <noscript><img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>"></noscript>
                     </a>
                 </figure>
                 <section class="work-details">

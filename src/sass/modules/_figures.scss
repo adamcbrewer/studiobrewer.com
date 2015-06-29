@@ -78,3 +78,12 @@
     transform: translateY(20px);
     transition: 0s 0.3s $easeOutExpo;
 }
+
+.js-layzr {
+    opacity: 0;
+    transition: 0.2s 0s;
+
+    &.is-loaded {
+        opacity: 1 !important;
+    }
+}
