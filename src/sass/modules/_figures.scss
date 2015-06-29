@@ -66,17 +66,25 @@
 
     a:hover & {
         opacity: 1;
+
         .rollover-content {
-            transition: 0.8s 0s $easeOutExpo;
+            transition:
+                0.8s 0s $easeOutExpo transform,
+                0s 0s $easeOutExpo top;
             transform: translateY(0);
+            top: 0px;
         }
     }
 
 }
 
 .rollover-content {
+    position: relative;
+    top: -40px;
     transform: translateY(20px);
-    transition: 0s 0.3s $easeOutExpo;
+    transition:
+        0.4s 0s $easeOutExpo transform,
+        0.4s 0s $easeOutExpo top;
 }
 
 .js-layzr {
