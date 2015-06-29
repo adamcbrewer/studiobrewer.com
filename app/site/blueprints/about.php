@@ -55,12 +55,6 @@ fields:
   section_title_clients:
     label: Section Title
     type: text
-  _infoThree:
-    label: Client Brands
-    type: info
-    text: >
-      Images for client brands can be uploaded under the files section on the left,
-      where you'll be able to arrange and sort them.
   client_brands_structure:
     label: Client Brands
     type: structure

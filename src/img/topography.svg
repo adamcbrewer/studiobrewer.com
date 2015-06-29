@@ -92,7 +92,7 @@
   <use xlink:href="#a" width="20" height="16" x="-10" y="-8" transform="matrix(1 0 0 -1 373 1137)" overflow="visible"/>
   <use xlink:href="#a" width="20" height="16" x="-10" y="-8" transform="matrix(1 0 0 -1 2242 1035)" overflow="visible"/>
   <use xlink:href="#a" width="20" height="16" x="-10" y="-8" transform="matrix(1 0 0 -1 2666 312)" overflow="visible"/>
-  <path d="M2118.2 618l9.3-16.1 9.2 16.1z"/>
+  <path fill="none" stroke-width="3" stroke-miterlimit="10" d="M2118.2 618l9.3-16.1 9.2 16.1z"/>
   <path fill="none" stroke-width="3" stroke-miterlimit="10" d="M1478.2 532.5l9.3-16.1 9.2 16.1z"/>
   <use xlink:href="#b" width="20" height="18" x="-10" y="-9" transform="matrix(1 0 0 -1 1001 1073)" overflow="visible"/>
   <use xlink:href="#b" width="20" height="18" x="-10" y="-9" transform="matrix(1 0 0 -1 1049 1920)" overflow="visible"/>
