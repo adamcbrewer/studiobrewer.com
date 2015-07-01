@@ -106,7 +106,7 @@
                 if (link.length && link[0].href) window.location = link[0].href;
                 break;
             case 27: // esc
-                window.location = '/';
+                window.location = Site.basePath;
             default:
                 break;
         }
