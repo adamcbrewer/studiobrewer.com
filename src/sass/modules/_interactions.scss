@@ -89,6 +89,10 @@ input {
             stroke-dasharray: $antSize-svg;
             stroke: $c-delta;
         }
+
+        .animate-clockwise {
+            animation-name: ants-svg-clockwise;
+        }
     }
 
 }
@@ -146,7 +150,7 @@ input {
 
 .btn--arrow {
     fill: none;
-    padding: 25px 20px 25px 10px;
+    padding: 26px 20px 24px 10px;
     width: 210px;
     height: 80px;
     border: none;
@@ -171,7 +175,7 @@ input {
             stroke-dasharray: $antSize-svg-arrow;
             stroke: $c-delta;
             animation:
-                ants-svg-arrow
+                ants-svg-arrow-clockwise
                 $marchSpeed
                 steps($marchLunges)
                 infinite;
@@ -190,6 +194,17 @@ input {
         }
     }
 
+}
+
+.btn--arrow--left {
+    padding: 26px 10px 24px 20px;
+
+    svg {
+        transform: rotate(180deg);
+    }
+    &:hover svg {
+        animation-name: ants-svg-arrow;
+    }
 }
 
 .btn-ants {

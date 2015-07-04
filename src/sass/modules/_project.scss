@@ -24,7 +24,7 @@
 }
 
 .project-images {
-    margin: 0 auto 16rem;
+    margin: 0 auto 0; //16rem;
     overflow: hidden;
 
     &:first-of-type {
@@ -42,8 +42,7 @@
 .project-footer {
     clear: both;
     font-size: $f-size-2;
-    padding: 10rem 0;
-    background: $c-white;
+    padding: 16rem 0;
 
     .inner {
         display: flex;
@@ -54,4 +53,6 @@
 
 .project-social {
     text-align: center;
+    display: flex;
+    align-items: center;
 }

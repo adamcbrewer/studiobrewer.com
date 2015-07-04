@@ -17,7 +17,17 @@
     100% { stroke-dashoffset: $antSize-svg * 2; }
 }
 
+@keyframes ants-svg-clockwise {
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg * 2 * -1; }
+}
+
 @keyframes ants-svg-arrow {
     0%   { stroke-dashoffset: 0; }
     100% { stroke-dashoffset: $antSize-svg-arrow * 2; }
+}
+
+@keyframes ants-svg-arrow-clockwise {
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg-arrow * 2 * -1; }
 }

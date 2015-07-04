@@ -35,12 +35,16 @@
 
         <footer class="project-footer">
             <div class="inner contain">
-                <a href="<?php echo $page->parent()->url() ?>"><?php echo $pages->find('work')->all_projects_copy() ?></a>
+                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--arrow btn--arrow--left">
+                    <?php snippet('buttons/arrow', array('copy' => $pages->find('work')->all_projects_copy())); ?>
+                </a>
                 <section class="project-social contain contain--text">
                     <?php snippet('project/social'); ?>
                 </section>
                 <?php if($next = $page->next()): ?>
-                    <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>"><?php echo $pages->find('work')->next_project_copy() ?></a>
+                    <a href="<?php echo $next->url() ?>" title="<?php echo $next->title() ?>" class="btn btn--arrow">
+                        <?php snippet('buttons/arrow', array('copy' => $pages->find('work')->next_project_copy())); ?>
+                    </a>
                 <?php endif ?>
             </div>
         </footer>

@@ -8,13 +8,13 @@
 
     <?php elseif ($type == 'pinterest') : ?>
 
-        <svg class="svg-ants svg-ants--circle" preserveAspectRatio="xMidYMid" width="240" viewBox="0 0 300 300">
+        <svg class="svg-ants svg-ants--circle animate-clockwise" preserveAspectRatio="xMidYMid" width="240" viewBox="0 0 300 300">
             <circle cx="150" cy="150" r="148" stroke-width="5"/>
         </svg>
 
     <?php else : ?>
 
-        <svg class="svg-ants svg-ants--square" preserveAspectRatio="xMidYMid" width="240" viewBox="0 0 300 300">
+        <svg class="svg-ants svg-ants--square animate-clockwise" preserveAspectRatio="xMidYMid" width="240" viewBox="0 0 300 300">
             <polygon points="0,0 300,0 300,300 0,300" stroke-width="9" shape-rendering="crispEdges"/>
         </svg>
 
