@@ -44,11 +44,19 @@ input {
         transition: 0.15s ease;
     }
 
+    .icon svg {
+        transform: translateY(0px);
+    }
+    .icon-label {
+        transform: translateY(4px);
+    }
+
     .section-title {
         margin-top: 0.4em;
         margin-bottom: 0;
     }
 
+    a,
     a:hover {
         border-bottom-color: transparent;
     }
@@ -62,10 +70,13 @@ input {
             color: $c-foxtrot;
         }
 
+        .icon svg,
+        .icon-label {
+            transition: 0.8s 0s $easeOutExpo;
+            transform: translateY(-12px);
+        }
         .icon-label {
             opacity: 1;
-            transition: 0.8s 0s $easeOutExpo;
-            transform: translateY(10px);
         }
 
         .svg-ants {
@@ -156,10 +167,11 @@ input {
     &:hover {
         color: $c-foxtrot;
         svg {
-            stroke-dasharray: $antSize-svg;
+
+            stroke-dasharray: $antSize-svg-arrow;
             stroke: $c-delta;
             animation:
-                ants-svg
+                ants-svg-arrow
                 $marchSpeed
                 steps($marchLunges)
                 infinite;

@@ -47,6 +47,10 @@
 
     a {
         color: $c-white;
+        border-bottom-color: transparent;
+        &:hover {
+            border-bottom-color: currentColor;
+        }
     }
 }
 

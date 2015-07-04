@@ -48,14 +48,21 @@
 }
 .work-title {
     color: $c-bravo;
-    > a { color: inherit; }
+    > a {
+        color: inherit;
+        border-bottom-color: transparent;
+    }
 }
 .work-summary {
     color: $c-alpha;
-    > a { color: inherit; }
+    > a {
+        color: inherit;
+        border-bottom-color: transparent;
+    }
 }
 
 .work-thumb:hover + .work-details a,
-.work-title a:hover {
+.work-title a:hover,
+.work-summary a:hover {
     border-bottom-color: $c-alpha;
 }
