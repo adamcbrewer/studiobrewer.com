@@ -19,7 +19,7 @@
 
 .figure--about {
     display: inline-block;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     width: auto;
 }
 
@@ -32,7 +32,7 @@
     text-align: left;
     margin: 0.8em 0;
     font-size: $f-size-3;
-    // color: $c-golf;
+    color: $c-alpha;
 
     .figure--alt & {
         text-align: left;

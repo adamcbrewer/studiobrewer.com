@@ -18,6 +18,9 @@ a {
     .icon &:hover {
         border: none
     }
+
+    position: relative;
+
 }
 a:hover {
     border-bottom-color: transparent;

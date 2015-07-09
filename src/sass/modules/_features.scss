@@ -19,6 +19,15 @@
     img {
         display: block;
     }
+
+    a {
+        &:after {
+            content: none;
+        }
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .feature-title {

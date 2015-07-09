@@ -32,7 +32,6 @@ input {
     width: 240px;
 
     max-width: 240px;
-    // max-height: 240px;
 
     display: flex;
     justify-content: center;
@@ -63,31 +62,39 @@ input {
 
     &:hover {
         .icon svg {
-            fill: $c-foxtrot;
+            fill: $c-bravo;
         }
         .section-title--alpha,
         .icon-label {
-            color: $c-foxtrot;
+            color: $c-bravo;
         }
 
         .icon svg,
         .icon-label {
             transition: 0.8s 0s $easeOutExpo;
-            transform: translateY(-12px);
         }
+
+        .icon svg {
+            transform: translateY(-16px);
+        }
+
+        .icon-label {
+            transform: translateY(-6px);
+        }
+
         .icon-label {
             opacity: 1;
         }
 
         .svg-ants {
+            stroke-dasharray: $antSize-svg;
+            stroke: $c-alpha;
+
             animation:
                 ants-svg
                 $marchSpeed
                 steps($marchLunges)
                 infinite;
-
-            stroke-dasharray: $antSize-svg;
-            stroke: $c-delta;
         }
 
         .animate-clockwise {
@@ -168,12 +175,16 @@ input {
         width: 100%;
     }
 
+    &:after {
+        content: none;
+    }
+
     &:hover {
-        color: $c-foxtrot;
+        color: $c-bravo;
         svg {
 
             stroke-dasharray: $antSize-svg-arrow;
-            stroke: $c-delta;
+            stroke: $c-alpha;
             animation:
                 ants-svg-arrow-clockwise
                 $marchSpeed
