@@ -3,7 +3,7 @@
     <header class="section section--hero section--topo u-textcenter bg-pattern--topo">
 
         <div class="contain inner">
-            <h1 class="title-hero">
+            <h1 class="title-hero title--major">
                 <?php echo $page->text()->html(); ?>
             </h1>
             <div class="btn-group">
@@ -25,7 +25,7 @@
     <section class="section contain">
 
         <header class="section-header contain">
-            <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
+            <h2 class="title-section title--major"><?php echo $page->titleFeatures()->html() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-01.svg" alt="">
         </header>
 
@@ -41,7 +41,7 @@
 
     <section class="section section--alt bg-pattern--shapes">
         <header class="section-header contain">
-            <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
+            <h2 class="title-section title--major"><?php echo $page->sectionTitleThree() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-02.svg" alt="">
         </header>
 

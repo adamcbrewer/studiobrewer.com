@@ -6,6 +6,10 @@ a {
         0.3s ease color;
     border-bottom: $d-link-thickness solid currentColor;
 
+    .title-section & {
+        border-bottom-width: #{$d-link-thickness + 1};
+    }
+
     svg {
         transition: 0.3s ease fill;
     }
@@ -24,8 +28,13 @@ a {
 }
 a:hover {
     border-bottom-color: transparent;
+
     .icon svg {
         fill: $c-bravo;
+    }
+
+    .title-section & {
+        border-bottom-color: $c-alpha;
     }
 }
 a:active {}
@@ -52,7 +61,7 @@ a:focus {}
         left: 0;
         bottom: -2px;
         width: 0%;
-        height: $d-link-thickness;
+        height: #{$d-link-thickness + 1};
         background: currentColor;
         content: "";
         transition: 0.3s width $easeOutExpo;

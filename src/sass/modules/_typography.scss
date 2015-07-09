@@ -36,7 +36,7 @@ p {
     font-size: $f-size-1;
     font-weight: 400;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: 4.4rem;
     margin-top: 0;
     text-align: center;
     color: $c-bravo;
@@ -44,9 +44,6 @@ p {
     > a {
         color: inherit;
         border-bottom-color: transparent;
-        &:hover {
-            border-bottom-color: currentColor;
-        }
     }
 
     .splitbox & {
@@ -57,11 +54,11 @@ p {
 }
 
 .title-section--secondary {
-    color: $c-foxtrot;
+    color: $c-bravo; //$c-foxtrot;
     margin-bottom: 0;
 }
 .title-section--tertiary {
-    color: $c-golf;
+    color: $c-alpha; //$c-golf;
 }
 .title-section--alpha {
     color: $c-alpha;
@@ -83,4 +80,8 @@ p {
     text-align: center;
     color: $c-alpha;
     font-weight: 400;
+}
+
+.title--major {
+    font-size: $f-size-major;
 }

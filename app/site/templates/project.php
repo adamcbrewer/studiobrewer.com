@@ -3,10 +3,10 @@
     <article class="project section section--alt-lighter">
 
         <header class="section-header contain">
-            <h1 class="title-section title-section--secondary">
+            <h1 class="title-section title-section--secondary title--major">
                 <?php echo $page->title() ?>
             </h1>
-            <p class="title-section title-section--tertiary">
+            <p class="title-section title-section--tertiary title--major">
                 <?php echo $page->summary() ?>
             </p>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-04.svg" alt="">
