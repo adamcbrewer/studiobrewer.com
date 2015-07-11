@@ -28,11 +28,9 @@ a {
 }
 a:hover {
     border-bottom-color: transparent;
-
     .icon svg {
         fill: $c-bravo;
     }
-
     .title-section & {
         border-bottom-color: $c-alpha;
     }
@@ -67,6 +65,7 @@ a:focus {}
         transition: 0.3s width $easeOutExpo;
     }
 
+    &:focus,
     &:hover {
         color: $c-alpha;
         .page--home & {

@@ -35,7 +35,7 @@
 
         <footer class="project-footer">
             <div class="inner contain">
-                <a href="<?php echo $site->find('/about')->url() ?>" class="btn btn--arrow btn--arrow--left">
+                <a href="<?php echo $site->find('work')->url() ?>" class="btn btn--arrow btn--arrow--left">
                     <?php snippet('buttons/arrow', array('copy' => $pages->find('work')->all_projects_copy())); ?>
                 </a>
                 <section class="project-social contain contain--text">

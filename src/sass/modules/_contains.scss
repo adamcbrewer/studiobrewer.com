@@ -17,7 +17,8 @@
     max-width: calc(#{($d-column * 10) + ($d-gutter * 9)} + #{$d-sitePadding});
 }
 .contain--header,
-.contain--social {
+.contain--social,
+.contain--about {
     max-width: ($d-column * 9) + ($d-gutter * 8);
 }
 

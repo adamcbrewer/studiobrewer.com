@@ -2,7 +2,7 @@
 
     <article class="contain section">
 
-        <header class="section-header contain contain--social">
+        <header class="section-header contain contain--about">
             <h1 class="title-section title--major"><?php echo $page->header() ?></h1>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-09.svg" alt="">
         </header>
@@ -27,7 +27,7 @@
 
     </article>
 
-    <section class="section section--alt bg-pattern--shapes">
+    <section class="section section--sub section--alt bg-pattern--shapes">
 
         <header class="section-header contain">
             <h2 class="title-section title--major"><?php echo $page->section_title_skills() ?></h2>
@@ -58,7 +58,7 @@
 
     </section>
 
-    <section class="section">
+    <section class="section section--sub">
 
         <header class="section-header contain">
             <h2 class="title-section title--major"><?php echo $page->section_title_clients() ?></h2>
