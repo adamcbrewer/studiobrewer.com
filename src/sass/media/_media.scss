@@ -235,8 +235,17 @@
 @media screen and (max-width: 600px) {
 
     // .feature { width: 100%; }
-    .feature-title { font-size: 2rem; }
+    .feature-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
     .feature-summary { display: none; }
+    .feature-details {
+        display: block;
+    }
+    .feature-figure {
+        margin-bottom: 1rem;
+    }
     .works { justify-content: space-around; }
     .work {
         width: 100%;
