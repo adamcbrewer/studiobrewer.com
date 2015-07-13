@@ -42,7 +42,7 @@
     }
 }
 
-.rollover {
+.figure-rollover {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -78,7 +78,7 @@
 
 }
 
-.rollover-content {
+.figure-rollover-content {
     position: relative;
     top: -40px;
     transform: translateY(20px);
