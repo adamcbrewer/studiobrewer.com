@@ -157,9 +157,9 @@ input {
 
 .btn--arrow {
     fill: none;
-    padding: 26px 20px 24px 10px;
-    width: 210px;
-    height: 80px;
+    padding: 23px 16px 24px 8px;
+    width: 213px;
+    height: 73px;
     border: none;
     stroke: $c-alpha;
     color: $c-bravo;
@@ -194,7 +194,7 @@ input {
     }
 
     .section--hero & {
-        min-width: 220px;
+        min-width: 0;
         stroke: $c-white;
         color: $c-white;
 

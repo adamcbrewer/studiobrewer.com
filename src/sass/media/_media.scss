@@ -196,7 +196,6 @@
     }
     .section--hero .btn--arrow {
         margin-bottom: 2rem;
-        transform: translateX(10px);
     }
     .footer-inner {
         padding-top: 6rem;
@@ -256,6 +255,7 @@
         }
         .btn--arrow {
             order: 1;
+            transform: translateX(10px);
         }
         .btn--arrow--left {
             order: 2;
