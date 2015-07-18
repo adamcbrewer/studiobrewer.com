@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             ],
             bower: {
                 js: [
-                    'bower_components/layzr.js/dist/layzr.js'
+                    // 'bower_components/layzr.js/dist/layzr.js'
                 ]
             }
         },

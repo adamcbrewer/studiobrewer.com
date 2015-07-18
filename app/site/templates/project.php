@@ -38,7 +38,7 @@
                 <a href="<?php echo $site->find('work')->url() ?>" class="btn btn--arrow btn--arrow--left">
                     <?php snippet('buttons/arrow', array('copy' => $pages->find('work')->all_projects_copy())); ?>
                 </a>
-                <section class="project-social contain contain--text">
+                <section class="project-social">
                     <?php snippet('project/social'); ?>
                 </section>
                 <?php if($next = $page->next()): ?>

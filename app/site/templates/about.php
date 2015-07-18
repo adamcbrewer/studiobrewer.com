@@ -10,7 +10,7 @@
         <div class="contain contain--narrow">
 
             <figure class="figure figure--about">
-                <img class="js-layzr" data-layzr="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>">
+                <img src="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>">
                 <noscript><img src="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>"></noscript>
                 <?php if ($page->profile_image()->caption()) : ?>
                 <figcaption class="figure-caption"><?php echo $page->profile_image()->caption() ?></figcaption>

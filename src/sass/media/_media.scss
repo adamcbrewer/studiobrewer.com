@@ -1,7 +1,11 @@
 @media screen and (max-width: 1300px) {
-    .tweets {
-        padding: ($d-gutter / 2);
+
+    .title-section {
+        .splitbox & {
+            font-size: 2.4rem;
+        }
     }
+    .tweets { padding: ($d-gutter / 2); }
     .tweet:nth-child(n) {
         padding: ($d-gutter / 2);
         margin-bottom: 0;
@@ -10,14 +14,11 @@
         padding: 7vw;
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 1300px) {
-    .title-section {
-        .splitbox & {
-            font-size: 2.4rem;
-        }
+    .project-social {
+        max-width: 45vw;
+        padding: 0 ($d-gutter / 2);
     }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -42,18 +43,7 @@
         margin-left: 0;
         margin-bottom: 5rem;
     }
-    .project-footer > .inner {
-        position: relative;
-        padding-bottom: 8rem;
-    }
     .project-images:first-of-type { margin-bottom: 3rem; }
-    .project-social {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0;
-    }
     .clients { padding: ($d-gutter / 2); }
     .client { margin: 1rem; }
 
@@ -164,7 +154,6 @@
         float: none;
         max-width: none;
     }
-    .project-social { float: none; }
     .layout {
         max-width: none;
         width: 100%;
@@ -181,15 +170,15 @@
     .skill { width: 100%; }
     .taglist { padding-left: 1em; }
     .btn-group {
-        width: 60vw;
+        // width: 60vw;
         // height: 60vw;
         padding-left: 0;
         padding-right: 0;
     }
-    .splitboxes { margin: 5rem 0 0; }
+    .splitboxes { margin: 4rem 0 0; }
     .section {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
     .section--sub .section-header,
     .section-header {
@@ -229,7 +218,31 @@
     .title-section {
         font-size: 2.4rem;
     }
+    .feature {
+        width: 100%;
 
+    }
+    .project-footer {
+        padding: 8rem 0;
+        .inner {
+            padding-bottom: 0;
+            flex-direction: column;
+        }
+        .btn--arrow {
+            order: 2;
+            margin: 1rem 0;
+            transform: translateX(10px);
+        }
+        .btn--arrow--left {
+            order: 3;
+            transform: translateX(-10px);
+        }
+    }
+    .project-social {
+        position: initial;
+        order: 1;
+        margin-bottom: 6rem;
+    }
 
 }
 
@@ -250,7 +263,7 @@
     .work-title,
     .work-summary {
         .feature-details & {
-            font-size: $f-size-3;
+            // font-size: $f-size-3;
         }
     }
     .works { justify-content: space-around; }
@@ -262,28 +275,6 @@
         }
     }
     .work-details { padding: 0; }
-    .project-footer {
-        padding: 8rem 0;
-        .inner {
-            padding-bottom: 0;
-            flex-direction: column;
-            // justify-content: space-between;
-            // align-items: center;
-        }
-        .btn--arrow {
-            order: 1;
-            transform: translateX(10px);
-        }
-        .btn--arrow--left {
-            order: 2;
-            margin: 4rem 0;
-            transform: translateX(-10px);
-        }
-    }
-    .project-social {
-        position: initial;
-        order: 3;
-    }
 
 }
 
@@ -294,6 +285,7 @@
     body { font-size: $f-size-3; }
     .tweet { padding: $d-gutter; }
     .tweet-body { font-size: 1.8rem; }
+    .contain--footer,
     .contain--header {
         padding-left: 2%;
         padding-right: 2%;
@@ -304,11 +296,21 @@
         margin-left: 1em;
         margin-right: 1em;
     }
+    .nav--footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &:after { content: none; }
+    }
     .footer br { display: none; }
+    .btn-group--svgicon { margin: 0.5em auto; }
     .btn-group--svgicon .icon--block {
         width: 16vw;
         height: 16vw;
     }
+    .figure--about { margin-bottom: 2.5rem; }
+    .client { width: 40%; }
 
 }
 

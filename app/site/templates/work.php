@@ -15,8 +15,7 @@
                         <div class="rollover" data-layzr="<?php echo $project->thumb()->url() ?>" data-layzr-bg>
                             <span class="rollover-content"><?php echo $page->buttonView() ?></span>
                         </div>
-                        <img class="js-layzr" data-layzr="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
-                        <noscript><img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>"></noscript>
+                        <img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
                     </a>
                 </figure>
                 <section class="work-details">

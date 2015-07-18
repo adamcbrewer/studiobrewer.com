@@ -4,7 +4,7 @@
 
     <footer class="footer">
 
-        <div class="footer-inner contain">
+        <div class="footer-inner contain contain--footer">
             <nav class="nav nav--footer">
                 <?php snippet('nav-one'); ?>
                 <?php snippet('nav-two'); ?>
