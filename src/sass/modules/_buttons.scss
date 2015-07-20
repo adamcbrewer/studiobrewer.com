@@ -1,22 +1,3 @@
-::-webkit-input-placeholder {}
-:-moz-placeholder {}
-
-::-webkit-validation-bubble-message { padding: 40px; }
-
-input {
-    &:required {}
-    &:optional {}
-    &:valid {}
-    &:invalid {}
-    &:default {}
-    &:focus {}
-
-    &:enabled {}
-    &:disabled {}
-    &:checked {}
-    &:indeterminate {} // un-selected radio buttons
-}
-
 .btn-group {
     text-align: center;
     margin: 1em auto;
@@ -28,11 +9,10 @@ input {
 
 .btn-group--svgicon {
     position: relative;
-    height: 300px;
+    height: 240px;
     width: 240px;
 
     max-width: 240px;
-    // max-height: 240px;
 
     display: flex;
     justify-content: center;
@@ -44,32 +24,64 @@ input {
         transition: 0.15s ease;
     }
 
+    .icon svg {
+        transform: translateY(0px);
+    }
+    .icon-label {
+        transform: translateY(4px);
+    }
+
     .section-title {
         margin-top: 0.4em;
         margin-bottom: 0;
     }
 
+    a,
     a:hover {
         border-bottom-color: transparent;
     }
 
     &:hover {
         .icon svg {
-            fill: $c-foxtrot;
+            fill: $c-bravo;
         }
-        .section-title--alpha {
-            color: $c-foxtrot;
+        .section-title--alpha,
+        .icon-label {
+            color: $c-bravo;
+        }
+
+        .icon svg,
+        .icon-label {
+            transition: 0.8s 0s $easeOutExpo;
+        }
+
+        .icon svg {
+            transform: translateY(-16px);
+        }
+
+        .icon-label {
+            transform: translateY(-6px);
+        }
+
+        .icon-label {
+            opacity: 1;
         }
 
         .svg-ants {
-            animation:
-                ants-svg
-                $marchSpeed
-                steps($marchLunges)
-                infinite;
-
             stroke-dasharray: $antSize-svg;
-            stroke: $c-golf;
+            stroke: $c-alpha;
+
+            html:not(.is-safari) & {
+                animation:
+                    ants-svg
+                    $marchSpeed
+                    steps($marchLunges)
+                    infinite;
+            }
+        }
+
+        .animate-clockwise {
+            animation-name: ants-svg-clockwise;
         }
     }
 
@@ -126,6 +138,72 @@ input {
     }
 }
 
+.btn--arrow {
+    fill: none;
+    padding: 23px 16px 24px 8px;
+    width: 213px;
+    height: 73px;
+    border: none;
+    stroke: $c-alpha;
+    color: $c-bravo;
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:after {
+        content: none;
+    }
+
+    &:hover {
+        color: $c-bravo;
+        svg {
+
+            stroke-dasharray: $antSize-svg-arrow;
+            stroke: $c-alpha;
+
+            html:not(.is-safari) & {
+                animation:
+                    ants-svg-arrow-clockwise
+                    $marchSpeed
+                    steps($marchLunges)
+                    infinite;
+            }
+        }
+    }
+
+    .section--hero & {
+        min-width: 0;
+        stroke: $c-white;
+        color: $c-white;
+
+    }
+    .section--hero &:hover {
+        svg {
+            stroke: $c-white;
+        }
+    }
+
+}
+
+.btn--arrow--left {
+    padding: 24px 10px 24px 20px;
+
+    svg {
+        transform: rotate(180deg);
+    }
+    &:hover svg {
+        animation-name: ants-svg-arrow;
+    }
+}
+
 .btn-ants {
     transition: 0.15s 0.0s ease;
     position: absolute;
@@ -175,7 +253,7 @@ input {
     width: 100%;
     fill: transparent;
     transition: 0.2s ease stroke, 0s ease stroke-dasharray;
-    stroke-dasharray: 0;
+    stroke-dasharray: none;
     stroke: $c-alpha;
 
     &.svg-ants--circle,

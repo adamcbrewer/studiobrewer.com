@@ -13,12 +13,11 @@ p {
 }
 
 .title-hero {
-    padding-top: 2.2em;
-    margin: 0 auto 2.2em;
+    margin: 0 auto 7rem;
     font-size: $f-size-1;
     line-height: 1.4;
     font-weight: 400;
-    max-width: 27em;
+    max-width: 21em;
     text-align: center;
 
     .page--work &,
@@ -33,34 +32,47 @@ p {
 
 }
 
-.title-main {
-    font-weight: 400;
+.title-section {
     font-size: $f-size-1;
+    font-weight: 400;
     line-height: 1.4;
-    margin: auto;
-    max-width: 22em;
+    margin-bottom: 3.4rem;
+    margin-top: 0;
     text-align: center;
+    color: $c-bravo;
 
-    .page--project & {
-        max-width: none;
-        margin-bottom: 0.4em;
+    > a {
+        color: inherit;
+        border-bottom-color: transparent;
+    }
+
+    .splitbox & {
+        color: $c-alpha;
+        margin-bottom: 3rem;
     }
 
 }
 
-.title-summary {
-    color: $c-golf;
-    font-weight: 400;
-    font-size: $f-size-1;
-    line-height: 1.4;
+.title-section--secondary {
+    color: $c-bravo; //$c-foxtrot;
+    margin-bottom: 0;
+}
+.title-section--tertiary {
+    color: $c-alpha; //$c-golf;
+}
+.title-section--alpha {
+    color: $c-alpha;
+}
+
+.title-underline {
+    height: 10px;
+    display: block;
     margin: auto;
-    text-align: center;
-    max-width: 22em;
+    width: 90px;
+}
 
-    .page--project & {
-        max-width: none;
-    }
-
+.title-underline--large {
+    height: 12px;
 }
 
 .title-404 {
@@ -68,4 +80,8 @@ p {
     text-align: center;
     color: $c-alpha;
     font-weight: 400;
+}
+
+.title--major {
+    font-size: $f-size-major;
 }

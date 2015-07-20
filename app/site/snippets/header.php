@@ -22,12 +22,21 @@
     <meta property="og:description" content="<?php echo $site->description() ?>" />
     <meta property="og:image" content="<?php echo url('/assets/img/facebook.gif') ?>" />
 
+    <?php if ($page->template() == 'project') : ?>
+        <?php if ($prev = $page->prev()) : ?>
+        <link rel="prev" href="<?php echo $prev->url(); ?>" />
+        <?php endif; ?>
+        <?php if ($next = $page->next()) : ?>
+        <link rel="next" href="<?php echo $next->url(); ?>" />
+        <?php endif; ?>
+    <?php endif; ?>
+
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
     <script>
         WebFont.load({typekit: { id: 'eus0xse' }});
     </script>
 
-    <?php echo css('assets/css/styles.css') ?>
+    <?php if (c::get('debug')) : echo css('assets/css/styles.prefixed.css'); else : echo css('assets/css/styles.css'); endif; ?>
     <?php echo js('assets/js/modernizr.build.js') ?>
 
 </head>

@@ -1,67 +1,74 @@
 <?php snippet('header') ?>
 
-    <article class="section section--hero section--yank">
+    <article class="contain section">
 
-        <header class="section-header contain">
-            <h1 class="title-hero">
-                <?php echo $page->header() ?>
-            </h1>
+        <header class="section-header contain contain--about">
+            <h1 class="title-section title--major"><?php echo $page->header() ?></h1>
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-09.svg" alt="">
         </header>
+
+        <div class="contain contain--narrow">
+
+            <figure class="figure figure--about">
+                <img src="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>">
+                <noscript><img src="<?php echo $page->profile_image()->url() ?>" alt="<?php echo $site->author() ?>"></noscript>
+                <?php if ($page->profile_image()->caption()) : ?>
+                <figcaption class="figure-caption"><?php echo $page->profile_image()->caption() ?></figcaption>
+                <?php endif; ?>
+            </figure>
+
+            <section class="contain contain--minute">
+
+                <?php echo kirbytext($page->about()) ?>
+
+            </section>
+
+        </div>
 
     </article>
 
-    <div class="contain contain--features u-textcenter">
-        <figure class="section figure figure--about">
-            <img src="<?php echo $page->images()->findBy('name', 'me')->url() ?>" alt="<?php echo $site->author() ?>">
-            <?php if ($page->images()->findBy('name', 'me')->caption()) : ?>
-            <figcaption class="figure-caption"><?php echo $page->images()->findBy('name', 'me')->caption() ?></figcaption>
-            <?php endif; ?>
-        </figure>
-    </div>
+    <section class="section section--sub section--alt bg-pattern--shapes">
 
-    <section class="section contain contain--narrow">
-
-        <?php echo kirbytext($page->about()) ?>
-
-    </section>
-
-    <section class="section section--alt">
         <header class="section-header contain">
-            <p class="section-title"><?php echo $page->sectionTitleTwo() ?></p>
+            <h2 class="title-section title--major"><?php echo $page->section_title_skills() ?></h2>
+            <img class="title-underline title-underline--large" src="<?php echo $site->url(); ?>/assets/img/headers/header-06.svg" alt="">
         </header>
-        <section class="contain contain--clients">
-            <ul class="clients u-flex u-flex--row u-flex--center-v u-textcenter">
-                <?php foreach ($page->images()->sortBy('sort', 'asc')->not('me.jpg', 'me.png') as $client) : ?>
-                    <li class="client" data-name="<?php e($client->client() != "", $client->client(), $client->name()) ?>">
-                        <img src="<?php echo $client->url() ?>" alt="<?php echo $client->filename() ?>">
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </section>
-    </section>
 
-    <section class="section contain">
-        <header class="section-header">
-            <p class="section-title"><?php echo $page->sectionTitleThree() ?></p>
-        </header>
-        <section class="skills contain contain--narrow u-columns u-columns--two u-columns--largegap">
-            <div class="skill">
-                <ul class="taglist">
-                    <?php foreach(explode(',', $page->skills()) as $value) : ?>
-                    <li class="taglist-item"><?php echo $value ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-        </section>
-    </section>
+        <div class="contain">
 
-    <section class="section section--alt">
-        <header class="section-header contain">
-            <p class="section-title"><?php echo $page->sectionTitleFour() ?></p>
-        </header>
-        <div class="u-textleft contain contain--narrow">
-            <?php echo kirbytext($page->TextSectionFour()) ?>
+            <section class="splitboxes">
+
+                <div class="splitbox">
+                    <h3 class="title-section"><?php echo $page->skills_box_title_left() ?></h3>
+                    <footer>
+                        <?php echo $page->skills_box_content_left()->kirbytext() ?>
+                    </footer>
+                </div>
+
+                <div class="splitbox splitbox--hollow">
+                    <h3 class="title-section"><?php echo $page->skills_box_title_right() ?></h3>
+                    <footer>
+                        <?php echo $page->skills_box_content_right()->kirbytext() ?>
+                    </footer>
+                </div>
+
+            </section>
+
         </div>
+
+    </section>
+
+    <section class="section section--sub">
+
+        <header class="section-header contain">
+            <h2 class="title-section title--major"><?php echo $page->section_title_clients() ?></h2>
+            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-07.svg" alt="">
+        </header>
+
+        <section class="contain">
+            <?php snippet('about/clients'); ?>
+        </section>
+
     </section>
 
 <?php snippet('footer') ?>

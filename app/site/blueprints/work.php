@@ -20,3 +20,9 @@ fields:
   buttonView:
     label: View Project Button Text
     type: text
+  next_project_copy:
+    label: "Next project" Text
+    type: text
+  all_projects_copy:
+    label: "Back to projects" Text
+    type: text

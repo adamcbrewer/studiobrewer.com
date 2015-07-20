@@ -2,7 +2,7 @@
 
 title: Home
 pages: false
-files: false
+files: true
 fields:
   title:
     label: Title
@@ -27,12 +27,25 @@ fields:
   _headerTwo:
     label: Section - Features
     type: headline
-  buttonView:
-    label: View Project Button Text
+  titleFeatures:
+    label: Features Title
     type: text
-  buttonFeatures:
-    label: Features Button Text
-    type: text
+  featured_project_uids:
+    label: Featured Projects
+    type: structure
+    width: 1/2
+    entry: >
+      {{ uid }}
+    fields:
+      uid:
+        label: Project
+        type: select
+        options: query
+        query:
+          page: work
+          fetch: visibleChildren
+          value: '{{uid}}'
+          text: '{{uid}}'
 
   _headerThree:
     label: Section - Twitter
@@ -43,3 +56,28 @@ fields:
   buttonTwitter:
     label: Twitter Button Text
     type: text
+
+  _headerFour:
+    label: Section - Get In Touch
+    type: headline
+  _infoOne:
+    label: &nbsp;
+    type: info
+    text: >
+      You change how your email and phone number links are displayed from the fields below, but the actual email address and phone number can be changed within the global site options.
+  sectionTitleFour:
+    label: Section Title
+    type: text
+  email_text:
+    label: Email Text
+    type: text
+  phone_text:
+    label: Phone Text
+    type: text
+  contact_text:
+    label: Text
+    type:  textarea
+  contact_image_filename:
+    label: Contact Image
+    type: select
+    options: images

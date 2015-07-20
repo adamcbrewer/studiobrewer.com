@@ -1,35 +1,47 @@
 .features {
-    margin: 5em 0;
+    margin: 6rem 0;
     padding: 0;
     list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .feature {
-    margin-bottom: 8.8rem;
+    margin-bottom: $d-gutter;
+    width: $d-columns-6;
 }
 
 .feature-figure {
-    margin-bottom: 2.5em;
     position: relative;
 
     img {
         display: block;
     }
-}
 
-.feature-title {
-    font-size: $f-size-2;
-    font-weight: 400;
-    color: $c-foxtrot;
-    margin: 0 0 0.6em;
-    line-height: 1;
     a {
-        color: inherit;
+        &:after {
+            content: none;
+        }
+        display: block;
+        height: 100%;
+        width: 100%;
     }
 }
 
+.feature-title {
+    font-size: $f-size-1;
+    font-weight: 400;
+    margin: 0 0 3rem;
+    line-height: 1.2;
+}
+
 .feature-summary {
-    margin: 0;
     font-size: $f-size-2;
-    color: $c-golf;
+    line-height: 1;
+}
+
+.feature-details {
+    display: none;
 }

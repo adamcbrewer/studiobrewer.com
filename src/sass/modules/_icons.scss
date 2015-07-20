@@ -13,12 +13,23 @@
     fill: $c-white;
 }
 
+.icon--bravo {
+    svg {
+        fill: $c-bravo;
+    }
+}
+
 .icon--small {
     width: 24px;
     height: 24px;
     margin-right: 0.2em;
     position: relative;
     top: 0.3em;
+}
+
+.icon--large {
+    width: 52px;
+    height: 52px;
 }
 
 .icon--block {
@@ -34,4 +45,21 @@
         }
     }
 
+}
+
+.icon-label {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.icon-label--social {
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    opacity: 0;
+    transition: 0.3s 0s $easeOutExpo;
 }

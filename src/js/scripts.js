@@ -13,6 +13,19 @@
 
 
     /**
+     * Useragent styling
+     *
+     */
+    var b = document.documentElement;
+    b.setAttribute("data-useragent", Site.userAgent);
+    b.setAttribute("data-platform", Site.platform);
+
+    if (Site.userAgent.indexOf('Safari') != -1 && Site.userAgent.indexOf('Chrome') == -1) {
+        b.classList.add('is-safari');
+    }
+
+
+    /**
      * Konami code
      *
      */
@@ -85,5 +98,33 @@
         $tweetContainer.classList.add('is-busy');
         request.send();
     }
+
+
+    /**
+     * Keyboard navigation
+     *
+     */
+    window.addEventListener('keyup', function (evt) {
+
+        var code = evt.keyCode || null;
+        var link = null;
+
+        switch (code) {
+            case 39: // right
+                link = document.querySelectorAll('[rel="next"]');
+                if (link.length && link[0].href) window.location = link[0].href;
+                break;
+            case 37: // left;
+                link = document.querySelectorAll('[rel="prev"]');
+                if (link.length && link[0].href) window.location = link[0].href;
+                break;
+            case 27: // esc
+                window.location = Site.basePath;
+            default:
+                break;
+        }
+
+    });
+
 
 }(window, document));

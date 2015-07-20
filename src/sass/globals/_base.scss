@@ -9,18 +9,18 @@
     color: $c-white;
 }
 a::-moz-selection {
-    background-color: #FF00D5;
+    background-color: #000;
     color: $c-white;
 }
 a::selection {
-    background-color: #FF00D5;
+    background-color: #000;
     color: $c-white;
 }
 
 html, body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
     -moz-osx-font-smoothing: grayscale;
 }
 html {
@@ -32,7 +32,7 @@ body {
     font-family: $ff;
     background-color: $c-bg;
     color: $c-text;
-    font-size: 2rem;
+    font-size: $f-size-2;
     font-weight: $fw;
     line-height: 1.7;
     display: flex;
@@ -53,8 +53,49 @@ img {
     max-width: 100%;
 }
 p {
-    margin: 1.8em auto;
+    margin: 2.4rem auto;
+
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
 }
-p:last-child {
-    margin-bottom: 0;
+
+.work-title span,
+.work-summary span,
+a {
+    color: $c-alpha;
+    text-decoration: none;
+    transition:
+        0.3s ease border-color,
+        0.3s ease color;
+    border-bottom: $d-link-thickness solid currentColor;
+    position: relative;
+
+    .title-section & {
+        border-bottom-width: #{$d-link-thickness + 1};
+    }
+
+    svg {
+        transition: 0.3s ease fill;
+    }
+
+    figure & {
+        border: none;
+    }
+
+    .icon &,
+    .icon &:hover {
+        border: none
+    }
+
 }
+a:hover {
+    border-bottom-color: transparent;
+    .icon svg {
+        fill: $c-bravo;
+    }
+    .title-section & {
+        border-bottom-color: $c-alpha;
+    }
+}
+a:active {}
+a:focus {}
