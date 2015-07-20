@@ -9,7 +9,10 @@
 
 .header {
     .page--home & {
-        background-color: $c-alpha;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
     }
 }
 
@@ -18,9 +21,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     flex: 1;
+
+    .page--home & {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
 
     .nav {
         display: flex;
@@ -28,10 +36,29 @@
     }
 }
 
+.availability {
+
+    .page--home & {
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        right: 0;
+    }
+
+    a {
+        color: $c-white;
+        border-bottom-color: transparent;
+        &:hover {
+            border-bottom-color: currentColor;
+        }
+    }
+}
+
 .logo {
     align-self: center;
     transition: 0.8s;
     position: relative;
+    transform: translateY(8px);
 
     .inner {
         margin: auto;
@@ -85,34 +112,4 @@
 .footer-inner {
     padding-top: 10rem;
     padding-bottom: 15rem;
-}
-
-.contain {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: calc(#{$d-siteWidth} + #{$d-sitePadding});
-    padding-left: $d-gutter;
-    padding-right: $d-gutter;
-}
-
-.contain--project-info {
-    max-width: calc(#{($d-column * 10) + ($d-gutter * 9)} + #{$d-sitePadding});
-}
-.contain--header,
-.contain--social {
-    max-width: ($d-column * 9) + ($d-gutter * 8);
-}
-
-.contain--text {
-    max-width: ($d-column * 7) + ($d-gutter * 6);
-}
-.contain--narrow {
-    max-width: ($d-column * 6) + ($d-gutter * 7);
-}
-.contain--features {
-    max-width: $d-features;
-}
-.contain--clients {
-    max-width: calc(#{($d-column * 10) + ($d-gutter * 10)} + #{$d-sitePadding});
 }

@@ -2,20 +2,19 @@
 
 class ProjectPage extends Page {
 
+
     /**
      * Get the feature image
      *
      */
     public function feature() {
-        $file = $this->images()->find($this->featureFilename());
+        $file = $this->images()->find($this->featuredFilename()->html());
         if (!$file) {
-            $file = $this->images()->findBy('name', 'feature');
-            if (!$file) {
-                $file = $this->images()->not('thumb.jpg')->first();
-            }
+            $file = $this->images()->first();
         }
         return $file;
     }
+
 
     /**
      * Calculates the aspect ratio in percentage for a feature image
@@ -26,6 +25,7 @@ class ProjectPage extends Page {
         return round($feature->height() / $feature->width() *100 , 2) . '%';
     }
 
+
     /**
      * Get the thumbnail image
      *
@@ -33,18 +33,9 @@ class ProjectPage extends Page {
     public function thumb() {
         $file = $this->images()->find($this->thumbFilename());
         if (!$file) {
-            $file = $this->images()->findBy('name', 'thumb');
+            $file = $this->images()->first();
         }
         return $file;
-    }
-
-
-    /**
-     * Fetch all the project images, not thumbnails or feature images
-     *
-     */
-    public function project_images() {
-        return $this->images()->sortBy('sort', 'asc')->not('thumb.jpg', 'thumb.png', 'feature.jpg', 'feature.png');
     }
 
 
@@ -53,8 +44,37 @@ class ProjectPage extends Page {
      *
      */
     public function first_image() {
-        return $this->images()->sortBy('sort', 'asc')->not('thumb.jpg', 'thumb.png', 'feature.jpg', 'feature.png')->first();
+
+        $image_structure = $this->project_images()->toStructure()->first();
+        $first_image = null;
+
+        if ($image_structure) {
+            $first_image = $image_structure;
+            $first_image->image = $this->images()->find($image_structure->filename());
+        }
+
+        return $first_image;
+
     }
 
+
+    /**
+     * Fetch all the remaining images
+     *
+     */
+    public function remaining_project_images() {
+
+        $images_structure = $this->project_images()->toStructure()->offset(1);
+        $images = array();
+
+        foreach ($images_structure as $key => $image) {
+            $this_image = $image;
+            $this_image->image = $this->images()->find($image->filename());
+            $images[] = $this_image;
+        }
+
+        return $images;
+
+    }
 
 }

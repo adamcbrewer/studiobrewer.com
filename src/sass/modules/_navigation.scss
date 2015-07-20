@@ -4,7 +4,11 @@ a {
     transition:
         0.3s ease border-color,
         0.3s ease color;
-    border-bottom: 2px solid transparent;
+    border-bottom: $d-link-thickness solid currentColor;
+
+    .title-section & {
+        border-bottom-width: #{$d-link-thickness + 1};
+    }
 
     svg {
         transition: 0.3s ease fill;
@@ -18,11 +22,17 @@ a {
     .icon &:hover {
         border: none
     }
+
+    position: relative;
+
 }
 a:hover {
-    border-bottom-color: currentcolor;
+    border-bottom-color: transparent;
     .icon svg {
         fill: $c-bravo;
+    }
+    .title-section & {
+        border-bottom-color: $c-alpha;
     }
 }
 a:active {}
@@ -47,14 +57,15 @@ a:focus {}
     &:after {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -2px;
         width: 0%;
-        height: 2px;
+        height: #{$d-link-thickness + 1};
         background: currentColor;
         content: "";
         transition: 0.3s width $easeOutExpo;
     }
 
+    &:focus,
     &:hover {
         color: $c-alpha;
         .page--home & {

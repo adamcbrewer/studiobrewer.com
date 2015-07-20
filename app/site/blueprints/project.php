@@ -44,9 +44,35 @@ fields:
     type: info
     text: >
       **Images sizes:** <br>
-      – Thumbnail: 440px <br>
-      – Feature: 920px <br>
+      – Thumbnail: 466px <br>
+      – Feature: 680px <br>
       – All others: 1400px (full), 680px (half), 440px (one third), 920px (two thirds)
+
+  project_images:
+    label: Project Images
+    type: structure
+    entry: >
+      <b>Image</b>:&nbsp;&nbsp; <i>{{filename}}</i> <br>
+      <b>Caption</b>:&nbsp;&nbsp; <i>{{caption}}</i> <br>
+      <b>Size</b>:&nbsp;&nbsp; <i>{{layout}}</i>
+    fields:
+      filename:
+        label: Image
+        type: select
+        options: images
+      caption:
+        label: Caption
+        type: text
+      layout:
+        label: Layout Options/Ratios
+        type: radio
+        default: full
+        options:
+          full: Full width
+          half: Half size
+          third: One third
+          twothirds: Two thirds
+
 
   _headerTwo:
     label: Section - Project Information
@@ -63,15 +89,3 @@ fields:
   details:
     label: Details
     type: textarea
-  homepage:
-    label: Display this project on the Home page?
-    type: toggle
-    text: yes/no
-    default: no
-    width: 1/2
-  _infoThree:
-    label: &nbsp;
-    type: info
-    width: 1/2
-    text: >
-      If the following option is enabled then this project will be displayed on the Home page, using the first uploaded image (not the thumbnail). There's no limit to the number of projects displayed on the Home page.

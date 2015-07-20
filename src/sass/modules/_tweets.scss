@@ -1,0 +1,81 @@
+.no-js #tweet-template {
+    display: none;
+}
+.tweets {
+    position: relative;
+    margin-bottom: $d-column;
+    font-size: $f-size-2;
+    background-color: lighten($c-bg, 1%);
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8px;
+        height: 20px;
+        background-color: white;
+        transition: 0.2s;
+        opacity: 0;
+        animation: none;
+    }
+
+    &.is-busy {
+        &:before {
+            animation: blink 0.25s 0s ease infinite alternate;
+            opacity: 1;
+        }
+    }
+}
+.tweet {
+    width: $d-columns-4;
+    padding: 7rem 7rem 10rem;
+    text-align: left;
+
+    transition: 0.4s;
+    opacity: 1;
+
+    .is-busy & {
+        opacity: 0;
+    }
+
+    &:nth-of-type(0n+1) {
+        padding-right: 0;
+        padding-left: 8rem;
+    }
+
+    &:nth-of-type(0n+3) {
+        padding-left: 0;
+        padding-right: 8rem;
+    }
+
+}
+.tweet-link {
+    color: $c-alpha;
+    border-bottom: none;
+    svg {
+        position: relative;
+        left: -2px;
+    }
+    &:hover {
+        color: $c-delta;
+        svg {
+            fill: $c-delta;
+        }
+    }
+}
+.tweet-header {
+    margin-bottom: 1.4em;
+}
+.tweet-time {
+    font-size: $f-size-3;
+}
+.tweet-body {
+    margin-bottom: 1em;
+    a {
+        // border-bottom-color: transparent;
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+}

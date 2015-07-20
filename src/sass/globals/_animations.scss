@@ -4,15 +4,30 @@
 }
 
 @keyframes ants-horizontal {
-  from { background-position: 0 0; }
-  to   { background-position: $antSize-css 0; }
+    from { background-position: 0 0; }
+    to   { background-position: $antSize-css 0; }
 }
 @keyframes ants-vertical {
-  from { background-position: 0 0; }
-  to   { background-position: 0 $antSize-css; }
+    from { background-position: 0 0; }
+    to   { background-position: 0 $antSize-css; }
 }
 
 @keyframes ants-svg {
-  0%   { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: $antSize-svg * 2; }
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg * 2; }
+}
+
+@keyframes ants-svg-clockwise {
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg * 2 * -1; }
+}
+
+@keyframes ants-svg-arrow {
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg-arrow * 2; }
+}
+
+@keyframes ants-svg-arrow-clockwise {
+    0%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $antSize-svg-arrow * 2 * -1; }
 }

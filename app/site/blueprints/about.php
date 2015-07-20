@@ -16,48 +16,58 @@ fields:
     label: Page Title
     type:  text
 
-  _headerOne:
+  _header_intro:
     label: Section - Introduction
     type: headline
   header:
     label: Main Header
     type: text
-  _infoTwo:
-    label: Your Profile Photo
-    type: info
-    text: >
-      Make sure to name your profile photo _me_, in either .jpg of .png format.
+  profile_image_filename:
+    label: You Profile Image
+    type: select
+    options: images
   about:
     label: About You
     type:  textarea
-  _headerTwo:
-    label: Section - Client Branding
-    type: headline
-  sectionTitleTwo:
-    label: Section Title
-    type: text
-  _infoThree:
-    label: Client Brands
-    type: info
-    text: >
-      Images for client brands can be uploaded under the files section on the left,
-      where you'll be able to arrange and sort them.
-  _headerThree:
+
+  _header_skills:
     label: Section - Skills
     type: headline
-  sectionTitleThree:
+  section_title_skills:
     label: Section Title
     type: text
-  skills:
-    label: Skills
-    type: tags
+  skills_box_title_left:
+    label: Left Box Title
+    type: text
+  skills_box_content_left:
+    label: Left Box Content
+    type: textarea
+  skills_box_title_right:
+    label: Right Box Title
+    type: text
+  skills_box_content_right:
+    label: Right Box Content
+    type: textarea
 
-  _headerFour:
-    label: Section - Sign-off
+  _header_clients:
+    label: Section - Client Branding
     type: headline
-  sectionTitleFour:
+  section_title_clients:
     label: Section Title
     type: text
-  TextSectionFour:
-    label: Sign-off Copy
-    type:  textarea
+  client_brands_structure:
+    label: Client Brand Images
+    type: structure
+    width: 1/2
+    entry: >
+      <b>Client Name</b>:&nbsp;&nbsp; <i>{{name}}</i> <br>
+      <b>Image</b>:&nbsp;&nbsp; <i>{{image_filename}}</i>
+    fields:
+      name:
+        label: Client Name
+        type: text
+      image_filename:
+        label: Image
+        type: select
+        options: images
+
