@@ -13,6 +13,19 @@
 
 
     /**
+     * Useragent styling
+     *
+     */
+    var b = document.documentElement;
+    b.setAttribute("data-useragent", Site.userAgent);
+    b.setAttribute("data-platform", Site.platform);
+
+    if (Site.userAgent.indexOf('Safari') != -1 && Site.userAgent.indexOf('Chrome') == -1) {
+        b.classList.add('is-safari');
+    }
+
+
+    /**
      * Konami code
      *
      */

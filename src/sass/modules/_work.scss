@@ -23,7 +23,32 @@
         }
 
     }
+
 }
+
+.work-link {
+
+
+    .work-title span {
+        color: $c-bravo;
+        border-bottom-color: transparent;
+    }
+    .work-summary span {
+        color: inherit;
+        border-bottom-color: transparent;
+    }
+
+    &:hover {
+
+        .work-title span,
+        .work-summary span {
+            border-bottom-color: $c-alpha;
+        }
+
+    }
+
+}
+
 .work-thumb {
     margin-bottom: 1em;
     overflow: hidden;
@@ -47,21 +72,8 @@
 }
 .work-title {
     color: $c-bravo;
-    > a {
-        color: inherit;
-        border-bottom-color: transparent;
-    }
 }
 .work-summary {
     color: $c-alpha;
-    > a {
-        color: inherit;
-        border-bottom-color: transparent;
-    }
-}
 
-.work-thumb:hover + .work-details a,
-.work-title a:hover,
-.work-summary a:hover {
-    border-bottom-color: $c-alpha;
 }

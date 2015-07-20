@@ -59,6 +59,8 @@ p {
     &:last-child { margin-bottom: 0; }
 }
 
+.work-title span,
+.work-summary span,
 a {
     color: $c-alpha;
     text-decoration: none;
@@ -66,6 +68,7 @@ a {
         0.3s ease border-color,
         0.3s ease color;
     border-bottom: $d-link-thickness solid currentColor;
+    position: relative;
 
     .title-section & {
         border-bottom-width: #{$d-link-thickness + 1};
@@ -83,8 +86,6 @@ a {
     .icon &:hover {
         border: none
     }
-
-    position: relative;
 
 }
 a:hover {

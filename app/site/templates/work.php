@@ -10,18 +10,18 @@
         <ol class="works contain">
             <?php foreach ($page->children()->visible() as $project) : ?>
             <li class="work">
-                <figure class="work-thumb figurelink">
-                    <a href="<?php echo $project->url() ?>">
-                        <div class="rollover" data-layzr="<?php echo $project->thumb()->url() ?>" data-layzr-bg>
+                <a class="work-link" href="<?php echo $project->url() ?>">
+                    <figure class="work-thumb figurelink">
+                        <div class="rollover" style="background-image: url(<?php echo $project->thumb()->url() ?>);">
                             <span class="rollover-content"><?php echo $page->buttonView() ?></span>
                         </div>
                         <img src="<?php echo $project->thumb()->url() ?>" alt="<?php echo $project->title(); ?>">
-                    </a>
-                </figure>
-                <section class="work-details">
-                    <h2 class="work-title"><a href="<?php echo $project->url() ?>"><?php echo $project->title(); ?></a></h2>
-                    <h3 class="work-summary"><a href="<?php echo $project->url() ?>"><?php echo $project->summary() ?></a></h3>
-                </section>
+                    </figure>
+                    <section class="work-details">
+                        <h2 class="work-title"><span><?php echo $project->title(); ?></span></h2>
+                        <h3 class="work-summary"><span><?php echo $project->summary() ?></span></h3>
+                    </section>
+                </a>
             </li>
             <?php endforeach; ?>
         </ol>

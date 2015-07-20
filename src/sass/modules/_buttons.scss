@@ -71,11 +71,13 @@
             stroke-dasharray: $antSize-svg;
             stroke: $c-alpha;
 
-            animation:
-                ants-svg
-                $marchSpeed
-                steps($marchLunges)
-                infinite;
+            html:not(.is-safari) & {
+                animation:
+                    ants-svg
+                    $marchSpeed
+                    steps($marchLunges)
+                    infinite;
+            }
         }
 
         .animate-clockwise {
@@ -166,11 +168,14 @@
 
             stroke-dasharray: $antSize-svg-arrow;
             stroke: $c-alpha;
-            animation:
-                ants-svg-arrow-clockwise
-                $marchSpeed
-                steps($marchLunges)
-                infinite;
+
+            html:not(.is-safari) & {
+                animation:
+                    ants-svg-arrow-clockwise
+                    $marchSpeed
+                    steps($marchLunges)
+                    infinite;
+            }
         }
     }
 
@@ -248,7 +253,7 @@
     width: 100%;
     fill: transparent;
     transition: 0.2s ease stroke, 0s ease stroke-dasharray;
-    stroke-dasharray: 0;
+    stroke-dasharray: none;
     stroke: $c-alpha;
 
     &.svg-ants--circle,

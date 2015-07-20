@@ -21,8 +21,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     flex: 1;
 
     .page--home & {
@@ -58,6 +58,7 @@
     align-self: center;
     transition: 0.8s;
     position: relative;
+    transform: translateY(8px);
 
     .inner {
         margin: auto;
