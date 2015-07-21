@@ -63,6 +63,7 @@
             padding-right: 0;
         }
     }
+    .contain--social { margin-top: 6rem; }
     .section-header { margin-bottom: 6rem; }
     .tweet {
         width: 100%;
@@ -188,6 +189,7 @@
     .section--hero .btn--arrow {
         margin-bottom: 2rem;
     }
+    .contain--social { margin-top: 4rem; }
     .footer-inner {
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -243,6 +245,7 @@
         position: initial;
         order: 1;
         margin-bottom: 6rem;
+        max-width: none;
     }
 
 }
