@@ -1,14 +1,14 @@
 {
-  "name": "fireshell",
-  "title": "Quick-start front-end builds. Forked from http://getfireshell.com by Todd Motto",
-  "url": "https://github.com/adamcbrewer/fireshell",
+  "name": "studiobrewer",
+  "title": "Online showcase of Designer and Illustrator Jake Brewer.",
+  "url": "https://github.com/adamcbrewer/studiobrewer",
   "author": "Adam Brewer",
-  "copyright": "2014",
-  "version": "5.0.0",
+  "copyright": "2015",
+  "version": "5.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/adamcbrewer/fireshell.git"
+    "url": "http://github.com/adamcbrewer/studiobrewer.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

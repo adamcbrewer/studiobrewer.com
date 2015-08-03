@@ -29,14 +29,14 @@
      * Fixing double tapping links in iOS
      *
      */
-    var links = document.getElementsByTagName('a');
-    var i = 0;
-    for (i; i < links.length; i++) {
-        links[i].addEventListener('click', function (evt) {
-            var url = this.href || false;
-            window.location = url;
-        });
-    }
+    // var links = document.getElementsByTagName('a');
+    // var i = 0;
+    // for (i; i < links.length; i++) {
+    //     links[i].addEventListener('click', function (evt) {
+    //         var url = this.href || false;
+    //         window.location = url;
+    //     });
+    // }
 
 
     /**
