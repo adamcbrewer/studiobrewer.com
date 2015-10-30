@@ -101,8 +101,7 @@ module.exports = function (grunt) {
         sass: {
             dev: {
                 options: {
-                    style: 'expanded',
-                    banner: '<%= tag.banner %>'
+                    style: 'expanded'
                 },
                 files: {
                     '<%= project.assets %>/css/styles.unprefixed.css': '<%= project.css %>'
@@ -110,8 +109,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    style: 'compressed',
-                    banner: '<%= tag.banner %>'
+                    style: 'compressed'
                 },
                 files: {
                     '<%= project.assets %>/css/styles.unprefixed.css': '<%= project.css %>'

@@ -16,11 +16,21 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-    <meta property="og:type" content="website" />
+    <?php if ($page->template() == 'project') : ?>
+
+    <meta property="og:url" content="<?php echo $page->url() ?>" />
+    <meta property="og:title" content="<?php echo $site->title() ?> &mdash; <?php echo $page->title() ?>" />
+    <meta property="og:description" content="<?php echo excerpt($page->intro(), 200) ?>" />
+    <meta property="og:image" content="<?php echo $page->feature()->url() ?>" />
+
+    <?php else : ?>
+
     <meta property="og:url" content="<?php echo $site->url() ?>" />
     <meta property="og:title" content="<?php echo $site->title() ?>" />
     <meta property="og:description" content="<?php echo $site->description() ?>" />
     <meta property="og:image" content="<?php echo url('/assets/img/facebook.gif') ?>" />
+
+    <?php endif; ?>
 
     <?php if ($page->template() == 'project') : ?>
         <?php if ($prev = $page->prev()) : ?>
