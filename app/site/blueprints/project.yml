@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Project
 pages: false
 files:
@@ -51,10 +49,7 @@ fields:
   project_images:
     label: Project Images
     type: structure
-    entry: >
-      <b>Image</b>:&nbsp;&nbsp; <i>{{filename}}</i> <br>
-      <b>Caption</b>:&nbsp;&nbsp; <i>{{caption}}</i> <br>
-      <b>Size</b>:&nbsp;&nbsp; <i>{{layout}}</i>
+    style: table
     fields:
       filename:
         label: Image

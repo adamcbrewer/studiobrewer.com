@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: About
 pages: false
 files:
@@ -58,10 +56,7 @@ fields:
   client_brands_structure:
     label: Client Brand Images
     type: structure
-    width: 1/2
-    entry: >
-      <b>Client Name</b>:&nbsp;&nbsp; <i>{{name}}</i> <br>
-      <b>Image</b>:&nbsp;&nbsp; <i>{{image_filename}}</i>
+    style: table
     fields:
       name:
         label: Client Name
