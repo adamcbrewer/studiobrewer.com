@@ -33,12 +33,11 @@ fields:
   featured_project_uids:
     label: Featured Projects
     type: structure
+    style: table
     width: 1/2
-    entry: >
-      {{ uid }}
     fields:
       uid:
-        label: Project
+        label: Project ID
         type: select
         options: query
         query:
