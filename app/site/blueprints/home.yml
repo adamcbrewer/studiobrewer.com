@@ -34,7 +34,7 @@ fields:
     style: table
     fields:
       uid:
-        label: Project
+        label: Project ID
         type: select
         options: query
         query:
