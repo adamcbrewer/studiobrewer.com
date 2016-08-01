@@ -78,7 +78,7 @@ module.exports = function (grunt) {
                     preserveComments: 'all'
                 },
                 files: {
-                    '<%= project.assets %>/js/script.js': '<%= project.js %>'
+                    '<%= project.assets %>/js/script.min.js': '<%= project.js %>'
                 }
             },
             dist: {
@@ -196,8 +196,8 @@ module.exports = function (grunt) {
             default: {
                 options: {
                     optimizationLevel: 4,
-                    progressive: true,
-                    pngquant: true
+                    // progressive: true,
+                    // pngquant: true
                 },
                 files: [
                     {
@@ -236,14 +236,15 @@ module.exports = function (grunt) {
 
         modernizr: {
             all: {
-                devFile : '',
-                outputFile : "<%= project.assets %>/js/modernizr.build.js",
-                parseFiles : false,
+                devFile: false,
+                dest: "<%= project.assets %>/js/modernizr.build.js",
+                crawl: true,
+                cache: false,
                 uglify: true,
-                extra : {
-                    load : false,
+                extra: {
+                    load: false,
                 },
-                tests : [
+                tests: [
                     'touch',
                     'flexbox'
                 ]
