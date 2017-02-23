@@ -77,11 +77,11 @@
                     $marchSpeed
                     steps($marchLunges)
                     infinite;
-            }
-        }
 
-        .animate-clockwise {
-            animation-name: ants-svg-clockwise;
+                &.animate-reverse {
+                    animation-direction: reverse;
+                }
+            }
         }
     }
 
@@ -259,6 +259,11 @@
 
     &.svg-ants--circle,
     &.svg-ants--square {
+
+    }
+
+    &.svg-ants--circle {
+        overflow: visible;
     }
 
 }
