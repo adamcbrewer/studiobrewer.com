@@ -238,12 +238,19 @@ module.exports = function (grunt) {
             all: {
                 devFile: false,
                 dest: "<%= project.assets %>/js/modernizr.build.js",
-                crawl: true,
+                parseFiles: false,
+                crawl: false,
                 cache: false,
                 uglify: true,
                 extra: {
                     load: false,
                 },
+                "options": [
+                    "setClasses",
+                    "testProp",
+                    "addTest",
+                    "fnBind"
+                ],
                 tests: [
                     'touch',
                     'flexbox'

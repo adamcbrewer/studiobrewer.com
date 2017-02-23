@@ -42,6 +42,10 @@ fields:
           fetch: visibleChildren
           value: '{{uid}}'
           text: '{{uid}}'
+  buttonFeatures:
+    label: Feature Button Text
+    type: text
+    default: See all Work
 
   _headerThree:
     label: Section - Twitter

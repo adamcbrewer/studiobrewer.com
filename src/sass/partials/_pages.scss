@@ -17,7 +17,22 @@
 
 .contact-email,
 .contact-phone {
+
     .page--home & {
         color: $c-alpha;
+        font-size: $f-size-1;
+        font-weight: 500;
+
+        a {
+            border-bottom-color: transparent;
+            &:hover {
+                border-bottom-color: currentColor;
+            }
+        }
     }
+}
+
+.contact-description {
+    font-size: $f-size-4;
+    line-height: 1.3;
 }

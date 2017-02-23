@@ -25,15 +25,21 @@
     <section class="section section--sub contain">
 
         <header class="section-header contain">
-            <h2 class="title-section title--major"><?php echo $page->titleFeatures()->html() ?></h2>
+            <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-01.svg" alt="">
         </header>
 
         <ol class="features u-textcenter">
 
-            <?php snippet('features'); ?>
+            <?php snippet('work-items', array('items' => $page->featured_projects())); ?>
 
         </ol>
+
+        <div class="contain btn-group">
+            <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--arrow">
+                <?php snippet('buttons/arrow', array('copy' => $page->buttonFeatures())); ?>
+            </a>
+        </div>
 
     </section>
 
@@ -41,7 +47,7 @@
 
     <section class="section section--sub section--alt bg-pattern--shapes">
         <header class="section-header contain">
-            <h2 class="title-section title--major"><?php echo $page->sectionTitleThree() ?></h2>
+            <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-02.svg" alt="">
         </header>
 
@@ -99,7 +105,7 @@
                         <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone_text()->html() ?></a>
                     <?php endif; ?>
                 </h3>
-                <footer>
+                <footer class="contact-description">
                     <?php echo $page->contact_text()->html() ?>
                 </footer>
             </div>

@@ -13,11 +13,11 @@ p {
 }
 
 .title-hero {
-    margin: 0 auto 7rem;
+    margin: 15vh auto 10rem;
     font-size: $f-size-1;
     line-height: 1.4;
     font-weight: 400;
-    max-width: 21em;
+    max-width: 18em;
     text-align: center;
 
     .page--work &,
@@ -33,10 +33,10 @@ p {
 }
 
 .title-section {
-    font-size: $f-size-1;
+    font-size: $f-size-minor;
     font-weight: 400;
     line-height: 1.4;
-    margin-bottom: 3.4rem;
+    margin-bottom: 2rem;
     margin-top: 0;
     text-align: center;
     color: $c-bravo;

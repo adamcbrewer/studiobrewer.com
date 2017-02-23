@@ -10,7 +10,7 @@
 .work {
     width: $d-columns-4;
 
-    margin: 0 ($d-gutter / $d-siteWidth) * 100%  4em 0;
+    margin: 0 ($d-gutter / $d-siteWidth) * 100%  4.2em 0;
 
     &:nth-child(3n) {
         margin-right: 0;
@@ -20,6 +20,10 @@
 
 .work-link {
 
+    .work-title span,
+    .work-summary span {
+        display: inline-block;
+    }
 
     .work-title span {
         color: $c-bravo;
@@ -42,7 +46,7 @@
 }
 
 .work-thumb {
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
     overflow: hidden;
     position: relative;
 
@@ -55,15 +59,23 @@
     text-align: center;
 }
 
+.work-thumb-image {
+    a:hover & {
+        filter: grayscale(1);
+
+    }
+}
+
 .work-title,
 .work-summary {
     margin: 0;
-    font-size: $f-size-2;
+    font-size: $f-size-4;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1;
 }
 .work-title {
     color: $c-bravo;
+    margin-bottom: 0.4em;
 }
 .work-summary {
     color: $c-alpha;
