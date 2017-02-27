@@ -58,6 +58,8 @@ fields:
       caption:
         label: Caption
         type: text
+        help: >
+          – HTML and <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a> supported
       layout:
         label: Layout Options/Ratios
         type: radio
