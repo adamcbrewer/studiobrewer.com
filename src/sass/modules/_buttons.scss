@@ -25,10 +25,10 @@
     }
 
     .icon svg {
-        transform: translateY(0px);
+        transform: translateY(6px);
     }
     .icon-label {
-        transform: translateY(4px);
+        transform: translateY(10px);
     }
 
     .section-title {
@@ -56,11 +56,11 @@
         }
 
         .icon svg {
-            transform: translateY(-16px);
+            transform: translateY(-10px);
         }
 
         .icon-label {
-            transform: translateY(-6px);
+            transform: translateY(0px);
         }
 
         .icon-label {
@@ -115,6 +115,7 @@
     background: transparent;
     position: relative;
     z-index: 1;
+    line-height: 1.7;
     transition:
         0.15s 0.0s ease;
 

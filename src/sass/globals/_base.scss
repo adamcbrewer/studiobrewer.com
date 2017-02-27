@@ -32,9 +32,9 @@ body {
     font-family: $ff;
     background-color: $c-bg;
     color: $c-text;
-    font-size: $f-size-2;
+    font-size: $f-size-base;
     font-weight: $fw;
-    line-height: 1.7;
+    line-height: 1.42;
     display: flex;
     min-height: 100vh;
     flex-direction: column;

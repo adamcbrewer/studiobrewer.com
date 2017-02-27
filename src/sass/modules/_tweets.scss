@@ -4,7 +4,7 @@
 .tweets {
     position: relative;
     margin-bottom: $d-column;
-    font-size: $f-size-2;
+    font-size: $f-size-tweet;
     background-color: lighten($c-bg, 1%);
 
     &:before {
