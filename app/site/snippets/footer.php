@@ -23,9 +23,23 @@
                                     <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $site->phone_text()->html() ?></a>
                                 <?php endif; ?>
                             </h3>
-                            <footer class="contact-description">
+                            <div class="contact-description">
                                 <?php echo $site->contact_text()->html() ?>
-                            </footer>
+                            </div>
+
+                            <div class="splitbox--icons">
+                                <?php $social_links = $page->get_social_links(); ?>
+                                <?php foreach($social_links as $social_link) : ?>
+                                    <div class="btn-group">
+                                        <a target="_blank" href="<?php echo $social_link['url'] ?>">
+                                            <div class="icon icon--block icon--medium icon--bravo">
+                                                <?php echo snippet('icons/' . strtolower($social_link['title'])) ?>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+
                         </div>
 
                     </section>

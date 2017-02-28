@@ -31,9 +31,11 @@ fields:
     label: Section – Images
     type: headline
   featuredFilename:
-    label: Feature Image (defaults to image named 'feature')
+    label: Feature & Social Image (defaults to image named 'feature')
     type: select
     options: images
+    help: >
+      – this image will be displayed when shared on FaceBook, so make sure it's set. Use the <a target="_blank" href="https://developers.facebook.com/tools/debug/">FaceBook debug tool</a> to test before you share.
   thumbFilename:
     label: Thumbnail Image (defaults to image named 'thumb')
     type: select

@@ -23,18 +23,3 @@ fields:
   text:
     label: Text
     type:  textarea
-
-  _headerTwo:
-    label: Section - Social Links
-    type: headline
-  externallinks:
-      label: Social Links
-      type: structure
-      style: table
-      fields:
-        title:
-          label: Title
-          type: text
-        url:
-          label: URL
-          type: url

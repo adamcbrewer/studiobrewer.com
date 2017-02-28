@@ -102,10 +102,10 @@
 
     a {
         color: $c-white;
-        border-bottom-color: transparent;
+        border-bottom-color: currentColor;
 
         &:hover {
-            border-bottom-color: currentColor;
+            border-bottom-color: transparent;
         }
     }
 

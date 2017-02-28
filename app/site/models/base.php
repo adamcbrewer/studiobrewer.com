@@ -13,4 +13,13 @@ class BasePage extends Page {
     }
 
 
+    /**
+     * Returns an array of the social links added to the site options.
+     *
+     */
+    public function get_social_links() {
+        return site()->social_links()->yaml();
+    }
+
+
 }
