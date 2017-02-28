@@ -2,6 +2,7 @@ title: Site
 pages:
   sortable: true
   max: 5
+files: true
 fields:
 
   _headerOne:
@@ -59,3 +60,29 @@ fields:
   tweetFilter:
     label: Tweet-Filter Keyword
     type: text
+
+  header_contact_ooter:
+    label: Contact Footer
+    type: headline
+  info_contact_footer:
+    label: &nbsp;
+    type: info
+    text: >
+      You change how your email and phone number links are displayed from the fields below, but the actual email address and phone number can be changed within the global site options.
+  contact_title:
+    label: Contact Footer Title
+    type: text
+  email_text:
+    label: Email Text
+    type: text
+    width: 1/2
+  phone_text:
+    label: Phone Text
+    type: text
+    width: 1/2
+  contact_text:
+    label: Text
+    type:  textarea
+  contact_image_filename:
+    label: Contact Image
+    type: image

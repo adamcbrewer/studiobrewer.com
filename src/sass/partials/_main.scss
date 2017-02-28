@@ -90,6 +90,8 @@
     min-height: 10px;
     color: $c-bravo;
     font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 500;
 
     &:after {
         content: "";
@@ -110,6 +112,6 @@
 }
 
 .footer-inner {
-    padding-top: 10rem;
-    padding-bottom: 15rem;
+    padding-top: 6.8rem;
+    padding-bottom: 19rem;
 }

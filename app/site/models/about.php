@@ -1,6 +1,6 @@
 <?php
 
-class AboutPage extends Page {
+class AboutPage extends BasePage {
 
     /**
      * Profile image
