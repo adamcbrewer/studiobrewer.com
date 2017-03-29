@@ -1,7 +1,13 @@
-.bg-pattern--topo {
-    background-image: url(../img/topography.svg);
+.bg-pattern--topo,
+.bg-pattern--topo-white {
     background-position: 50% 50%;
     background-size: 3900px;
+}
+.bg-pattern--topo {
+    background-image: url(../img/topography.svg);
+}
+.bg-pattern--topo-white {
+    background-image: url(../img/topography-light.svg);
 }
 .bg-pattern--shapes {
     background-image: url(../img/pattern.svg);

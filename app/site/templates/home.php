@@ -45,7 +45,7 @@
 
     <?php if ($site->showtweets() == 'true') : ?>
 
-    <section class="section section--sub section--alt bg-pattern--shapes">
+    <section class="section section--sub section--alt bg-pattern--topo-white">
         <header class="section-header contain">
             <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-02.svg" alt="">
