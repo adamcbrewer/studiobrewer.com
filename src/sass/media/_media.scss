@@ -108,12 +108,16 @@
     }
     .section {
         .page--home &.section--hero {
+            .btn-group {
+                margin-bottom: 2rem;
+            }
             .no-flexbox &,
             .flexbox & {
-                padding-top: 18rem;
+                padding-top: 10rem;
                 padding-bottom: 6rem;
                 display: block;
                 height: auto;
+                min-height: 500px;
                 background-size: 3000px;
             }
         }
