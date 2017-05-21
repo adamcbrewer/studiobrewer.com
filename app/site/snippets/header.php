@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="<?php echo $site->url() ?>/favicon.ico?">
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
+    <meta name="p:domain_verify" content="3761316ad9e543e395fbc50295378659"/>
 
     <?php if ($page->template() == 'project') : ?>
 
@@ -73,4 +74,3 @@
     <section class="wrapper">
 
         <section class="content">
-
