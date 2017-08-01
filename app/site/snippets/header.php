@@ -10,7 +10,7 @@
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
 
-    <meta name="author" content="Jake Brewer">
+    <meta name="author" content="<?php echo $site->author() ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="<?php echo $site->url() ?>/favicon.ico?">
     <meta name="description" content="<?php echo $site->description()->html() ?>">
@@ -20,14 +20,14 @@
     <?php if ($page->template() == 'project') : ?>
 
     <meta property="og:url" content="<?php echo $page->url() ?>" />
-    <meta property="og:title" content="<?php echo $site->title() ?> &mdash; <?php echo $page->title() ?>" />
+    <meta property="og:title" content="<?php echo $site->author() ?> &mdash; <?php echo $page->title() ?>" />
     <meta property="og:description" content="<?php echo excerpt($page->intro(), 200) ?>" />
     <meta property="og:image" content="<?php echo $page->feature()->url() ?>" />
 
     <meta name="twitter:site" content="jakefbrewer" />
     <meta name="twitter:creator" content="jakefbrewer" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?php echo $site->title() ?> &mdash; <?php echo $page->title() ?>" />
+    <meta name="twitter:title" content="<?php echo $site->author() ?> &mdash; <?php echo $page->title() ?>" />
     <meta name="twitter:description" content="<?php echo excerpt($page->intro(), 200) ?>" />
     <meta name="twitter:image" content="<?php echo $page->feature()->url() ?>" />
 
