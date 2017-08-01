@@ -35,7 +35,7 @@ fields:
     type: select
     options: images
     help: >
-      – this image will be displayed when shared on FaceBook, so make sure it's set. Use the <a target="_blank" href="https://developers.facebook.com/tools/debug/">FaceBook debug tool</a> to test before you share.
+      – this image will be displayed when shared on FaceBook and Twitter, so make sure it's set. Use the <a target="_blank" href="https://developers.facebook.com/tools/debug/">FaceBook debug tool</a> and <a target="_blank" href="https://cards-dev.twitter.com/validator">Twitter Card Validator</a> to test before you share.
   thumbFilename:
     label: Thumbnail Image (defaults to image named 'thumb')
     type: select
