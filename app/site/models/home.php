@@ -1,6 +1,6 @@
 <?php
 
-class HomePage extends Page {
+class HomePage extends BasePage {
 
     /**
      * Get the homepage features
@@ -31,16 +31,5 @@ class HomePage extends Page {
         return  $features;
 
     }
-
-
-    /**
-     * Get the contact image
-     *
-     */
-    public function contact_image() {
-        $file = $this->images()->find($this->contact_image_filename()->html());
-        return $file;
-    }
-
 
 }

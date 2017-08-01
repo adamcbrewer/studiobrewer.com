@@ -31,9 +31,11 @@ fields:
     label: Section – Images
     type: headline
   featuredFilename:
-    label: Feature Image (defaults to image named 'feature')
+    label: Feature & Social Image (defaults to image named 'feature')
     type: select
     options: images
+    help: >
+      – this image will be displayed when shared on FaceBook and Twitter, so make sure it's set. Use the <a target="_blank" href="https://developers.facebook.com/tools/debug/">FaceBook debug tool</a> and <a target="_blank" href="https://cards-dev.twitter.com/validator">Twitter Card Validator</a> to test before you share.
   thumbFilename:
     label: Thumbnail Image (defaults to image named 'thumb')
     type: select
@@ -58,6 +60,8 @@ fields:
       caption:
         label: Caption
         type: text
+        help: >
+          – HTML and <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a> supported
       layout:
         label: Layout Options/Ratios
         type: radio

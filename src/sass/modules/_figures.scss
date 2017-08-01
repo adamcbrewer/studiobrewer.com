@@ -40,6 +40,13 @@
         color: $c-echo;
         margin-top: 0.2em;
     }
+
+    a {
+        border-bottom: $d-link-thickness solid currentColor;
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
 }
 
 .js-layzr {

@@ -53,6 +53,7 @@ a:focus {}
     text-transform: uppercase;
     color: $c-charlie;
     position: relative;
+    letter-spacing: 0.07em;
 
     &:after {
         position: absolute;

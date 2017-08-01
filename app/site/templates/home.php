@@ -25,23 +25,29 @@
     <section class="section section--sub contain">
 
         <header class="section-header contain">
-            <h2 class="title-section title--major"><?php echo $page->titleFeatures()->html() ?></h2>
+            <h2 class="title-section"><?php echo $page->titleFeatures()->html() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-01.svg" alt="">
         </header>
 
         <ol class="features u-textcenter">
 
-            <?php snippet('features'); ?>
+            <?php snippet('work-items', array('items' => $page->featured_projects())); ?>
 
         </ol>
+
+        <div class="contain btn-group">
+            <a href="<?php echo $site->find('/work')->url() ?>" class="btn btn--arrow">
+                <?php snippet('buttons/arrow', array('copy' => $page->buttonFeatures())); ?>
+            </a>
+        </div>
 
     </section>
 
     <?php if ($site->showtweets() == 'true') : ?>
 
-    <section class="section section--sub section--alt bg-pattern--shapes">
+    <section class="section section--sub section--alt bg-pattern--topo-white">
         <header class="section-header contain">
-            <h2 class="title-section title--major"><?php echo $page->sectionTitleThree() ?></h2>
+            <h2 class="title-section"><?php echo $page->sectionTitleThree() ?></h2>
             <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-02.svg" alt="">
         </header>
 
@@ -76,37 +82,6 @@
     </section>
 
     <?php endif; ?>
-
-    <section class="section section--sub contain">
-
-        <header class="section-header contain">
-            <h2 class="title-section"><?php echo $page->sectionTitleFour()->html() ?></h2>
-            <img class="title-underline" src="<?php echo $site->url(); ?>/assets/img/headers/header-03.svg" alt="">
-        </header>
-
-        <section class="splitboxes">
-
-            <div class="splitbox splitbox--image">
-                <figure class="figure figure--svg">
-                    <img src="<?php echo $page->contact_image()->url() ?>" alt="<?php echo $page->contact_image()->name() ?>">
-                </figure>
-            </div>
-
-            <div class="splitbox u-textcenter">
-                <h3 class="title-section">
-                    <a class="contact-email" href="mailto:<?php echo $site->email() ?>"><?php echo $page->email_text()->html() ?></a> <br>
-                    <?php if (!$site->phone()->empty() && !$page->phone_text()->empty()) : ?>
-                        <a class="contact-phone" href="tel:<?php echo $site->phone() ?>"><?php echo $page->phone_text()->html() ?></a>
-                    <?php endif; ?>
-                </h3>
-                <footer>
-                    <?php echo $page->contact_text()->html() ?>
-                </footer>
-            </div>
-
-        </section>
-
-    </section>
 
 <?php snippet('footer') ?>
 

@@ -11,12 +11,12 @@
 .splitbox {
     margin-bottom: $d-gutter;
     width: $d-columns-6;
-    border: 8px solid $c-white;
-    background-color: $c-white;
-    padding: 9rem 10rem;
+    border: 8px solid $c-hotel;
+    background-color: $c-hotel;
+    padding: 7rem 10rem 9rem;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -29,4 +29,32 @@
 
 .splitbox--hollow {
     background-color: transparent;
+}
+
+.splitbox--icons {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+
+    a {
+        display: block;
+        border: 0;
+
+        &:hover {
+            svg {
+                fill: $c-alpha;
+            }
+        }
+    }
+
+    .icon--block {
+        margin: 0;
+    }
+    .btn-group {
+        display: block;
+        margin: 0 2.5rem;
+    }
 }

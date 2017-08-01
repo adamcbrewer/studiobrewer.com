@@ -11,9 +11,8 @@
     opacity: 0;
     color: $c-white;
     font-size: $f-size-1;
-    background-blend-mode: multiply;
     background-size: cover;
-    background-color: $c-alpha;
+    background-color: rgba($c-white, 0.7);
     transition: 0.3s ease;
 
     display: flex;

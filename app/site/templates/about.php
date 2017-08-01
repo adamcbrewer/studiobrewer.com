@@ -27,7 +27,7 @@
 
     </article>
 
-    <section class="section section--sub section--alt bg-pattern--shapes">
+    <section class="section section--sub section--alt bg-pattern--topo-white">
 
         <header class="section-header contain">
             <h2 class="title-section title--major"><?php echo $page->section_title_skills() ?></h2>

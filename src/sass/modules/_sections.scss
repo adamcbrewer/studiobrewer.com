@@ -10,7 +10,8 @@
         .flexbox & {
             padding-top: 0;
             padding-bottom: 0;
-            height: 100vh;
+            height: 80vh;
+            min-height: 660px;
             display: flex;
         }
     }
@@ -22,7 +23,8 @@
 }
 
 .section--sub {
-    padding-top: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
 }
 
 .section--hero {
@@ -43,12 +45,16 @@
     background-color: $c-hotel;
 }
 
+.section--contact-footer {
+    background-color: $c-white;
+}
+
 .section-header {
     margin-bottom: 10rem;
     padding-bottom: 0em;
 
     .section--sub & {
-        margin-bottom: 6rem;
+        margin-bottom: 7rem;
     }
 
 }

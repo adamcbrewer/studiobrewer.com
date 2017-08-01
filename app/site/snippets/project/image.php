@@ -1,10 +1,10 @@
 <?php if ($image_object) : ?>
-<article class="figure layout layout--<?php echo $image_object->layout() ?>">
+<div class="figure layout layout--<?php echo $image_object->layout() ?>">
     <figure class="figure-image">
         <img src="<?php echo $image_object->image()->url() ?>" alt="<?php echo $image_object->image()->filename() ?>">
         <?php if ($image_object->caption() != '') : ?>
-        <figcaption class="figure-caption"><?php echo $image_object->caption() ?></figcaption>
+        <figcaption class="figure-caption"><?php echo markdown($image_object->caption()); ?></figcaption>
         <?php endif; ?>
     </figure>
-</article>
+</div>
 <?php endif; ?>

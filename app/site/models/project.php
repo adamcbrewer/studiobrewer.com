@@ -1,6 +1,6 @@
 <?php
 
-class ProjectPage extends Page {
+class ProjectPage extends BasePage {
 
 
     /**
